@@ -41,8 +41,10 @@ export function VideoLoopPlayer({ src, poster, blurDataURL, label, priority, cla
     const io = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
+          // First entry attaches the source (autoPlay then starts it once it can
+          // play); later entries resume a loop that was paused off-screen.
           setLoad(true);
-          el.play().catch(() => {});
+          if (el.currentSrc) el.play().catch(() => {});
         } else {
           el.pause();
         }
@@ -74,7 +76,7 @@ export function VideoLoopPlayer({ src, poster, blurDataURL, label, priority, cla
           muted
           loop
           playsInline
-          autoPlay={priority}
+          autoPlay
           preload={load ? "auto" : "none"}
           aria-hidden="true"
           src={load ? src : undefined}

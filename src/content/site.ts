@@ -47,18 +47,26 @@ export const industries: NavChild[] = [
   },
 ];
 
-export const products: (NavChild & { status: "live" | "in-development" })[] = [
+export type Product = NavChild & {
+  status: "live" | "in-development";
+  /** Public app URL for live products. */
+  url?: string;
+};
+
+export const products: Product[] = [
   {
     label: "TraceChain",
     href: "/products/tracechain/",
     description: "Blockchain mineral traceability from pit to buyer.",
     status: "live",
+    url: "https://tracechain.nordrockltd.com",
   },
   {
     label: "AgroTrace",
     href: "/products/agrotrace/",
     description: "Traceability and compliance for agricultural trade.",
     status: "live",
+    url: "https://agrotrace.nordrockltd.com",
   },
   {
     label: "GeoAI",

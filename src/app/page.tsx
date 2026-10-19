@@ -1,11 +1,16 @@
+import { AudienceCta } from "@/components/home/AudienceCta";
+import { HomeIntro } from "@/components/home/HomeIntro";
+import { HubSection } from "@/components/home/HubSection";
+import { IndustriesTeaser } from "@/components/home/IndustriesTeaser";
+import { PartnersMarquee } from "@/components/home/PartnersMarquee";
+import { Pillars } from "@/components/home/Pillars";
+import { ProductsTeaser } from "@/components/home/ProductsTeaser";
 import { Magnetic } from "@/components/motion/Magnetic";
 import { PageTransition } from "@/components/motion/PageTransition";
-import { InProgress } from "@/components/sections/InProgress";
 import { PageHero } from "@/components/sections/PageHero";
 import { Button } from "@/components/ui/Button";
 import { company } from "@/content/site";
 
-// Hero only for now; the remaining home sections arrive in phase 5.
 export default function Home() {
   return (
     <PageTransition>
@@ -26,7 +31,13 @@ export default function Home() {
           Get in touch
         </Button>
       </PageHero>
-      <InProgress topic="home" />
+      <HomeIntro />
+      <Pillars />
+      <IndustriesTeaser />
+      <HubSection />
+      <ProductsTeaser />
+      <PartnersMarquee />
+      <AudienceCta />
     </PageTransition>
   );
 }
