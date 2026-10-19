@@ -1,9 +1,18 @@
 import type { Metadata } from "next";
 import { PageTransition } from "@/components/motion/PageTransition";
-import { InProgress } from "@/components/sections/InProgress";
 import { PageHero } from "@/components/sections/PageHero";
+import { Challenges } from "@/components/who-we-are/Challenges";
+import { Governance } from "@/components/who-we-are/Governance";
+import { Milestones } from "@/components/who-we-are/Milestones";
+import { Overview } from "@/components/who-we-are/Overview";
+import { Purpose } from "@/components/who-we-are/Purpose";
+import { Strategy } from "@/components/who-we-are/Strategy";
 
-export const metadata: Metadata = { title: "Who We Are" };
+export const metadata: Metadata = {
+  title: "Who We Are",
+  description:
+    "NordRock Limited is a Nigerian indigenous minerals operations and trading company — our vision, mission, values, strategy and journey so far.",
+};
 
 export default function Page() {
   return (
@@ -14,7 +23,12 @@ export default function Page() {
         intro="A Nigerian indigenous minerals operations and trading company unlocking Nigeria's vast mineral endowment."
         media={{ image: "site-inspection-team", label: "NordRock team inspecting a mine site" }}
       />
-      <InProgress topic="Who We Are" />
+      <Overview />
+      <Purpose />
+      <Challenges />
+      <Strategy />
+      <Milestones />
+      <Governance />
     </PageTransition>
   );
 }
