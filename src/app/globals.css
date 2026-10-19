@@ -1,32 +1,106 @@
 @import "tailwindcss";
 
 /* NordRock brand tokens. Navy and sky come from the existing brand
-   (Website/colors.txt); ink and gold extend it for dark sections and accents. */
+   (Website/colors.txt); ink and gold extend it for dark sections and accents.
+   Text pairings are WCAG AA checked: azure-700 on white/stone/sky ≥ 5.3:1,
+   sky-300 on navy/ink ≥ 10:1, ink on gold ≥ 5.3:1, stone-500 on stone-50 ≥ 4.6:1. */
 @theme {
   --color-navy: #1d2545;
   --color-navy-700: #2a3460;
   --color-ink: #0f1428;
   --color-sky: #def5ff;
   --color-sky-300: #9fdcf5;
-  --color-azure: #2a9fd8;
+  --color-azure: #2a9fd8; /* decorative only (lines, icons, glows) — not body text */
+  --color-azure-700: #1767a0;
   --color-gold: #c9a54c;
   --color-gold-600: #a8862f;
   --color-stone-50: #f6f7f9;
   --color-stone-200: #e3e6ec;
-  --color-stone-500: #6b7286;
+  --color-stone-500: #5f6679;
 
   --font-sans: var(--font-inter);
   --font-display: var(--font-sora);
+
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --animate-marquee: marquee var(--marquee-duration, 40s) linear infinite;
+
+  @keyframes marquee {
+    to {
+      transform: translateX(-50%);
+    }
+  }
 }
 
 :root {
   --background: #ffffff;
   --foreground: var(--color-navy);
+  /* Accent text colour; dark sections override it (see Section tones). */
+  --accent: var(--color-azure-700);
+  --header-h: 5rem;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
+}
+
+::selection {
+  background: var(--color-gold);
+  color: var(--color-ink);
+}
+
+/* Anchor jumps land below the fixed header. */
+html {
+  scroll-padding-top: var(--header-h);
+}
+
+/* ---- Lenis smooth scroll (from lenis/dist/lenis.css) ---- */
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+.lenis:not(.lenis-autoToggle).lenis-stopped {
+  overflow: clip;
+}
+.lenis [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+.lenis.lenis-smooth iframe {
+  pointer-events: none;
+}
+
+/* ---- Page transitions (React <ViewTransition>, see components/motion/PageTransition) ---- */
+::view-transition {
+  pointer-events: none;
+}
+::view-transition-old(.page) {
+  animation: 220ms ease-in both page-out;
+}
+::view-transition-new(.page) {
+  animation: 520ms var(--ease-out-expo) 120ms both page-in;
+}
+@keyframes page-out {
+  to {
+    opacity: 0;
+    translate: 0 -16px;
+  }
+}
+@keyframes page-in {
+  from {
+    opacity: 0;
+    translate: 0 28px;
+  }
+}
+/* The header stays put while page content transitions underneath it. */
+::view-transition-group(site-header) {
+  animation: none;
+  z-index: 100;
+}
+::view-transition-old(site-header) {
+  display: none;
+}
+::view-transition-new(site-header) {
+  animation: none;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -37,5 +111,10 @@ body {
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
+  }
+  ::view-transition-group(*),
+  ::view-transition-old(*),
+  ::view-transition-new(*) {
+    animation: none !important;
   }
 }

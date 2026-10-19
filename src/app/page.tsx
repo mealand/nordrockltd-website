@@ -1,28 +1,32 @@
-// Temporary holding page while the design system and pages are built
-// (see docs/DEVELOPMENT_PLAN.md, phases 3–5).
+import { Magnetic } from "@/components/motion/Magnetic";
+import { PageTransition } from "@/components/motion/PageTransition";
+import { InProgress } from "@/components/sections/InProgress";
+import { PageHero } from "@/components/sections/PageHero";
+import { Button } from "@/components/ui/Button";
+import { company } from "@/content/site";
+
+// Hero only for now; the remaining home sections arrive in phase 5.
 export default function Home() {
   return (
-    <main className="flex flex-1 flex-col items-center justify-center gap-6 bg-navy px-4 py-24 text-center text-sky">
-      <picture>
-        <source srcSet="/media/logos/nordrock-logo-white.webp" type="image/webp" />
-        <img
-          src="/media/logos/nordrock-logo-white.png"
-          alt="NordRock"
-          className="h-auto w-56 sm:w-72"
-        />
-      </picture>
-      <h1 className="font-display max-w-2xl text-3xl font-semibold tracking-tight sm:text-5xl">
-        A new NordRock website is on its way.
-      </h1>
-      <p className="max-w-xl text-sky/80">
-        Africa&apos;s first mining enterprise based on asset-backed blockchain technology.
-      </p>
-      <a
-        href="mailto:contact@nordrockltd.com"
-        className="rounded-full bg-gold px-6 py-3 font-medium text-ink transition hover:bg-gold-600"
+    <PageTransition>
+      <PageHero
+        size="home"
+        eyebrow="NordRock Limited"
+        title="Creating a legitimate mining ecosystem in Africa."
+        intro={company.tagline}
+        media={{
+          video: "site-team-walk",
+          label: "NordRock team walking a mine site in safety gear",
+        }}
       >
-        contact@nordrockltd.com
-      </a>
-    </main>
+        <Magnetic>
+          <Button href="/what-we-do/">What we do</Button>
+        </Magnetic>
+        <Button href="/contact/" variant="outline" arrow={false}>
+          Get in touch
+        </Button>
+      </PageHero>
+      <InProgress topic="home" />
+    </PageTransition>
   );
 }
