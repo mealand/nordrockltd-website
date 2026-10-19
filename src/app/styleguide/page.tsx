@@ -6,7 +6,6 @@ import { Magnetic } from "@/components/motion/Magnetic";
 import { Marquee } from "@/components/motion/Marquee";
 import { PageTransition } from "@/components/motion/PageTransition";
 import { Parallax } from "@/components/motion/Parallax";
-import { PinnedScroll } from "@/components/motion/PinnedScroll";
 import { Reveal, RevealGroup } from "@/components/motion/Reveal";
 import { SplitReveal } from "@/components/motion/SplitReveal";
 import { PageHero } from "@/components/sections/PageHero";
@@ -14,7 +13,7 @@ import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
 import { Eyebrow, Heading } from "@/components/ui/Heading";
 import { Section } from "@/components/ui/Section";
-import type { ImageSlug } from "@/lib/media";
+import { ValueChain } from "@/components/what-we-do/ValueChain";
 
 // Internal reference page for the design system. Not linked from the menu.
 export const metadata: Metadata = { title: "Styleguide", robots: { index: false, follow: false } };
@@ -28,34 +27,6 @@ const colors = [
   ["gold", "#C9A54C", "bg-gold text-ink"],
   ["stone-50", "#F6F7F9", "bg-stone-50 text-navy"],
   ["stone-500", "#5F6679", "bg-stone-500 text-white"],
-];
-
-const chain: { title: string; text: string; image: ImageSlug }[] = [
-  {
-    title: "Extraction",
-    text: "Responsible mining at licensed and artisanal sites.",
-    image: "excavation-pit",
-  },
-  {
-    title: "Aggregation",
-    text: "Verified collection from registered cooperatives.",
-    image: "ore-bagging-crew",
-  },
-  {
-    title: "Weighing & tagging",
-    text: "Bag-and-tag with a TraceChain ID at source.",
-    image: "ore-weighing",
-  },
-  {
-    title: "Processing",
-    text: "Concentration, testing and quality assurance.",
-    image: "wash-plant",
-  },
-  {
-    title: "Market access",
-    text: "Traceable supply delivered to global buyers.",
-    image: "gold-nuggets",
-  },
 ];
 
 export default function Styleguide() {
@@ -154,34 +125,7 @@ export default function Styleguide() {
         </Container>
       </section>
 
-      <Section tone="sky" className="py-0! sm:py-0! lg:py-0!">
-        <PinnedScroll
-          className="py-20 lg:py-0"
-          intro={
-            <Container wide className="pb-10 lg:pt-16">
-              <Eyebrow>Pinned horizontal scroll</Eyebrow>
-              <Heading className="mt-4">The value chain</Heading>
-            </Container>
-          }
-        >
-          {chain.map((step, i) => (
-            <article
-              key={step.title}
-              className="relative w-[80vw] shrink-0 snap-start overflow-hidden rounded-3xl bg-navy text-white sm:w-[26rem] lg:h-[58svh] lg:w-[30vw]"
-            >
-              <div className="relative aspect-[4/3] lg:absolute lg:inset-0 lg:aspect-auto">
-                <Picture slug={step.image} alt="" fill sizes="(min-width: 1024px) 34vw, 80vw" />
-                <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/30 to-transparent" />
-              </div>
-              <div className="relative p-6 lg:absolute lg:inset-x-0 lg:bottom-0 lg:p-8">
-                <p className="font-display text-sm text-gold">0{i + 1}</p>
-                <h3 className="font-display mt-2 text-2xl font-semibold">{step.title}</h3>
-                <p className="mt-2 text-sm text-white/75">{step.text}</p>
-              </div>
-            </article>
-          ))}
-        </PinnedScroll>
-      </Section>
+      <ValueChain />
 
       <Section tone="muted">
         <Container>

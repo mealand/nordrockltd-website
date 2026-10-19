@@ -62,7 +62,7 @@ export function PinnedScroll({
         ref={track}
         className={cn(
           // Mobile / reduced motion: native horizontal scroll with snap.
-          "flex snap-x snap-mandatory gap-6 overflow-x-auto px-4 pb-4 sm:px-6",
+          "flex snap-x snap-mandatory gap-6 overflow-x-auto px-4 pb-4 [scrollbar-width:none] sm:px-6 [&::-webkit-scrollbar]:hidden",
           // Desktop: GSAP translates the track; no native scrolling.
           "lg:w-max lg:snap-none lg:overflow-visible lg:px-10 lg:pb-0",
           trackClassName,
