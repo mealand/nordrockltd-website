@@ -1,7 +1,6 @@
 import Link from "next/link";
-import { industryMedia } from "@/content/home";
-import { industries } from "@/content/site";
-import { VideoLoop } from "@/components/media/VideoLoop";
+import { industryPages } from "@/content/industries";
+import { HeroMediaFill } from "@/components/media/HeroMediaFill";
 import { Reveal, RevealGroup } from "@/components/motion/Reveal";
 import { SplitReveal } from "@/components/motion/SplitReveal";
 import { Button } from "@/components/ui/Button";
@@ -32,16 +31,17 @@ export function IndustriesTeaser() {
         </div>
 
         <RevealGroup className="mt-14 grid gap-5 md:grid-cols-3" stagger={0.12}>
-          {industries.map((ind, i) => {
-            const m = industryMedia[ind.href];
+          {industryPages.map((ind, i) => {
+            const m = ind.overview;
+            const href = `/industries/${ind.slug}/`;
             return (
               <Link
-                key={ind.href}
-                href={ind.href}
+                key={ind.slug}
+                href={href}
                 className="group relative flex aspect-[3/4] flex-col justify-end overflow-hidden rounded-3xl bg-ink p-6 text-white focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-azure sm:p-8 md:aspect-[9/14]"
               >
                 <div className="absolute inset-0 transition-transform duration-[1.2s] ease-out-expo group-hover:scale-105">
-                  <VideoLoop slug={m.video} label={m.label} />
+                  <HeroMediaFill media={m.media} sizes="(min-width: 768px) 33vw, 100vw" />
                 </div>
                 <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/50 to-ink/10 transition-opacity duration-500 group-hover:opacity-90" />
                 <div className="relative">
@@ -49,7 +49,7 @@ export function IndustriesTeaser() {
                   <h3 className="font-display mt-2 text-2xl font-semibold tracking-tight sm:text-3xl">
                     {ind.label}
                   </h3>
-                  <p className="mt-2 text-sm leading-relaxed text-white/80">{ind.description}</p>
+                  <p className="mt-2 text-sm leading-relaxed text-white/80">{m.summary}</p>
                   <ul className="mt-5 flex flex-wrap gap-2">
                     {m.points.map((pt) => (
                       <li

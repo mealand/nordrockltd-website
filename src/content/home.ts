@@ -1,7 +1,7 @@
 // Home page copy. Sources: the live nordrockltd.com home page and the public-safe
 // parts of the strategy document (no financial or contract figures — see
 // docs/DEVELOPMENT_PLAN.md §1).
-import type { ImageSlug, VideoSlug } from "@/lib/media";
+import type { ImageSlug } from "@/lib/media";
 
 export const intro = {
   eyebrow: "Our goal",
@@ -61,25 +61,6 @@ export const pillars: {
     alt: "Gold concentrate being weighed on a digital scale",
   },
 ];
-
-export const industryMedia: Record<string, { video: VideoSlug; label: string; points: string[] }> =
-  {
-    "/industries/mineral-operations/": {
-      video: "artisan-pit-mining",
-      label: "Artisanal miners working a mineral pit",
-      points: ["Extraction", "Sourcing", "Trading", "ASM formalisation"],
-    },
-    "/industries/technology/": {
-      video: "registration-documentation",
-      label: "Field registration of miners onto NordRock's digital platform",
-      points: ["Blockchain traceability", "AI geospatial analysis", "Digital trade"],
-    },
-    "/industries/renewable-energy/": {
-      video: "site-survey-river",
-      label: "Survey of an open mine site landscape",
-      points: ["Solar for mine & processing sites", "AI energy optimisation", "Verified ESG data"],
-    },
-  };
 
 export const productDetails: Record<string, { tagline: string; points: string[] }> = {
   "/products/tracechain/": {
