@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+/* NordRock brand tokens. Navy and sky come from the existing brand
+   (Website/colors.txt); ink and gold extend it for dark sections and accents. */
+@theme {
+  --color-navy: #1d2545;
+  --color-navy-700: #2a3460;
+  --color-ink: #0f1428;
+  --color-sky: #def5ff;
+  --color-sky-300: #9fdcf5;
+  --color-azure: #2a9fd8;
+  --color-gold: #c9a54c;
+  --color-gold-600: #a8862f;
+  --color-stone-50: #f6f7f9;
+  --color-stone-200: #e3e6ec;
+  --color-stone-500: #6b7286;
+
+  --font-sans: var(--font-inter);
+  --font-display: var(--font-sora);
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: var(--color-navy);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

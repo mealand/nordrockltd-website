@@ -1,0 +1,1151 @@
+{
+  "images": {
+    "artisan-briefing-1": {
+      "slug": "artisan-briefing-1",
+      "kind": "photos",
+      "width": 540,
+      "height": 960,
+      "blurDataURL": "data:image/webp;base64,UklGRqQAAABXRUJQVlA4IJgAAABwBACdASoQAB0APu1iqU2ppaOiMAgBMB2JQBdgO4FwnsmS+hn3wtNZsypAAAD+1/rIGM/GdBQ1UP/jy3l9CEy02iD/+GNRxQD2pclMINUK14mO1m4IAKYObx2l7LR5VcR5HNnfgfZK7U+XlpOHtHhzvxpW30Ie7bkPRN7bCPi66/hdxDz8K//dTSMhGL0YkBFRaXPX4AAAAA==",
+      "variants": {
+        "avif": [
+          {
+            "width": 540,
+            "src": "/media/images/artisan-briefing-1-540.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 540,
+            "src": "/media/images/artisan-briefing-1-540.webp"
+          }
+        ],
+        "jpg": [
+          {
+            "width": 540,
+            "src": "/media/images/artisan-briefing-1-540.jpg"
+          }
+        ]
+      }
+    },
+    "artisan-briefing-2": {
+      "slug": "artisan-briefing-2",
+      "kind": "photos",
+      "width": 540,
+      "height": 960,
+      "blurDataURL": "data:image/webp;base64,UklGRpgAAABXRUJQVlA4IIwAAACwAwCdASoQAB0ALrV2u12jqampiYC0SgAAuc+c4b3gtstuX4tOAAD++LFGO6NTlRaTlB6mJN1pS6xE6UfeiDeSPN64/rn8hDH38cJZoQi0bbw6zlzJI/20n9U2JN/wEc7/pdWZ6Nmp8aoRn9SpEJSC7DapQlN5NKQRPTy6bj+Ed7GNeDt22wAKYkYAAA==",
+      "variants": {
+        "avif": [
+          {
+            "width": 540,
+            "src": "/media/images/artisan-briefing-2-540.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 540,
+            "src": "/media/images/artisan-briefing-2-540.webp"
+          }
+        ],
+        "jpg": [
+          {
+            "width": 540,
+            "src": "/media/images/artisan-briefing-2-540.jpg"
+          }
+        ]
+      }
+    },
+    "excavation-pit": {
+      "slug": "excavation-pit",
+      "kind": "photos",
+      "width": 540,
+      "height": 960,
+      "blurDataURL": "data:image/webp;base64,UklGRqgAAABXRUJQVlA4IJwAAAAwBACdASoQAB0APu1iqk2ppaQiMAgBMB2JZgCdAywBs/x/3EFsDM5WD5AA/unZ0dxe2krzKSMKxVgGHGxZu11GBc08+sDtpjTtZrDNSS9Szn0uqxB78mpjBChyO9WSXwr8IwktcO8D10lZ+xufyGhZcSkTOUh1fylYT/y3rTS3vOLMcJQveC/0ttAPAXLii4lW/xJdAVpfiJmkAAA=",
+      "variants": {
+        "avif": [
+          {
+            "width": 540,
+            "src": "/media/images/excavation-pit-540.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 540,
+            "src": "/media/images/excavation-pit-540.webp"
+          }
+        ],
+        "jpg": [
+          {
+            "width": 540,
+            "src": "/media/images/excavation-pit-540.jpg"
+          }
+        ]
+      }
+    },
+    "excavator-bagging": {
+      "slug": "excavator-bagging",
+      "kind": "photos",
+      "width": 432,
+      "height": 984,
+      "blurDataURL": "data:image/webp;base64,UklGRqwAAABXRUJQVlA4IKAAAAAQBQCdASoQACQAPuVkpk2pJiOiNVgIASAciWcAwdAKJZYF5Pf3wSGtMRvg1mtXzCEAAP5bzK7Io9tEUuLcJIhtfVSPqNwzr2t++TDYHNatL7cr1TOF9zgi1NQvkacC2xlKyV//MDktmHJKL3xXmbiM+9NWY/TGsyKzMrTYvsmzOd+koQET8rI83RL5Yqh1HSj/zyNbwXnuJItJxjMxkYAA",
+      "variants": {
+        "avif": [
+          {
+            "width": 432,
+            "src": "/media/images/excavator-bagging-432.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 432,
+            "src": "/media/images/excavator-bagging-432.webp"
+          }
+        ],
+        "jpg": [
+          {
+            "width": 432,
+            "src": "/media/images/excavator-bagging-432.jpg"
+          }
+        ]
+      }
+    },
+    "excavator-bucket-loading": {
+      "slug": "excavator-bucket-loading",
+      "kind": "photos",
+      "width": 540,
+      "height": 960,
+      "blurDataURL": "data:image/webp;base64,UklGRqIAAABXRUJQVlA4IJYAAACwAwCdASoQAB0APu1iqU2ppaOiMAgBMB2JQBOgA0VVdMhh5F1ooAD94eYcYurdae51a2AfQwe4T2N6A2AMDam6hUIQSIJ2BFopH3MyRNaNkE20KnhKMJdCzJDZqgHjq8E1z9/Qpj5T9CWBK5+OV4EvFCMNTWJLoGZr9g2Q4KBbxeQ+L6fJaWKNmz/OSlA1GVVnNOfOAAA=",
+      "variants": {
+        "avif": [
+          {
+            "width": 540,
+            "src": "/media/images/excavator-bucket-loading-540.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 540,
+            "src": "/media/images/excavator-bucket-loading-540.webp"
+          }
+        ],
+        "jpg": [
+          {
+            "width": 540,
+            "src": "/media/images/excavator-bucket-loading-540.jpg"
+          }
+        ]
+      }
+    },
+    "excavators-haul-road": {
+      "slug": "excavators-haul-road",
+      "kind": "photos",
+      "width": 540,
+      "height": 960,
+      "blurDataURL": "data:image/webp;base64,UklGRogAAABXRUJQVlA4IHwAAACQBACdASoQAB0APu1iqU2ppaOiMAgBMB2JYgCdMoAldsYGkQuJQpmbI48ZARAA/H2nMxu35kgiAnAcldHYaJTGwGqBkmsiPxJGmn9HWxwwMrIN2DAeSjPYLSctFmM5ufVdzhO7iseoUosBjFAsdtwf4gwnIKLs3WtmQAAA",
+      "variants": {
+        "avif": [
+          {
+            "width": 540,
+            "src": "/media/images/excavators-haul-road-540.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 540,
+            "src": "/media/images/excavators-haul-road-540.webp"
+          }
+        ],
+        "jpg": [
+          {
+            "width": 540,
+            "src": "/media/images/excavators-haul-road-540.jpg"
+          }
+        ]
+      }
+    },
+    "field-team-meeting": {
+      "slug": "field-team-meeting",
+      "kind": "photos",
+      "width": 960,
+      "height": 540,
+      "blurDataURL": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAAAQAgCdASoQAAkAA4BaJZgCdAD7jZU3AIIAAP5ohyaJegn2tb3nSbSxKywlLCrbl2qDEyfS+IBQ893TQ5OxepFAVJndBIbb6yDHsNwg3ohpjojLGrgYgFoAi/IAAA==",
+      "variants": {
+        "avif": [
+          {
+            "width": 640,
+            "src": "/media/images/field-team-meeting-640.avif"
+          },
+          {
+            "width": 960,
+            "src": "/media/images/field-team-meeting-960.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 640,
+            "src": "/media/images/field-team-meeting-640.webp"
+          },
+          {
+            "width": 960,
+            "src": "/media/images/field-team-meeting-960.webp"
+          }
+        ],
+        "jpg": [
+          {
+            "width": 640,
+            "src": "/media/images/field-team-meeting-640.jpg"
+          },
+          {
+            "width": 960,
+            "src": "/media/images/field-team-meeting-960.jpg"
+          }
+        ]
+      }
+    },
+    "gold-dust-weighing": {
+      "slug": "gold-dust-weighing",
+      "kind": "photos",
+      "width": 810,
+      "height": 1080,
+      "blurDataURL": "data:image/webp;base64,UklGRoAAAABXRUJQVlA4IHQAAAAwBACdASoQABUAPu1kqU2ppaQiMAgBMB2JbACdMoADTpaCPh6pOpRu8gAA/uvtzuD++TD19D5kYL3VTv3APv0qrjpwqKrujM8btlAxIPJh3nu3k9FCM+pmAyLGfpbZZbponxdzB4XvxoGysf8wFYe7bLoAAA==",
+      "variants": {
+        "avif": [
+          {
+            "width": 640,
+            "src": "/media/images/gold-dust-weighing-640.avif"
+          },
+          {
+            "width": 810,
+            "src": "/media/images/gold-dust-weighing-810.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 640,
+            "src": "/media/images/gold-dust-weighing-640.webp"
+          },
+          {
+            "width": 810,
+            "src": "/media/images/gold-dust-weighing-810.webp"
+          }
+        ],
+        "jpg": [
+          {
+            "width": 640,
+            "src": "/media/images/gold-dust-weighing-640.jpg"
+          },
+          {
+            "width": 810,
+            "src": "/media/images/gold-dust-weighing-810.jpg"
+          }
+        ]
+      }
+    },
+    "gold-nuggets": {
+      "slug": "gold-nuggets",
+      "kind": "photos",
+      "width": 1024,
+      "height": 768,
+      "blurDataURL": "data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAABwAgCdASoQAAwAA4BaJbACdH8Agti3D1PPAzH0AP7AfpEQFIfXW68UUsOeq9rjDgIy4pUZeS7Rt8VGlK2xzx+vxSuEsjPkkuAGPjJIdusRLLPKaiuszipolZwO35KlUaAm+iv9J7Hd3DAA",
+      "variants": {
+        "avif": [
+          {
+            "width": 640,
+            "src": "/media/images/gold-nuggets-640.avif"
+          },
+          {
+            "width": 1024,
+            "src": "/media/images/gold-nuggets-1024.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 640,
+            "src": "/media/images/gold-nuggets-640.webp"
+          },
+          {
+            "width": 1024,
+            "src": "/media/images/gold-nuggets-1024.webp"
+          }
+        ],
+        "jpg": [
+          {
+            "width": 640,
+            "src": "/media/images/gold-nuggets-640.jpg"
+          },
+          {
+            "width": 1024,
+            "src": "/media/images/gold-nuggets-1024.jpg"
+          }
+        ]
+      }
+    },
+    "ore-bagging-crew": {
+      "slug": "ore-bagging-crew",
+      "kind": "photos",
+      "width": 432,
+      "height": 984,
+      "blurDataURL": "data:image/webp;base64,UklGRpoAAABXRUJQVlA4II4AAACQBACdASoQACQAPt1cpU2opSOiNUgBEBuJQBhQBZ4/Zz+tYQe2Kk16ieU5LAAA/uchUOnMH3vWIBLAqG5LhqGMFNj6UFLpuDhHo9sFRMgVNQpQeNW1Ecu6W8iuXEuzvcsQQOx7gZlSlKxISv16pI+LgqUZecF3KbBv0bUkCQTO5z3LJXXyA2TsiBLJuEAA",
+      "variants": {
+        "avif": [
+          {
+            "width": 432,
+            "src": "/media/images/ore-bagging-crew-432.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 432,
+            "src": "/media/images/ore-bagging-crew-432.webp"
+          }
+        ],
+        "jpg": [
+          {
+            "width": 432,
+            "src": "/media/images/ore-bagging-crew-432.jpg"
+          }
+        ]
+      }
+    },
+    "ore-weighing": {
+      "slug": "ore-weighing",
+      "kind": "photos",
+      "width": 432,
+      "height": 984,
+      "blurDataURL": "data:image/webp;base64,UklGRuQAAABXRUJQVlA4INgAAAAwBQCdASoQACQAPt1apE2opSOiNUgBEBuJZgCw7YyK9OJNl93ze9cocs9Y2TCPaJMpzgDMEeDfP96a0AsjCWucuLmbQHjWW/x/rgG6Q+Oz3zBMrU23VXIBVk30wkioOsmvKvjYxDhBzOg3y5S0j10StvwizxsTP8sItzxI8AIWCmiUVIMcdI01x5WqeeadLwgGF8o607TV4jogjATruoqVlFgqKlcwZufc+N0Sg9pXgug34qF3dJZVb5f7mYkwsxGpN2F6NzGO3bWY1sk0C2Jc2bMRBLgAAAA=",
+      "variants": {
+        "avif": [
+          {
+            "width": 432,
+            "src": "/media/images/ore-weighing-432.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 432,
+            "src": "/media/images/ore-weighing-432.webp"
+          }
+        ],
+        "jpg": [
+          {
+            "width": 432,
+            "src": "/media/images/ore-weighing-432.jpg"
+          }
+        ]
+      }
+    },
+    "site-inspection-pond": {
+      "slug": "site-inspection-pond",
+      "kind": "photos",
+      "width": 540,
+      "height": 960,
+      "blurDataURL": "data:image/webp;base64,UklGRsgAAABXRUJQVlA4ILwAAACQBACdASoQAB0APu1iqU2ppaOiMAgBMB2JYgCdAYw65Us+1XAfo8VmYHREacAA/tcmrvTQp56ORzLVVU7P2yBgNT8on8G6cyShr2Qwcl6PbrT5DT9CGVy1/myhRsZF95L/UUu4VmSKUD02vg+H0Kdkh6Otegx/BpYKa8ccN/KwHli9cy8Xob+dUH1p3H49ylTfPH3Dya0fR1gPQoq8aVdSw0XpYCJ75LbFTBDSW5E2oZvTQP8geY5O4CgAAA==",
+      "variants": {
+        "avif": [
+          {
+            "width": 540,
+            "src": "/media/images/site-inspection-pond-540.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 540,
+            "src": "/media/images/site-inspection-pond-540.webp"
+          }
+        ],
+        "jpg": [
+          {
+            "width": 540,
+            "src": "/media/images/site-inspection-pond-540.jpg"
+          }
+        ]
+      }
+    },
+    "site-inspection-team": {
+      "slug": "site-inspection-team",
+      "kind": "photos",
+      "width": 540,
+      "height": 960,
+      "blurDataURL": "data:image/webp;base64,UklGRrQAAABXRUJQVlA4IKgAAABQBACdASoQAB0APu1orU2ppqSiMAgBMB2JZACdEf/i2QG28F4bbvUb+owAAP6zjXeiHKoq7SxbOc/vfZRP5u8xxq//vJqlxATeijkEZKNOeXva38YrvXIWy94ePsTvpOmHKxX4hUffDg+yASM51uh2HkMSHwi/hzmyaPQYeChCgKcQfAQcQE8cUZHhRJgRLpwwRddCXqkWGrYW63RenbFMZbe8/G0QAAA=",
+      "variants": {
+        "avif": [
+          {
+            "width": 540,
+            "src": "/media/images/site-inspection-team-540.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 540,
+            "src": "/media/images/site-inspection-team-540.webp"
+          }
+        ],
+        "jpg": [
+          {
+            "width": 540,
+            "src": "/media/images/site-inspection-team-540.jpg"
+          }
+        ]
+      }
+    },
+    "site-office-registration": {
+      "slug": "site-office-registration",
+      "kind": "photos",
+      "width": 780,
+      "height": 1040,
+      "blurDataURL": "data:image/webp;base64,UklGRsYAAABXRUJQVlA4ILoAAACQBACdASoQABUAPu1iqU2ppaOiMAgBMB2JbACdMoGv/i18GwA+qiVqEDIVQ3QA+4ANXoNmLfPI1Ud0zN5gqtyD0GFBk/FvTsRHXfhupO5QPLPUFb6br9Ci/w0+VBMrRk4SFsDqquK6/bEN6HgwoLHiFnLXI9SQru/UL5M2cxuf55vycP8WTNn+gINaCSc4fuJkR374gbrffn0fhniDmzqeJxiATbj6dfuYQsRtavLHPLuErhOAOU8AAAA=",
+      "variants": {
+        "avif": [
+          {
+            "width": 640,
+            "src": "/media/images/site-office-registration-640.avif"
+          },
+          {
+            "width": 780,
+            "src": "/media/images/site-office-registration-780.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 640,
+            "src": "/media/images/site-office-registration-640.webp"
+          },
+          {
+            "width": 780,
+            "src": "/media/images/site-office-registration-780.webp"
+          }
+        ],
+        "jpg": [
+          {
+            "width": 640,
+            "src": "/media/images/site-office-registration-640.jpg"
+          },
+          {
+            "width": 780,
+            "src": "/media/images/site-office-registration-780.jpg"
+          }
+        ]
+      }
+    },
+    "site-walk": {
+      "slug": "site-walk",
+      "kind": "photos",
+      "width": 540,
+      "height": 960,
+      "blurDataURL": "data:image/webp;base64,UklGRsQAAABXRUJQVlA4ILgAAABwBACdASoQAB0APu1iqU2ppaOiMAgBMB2JagCw7Yuk3zpF8WqOirAjybhgAAD+s6otzmh+iNpUPNw/OvPc6HcWSrgHJ3Ub2ln6ovo+i9E0jrnsgHN6RzpdMVH5UjunAcUNj+3w16ZnXGz70P+47vXSiV3dt3mbsj5agHLeAaqdnakwiFybiCR6nT9TR1Tpn53e3MYNvV+d4MCiRMhtzka8OSCjpQlwoJXfj+MjX0qmBDIltZcVjgAA",
+      "variants": {
+        "avif": [
+          {
+            "width": 540,
+            "src": "/media/images/site-walk-540.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 540,
+            "src": "/media/images/site-walk-540.webp"
+          }
+        ],
+        "jpg": [
+          {
+            "width": 540,
+            "src": "/media/images/site-walk-540.jpg"
+          }
+        ]
+      }
+    },
+    "smelting-furnace": {
+      "slug": "smelting-furnace",
+      "kind": "photos",
+      "width": 720,
+      "height": 1280,
+      "blurDataURL": "data:image/webp;base64,UklGRpwAAABXRUJQVlA4IJAAAABQBACdASoQABwAPu1iqU2ppaOiMAgBMB2JYgCdABjpFnnJxgIzk76YSvqAAP7JF0jrAENy/0Y4O83e77NVQ7kg8RaIhccaSgFqmRj0tyumNeYJ54r3YBHDLYkZf0pcLV2//ylq3n2fjocweOQRG1pLgDP29/miUhK5idZiLNMa7x0+5ka2sgUYUIRnkVWAAAA=",
+      "variants": {
+        "avif": [
+          {
+            "width": 640,
+            "src": "/media/images/smelting-furnace-640.avif"
+          },
+          {
+            "width": 720,
+            "src": "/media/images/smelting-furnace-720.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 640,
+            "src": "/media/images/smelting-furnace-640.webp"
+          },
+          {
+            "width": 720,
+            "src": "/media/images/smelting-furnace-720.webp"
+          }
+        ],
+        "jpg": [
+          {
+            "width": 640,
+            "src": "/media/images/smelting-furnace-640.jpg"
+          },
+          {
+            "width": 720,
+            "src": "/media/images/smelting-furnace-720.jpg"
+          }
+        ]
+      }
+    },
+    "wash-plant-sluice": {
+      "slug": "wash-plant-sluice",
+      "kind": "photos",
+      "width": 1080,
+      "height": 810,
+      "blurDataURL": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAAAQAgCdASoQAAwAA4BaJQBdgB7G+S+aYIwAAP36Qxyqdy2RQeGe4PqVz3GrU3casw805MuN+FhLkvpQ8mcNNhPQAyFC21SJpsoheOel62hQzbWqAAA=",
+      "variants": {
+        "avif": [
+          {
+            "width": 640,
+            "src": "/media/images/wash-plant-sluice-640.avif"
+          },
+          {
+            "width": 1080,
+            "src": "/media/images/wash-plant-sluice-1080.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 640,
+            "src": "/media/images/wash-plant-sluice-640.webp"
+          },
+          {
+            "width": 1080,
+            "src": "/media/images/wash-plant-sluice-1080.webp"
+          }
+        ],
+        "jpg": [
+          {
+            "width": 640,
+            "src": "/media/images/wash-plant-sluice-640.jpg"
+          },
+          {
+            "width": 1080,
+            "src": "/media/images/wash-plant-sluice-1080.jpg"
+          }
+        ]
+      }
+    },
+    "wash-plant": {
+      "slug": "wash-plant",
+      "kind": "photos",
+      "width": 1080,
+      "height": 810,
+      "blurDataURL": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAAAwAgCdASoQAAwAA4BaJQBYdh0kXP+fTwEQAAD+9nDLk4Jwr0Znf2HuTAPYYSpxt4ucHCRUdYan21AbC0hVoQBRDM6zsdUnhOu8G8B/nqgnw9PIAAA=",
+      "variants": {
+        "avif": [
+          {
+            "width": 640,
+            "src": "/media/images/wash-plant-640.avif"
+          },
+          {
+            "width": 1080,
+            "src": "/media/images/wash-plant-1080.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 640,
+            "src": "/media/images/wash-plant-640.webp"
+          },
+          {
+            "width": 1080,
+            "src": "/media/images/wash-plant-1080.webp"
+          }
+        ],
+        "jpg": [
+          {
+            "width": 640,
+            "src": "/media/images/wash-plant-640.jpg"
+          },
+          {
+            "width": 1080,
+            "src": "/media/images/wash-plant-1080.jpg"
+          }
+        ]
+      }
+    },
+    "artisan-mining-site": {
+      "slug": "artisan-mining-site",
+      "kind": "illustrations",
+      "width": 731,
+      "height": 619,
+      "blurDataURL": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAADwAQCdASoQAA4AA4BaJYgCdAEPQxPe7AAA/tYl/4dC9MaGHBmOROGHDZJDDdikVBZkrMFr1BHfHD5SYVBlIZe818AWw/nnIyipu5VwJwMbRRI0AAA=",
+      "variants": {
+        "avif": [
+          {
+            "width": 640,
+            "src": "/media/images/artisan-mining-site-640.avif"
+          },
+          {
+            "width": 731,
+            "src": "/media/images/artisan-mining-site-731.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 640,
+            "src": "/media/images/artisan-mining-site-640.webp"
+          },
+          {
+            "width": 731,
+            "src": "/media/images/artisan-mining-site-731.webp"
+          }
+        ],
+        "jpg": [
+          {
+            "width": 640,
+            "src": "/media/images/artisan-mining-site-640.jpg"
+          },
+          {
+            "width": 731,
+            "src": "/media/images/artisan-mining-site-731.jpg"
+          }
+        ]
+      }
+    },
+    "artisans-hardhats": {
+      "slug": "artisans-hardhats",
+      "kind": "illustrations",
+      "width": 807,
+      "height": 995,
+      "blurDataURL": "data:image/webp;base64,UklGRqIAAABXRUJQVlA4IJYAAACQBACdASoQABQAPu1iqU2ppaOiMAgBMB2JYgCdMoRwEGZgUnLljLCnrrlQjzgA/uqK797veI/X1SywYFjRQCgYgWxTZF8A2aOKzAzJH7iurKc5xirRZy8mx18T9BwLJOZp0dCCBLePvIS/tLF+42ycSEUyyfvq62VmUtYF/bJkuipEYugBvi9i+Ec0j5JZcAHDI1zVoAA=",
+      "variants": {
+        "avif": [
+          {
+            "width": 640,
+            "src": "/media/images/artisans-hardhats-640.avif"
+          },
+          {
+            "width": 807,
+            "src": "/media/images/artisans-hardhats-807.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 640,
+            "src": "/media/images/artisans-hardhats-640.webp"
+          },
+          {
+            "width": 807,
+            "src": "/media/images/artisans-hardhats-807.webp"
+          }
+        ],
+        "jpg": [
+          {
+            "width": 640,
+            "src": "/media/images/artisans-hardhats-640.jpg"
+          },
+          {
+            "width": 807,
+            "src": "/media/images/artisans-hardhats-807.jpg"
+          }
+        ]
+      }
+    },
+    "boardroom-meeting": {
+      "slug": "boardroom-meeting",
+      "kind": "illustrations",
+      "width": 821,
+      "height": 1125,
+      "blurDataURL": "data:image/webp;base64,UklGRrQAAABXRUJQVlA4IKgAAADQBACdASoQABYAPu1iqU2ppaOiMAgBMB2JZgCdMoMYA+vCBi9p137dB8CAN7v90AD9UWHirAQju/yZ/onK84d5fn8NTAL+z6M6fGO5zDEGNZoQtyuk6CxZA66YmOTR+Ei4TbA64KxM9XgHxyIOtr7RZ0e87I/NoxTGdMAA6CEbCGD35rKOcqdAQreGHRgRn42Ar8o6AxzMKrqyy5oqwDwiF8DPASnAAAA=",
+      "variants": {
+        "avif": [
+          {
+            "width": 640,
+            "src": "/media/images/boardroom-meeting-640.avif"
+          },
+          {
+            "width": 821,
+            "src": "/media/images/boardroom-meeting-821.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 640,
+            "src": "/media/images/boardroom-meeting-640.webp"
+          },
+          {
+            "width": 821,
+            "src": "/media/images/boardroom-meeting-821.webp"
+          }
+        ],
+        "jpg": [
+          {
+            "width": 640,
+            "src": "/media/images/boardroom-meeting-640.jpg"
+          },
+          {
+            "width": 821,
+            "src": "/media/images/boardroom-meeting-821.jpg"
+          }
+        ]
+      }
+    },
+    "community-engagement": {
+      "slug": "community-engagement",
+      "kind": "illustrations",
+      "width": 725,
+      "height": 691,
+      "blurDataURL": "data:image/webp;base64,UklGRnQAAABXRUJQVlA4IGgAAADwAQCdASoQAA8AA4BaJYgCdAD0R7SWgAAA/tvjfE+u2pRdCV2QAWsm8k8z3ONvn2/V3zjvCm27y54qtxfBnIALQ+8IzZcv+hhpj9RPTl5ukCR6uxan7WDPSYJH6xHRS1+sFLyXAo+QAA==",
+      "variants": {
+        "avif": [
+          {
+            "width": 640,
+            "src": "/media/images/community-engagement-640.avif"
+          },
+          {
+            "width": 725,
+            "src": "/media/images/community-engagement-725.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 640,
+            "src": "/media/images/community-engagement-640.webp"
+          },
+          {
+            "width": 725,
+            "src": "/media/images/community-engagement-725.webp"
+          }
+        ],
+        "jpg": [
+          {
+            "width": 640,
+            "src": "/media/images/community-engagement-640.jpg"
+          },
+          {
+            "width": 725,
+            "src": "/media/images/community-engagement-725.jpg"
+          }
+        ]
+      }
+    },
+    "partnership-handshake-blue": {
+      "slug": "partnership-handshake-blue",
+      "kind": "illustrations",
+      "width": 733,
+      "height": 614,
+      "blurDataURL": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAADwAQCdASoQAA0AA4BaJZgCdAEOcZr4CGgA+hDzQ57js20oG+E8nwAHUz3XYuA145HidRCgk89PIvVFykq8p/j2xaECxZlm0Euhb/GA7sZ3ZrC9o5e9LXA0AAA=",
+      "variants": {
+        "avif": [
+          {
+            "width": 640,
+            "src": "/media/images/partnership-handshake-blue-640.avif"
+          },
+          {
+            "width": 733,
+            "src": "/media/images/partnership-handshake-blue-733.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 640,
+            "src": "/media/images/partnership-handshake-blue-640.webp"
+          },
+          {
+            "width": 733,
+            "src": "/media/images/partnership-handshake-blue-733.webp"
+          }
+        ],
+        "jpg": [
+          {
+            "width": 640,
+            "src": "/media/images/partnership-handshake-blue-640.jpg"
+          },
+          {
+            "width": 733,
+            "src": "/media/images/partnership-handshake-blue-733.jpg"
+          }
+        ]
+      }
+    },
+    "partnership-handshake": {
+      "slug": "partnership-handshake",
+      "kind": "illustrations",
+      "width": 731,
+      "height": 617,
+      "blurDataURL": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAADwAQCdASoQAA4AA4BaJZwAAvhwf20oGHAA/uxUwDcbgV1bwMJh1L4y7Q3AGpt5PUtLre6aGslZk8WnNUO19y2rnPeYz7jQozSzAAAA",
+      "variants": {
+        "avif": [
+          {
+            "width": 640,
+            "src": "/media/images/partnership-handshake-640.avif"
+          },
+          {
+            "width": 731,
+            "src": "/media/images/partnership-handshake-731.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 640,
+            "src": "/media/images/partnership-handshake-640.webp"
+          },
+          {
+            "width": 731,
+            "src": "/media/images/partnership-handshake-731.webp"
+          }
+        ],
+        "jpg": [
+          {
+            "width": 640,
+            "src": "/media/images/partnership-handshake-640.jpg"
+          },
+          {
+            "width": 731,
+            "src": "/media/images/partnership-handshake-731.jpg"
+          }
+        ]
+      }
+    },
+    "site-briefing": {
+      "slug": "site-briefing",
+      "kind": "illustrations",
+      "width": 973,
+      "height": 973,
+      "blurDataURL": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAAAQAgCdASoQABAAA4BaJYwCdAEOjcvmm54AAP5BE54ov2yp7Ht1WPHrxUMSUHO3xOtpNp58aDChhJmNNdrFZQS3NQwnYFhUYJW6VQAA",
+      "variants": {
+        "avif": [
+          {
+            "width": 640,
+            "src": "/media/images/site-briefing-640.avif"
+          },
+          {
+            "width": 973,
+            "src": "/media/images/site-briefing-973.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 640,
+            "src": "/media/images/site-briefing-640.webp"
+          },
+          {
+            "width": 973,
+            "src": "/media/images/site-briefing-973.webp"
+          }
+        ],
+        "jpg": [
+          {
+            "width": 640,
+            "src": "/media/images/site-briefing-640.jpg"
+          },
+          {
+            "width": 973,
+            "src": "/media/images/site-briefing-973.jpg"
+          }
+        ]
+      }
+    },
+    "stakeholder-meeting": {
+      "slug": "stakeholder-meeting",
+      "kind": "illustrations",
+      "width": 661,
+      "height": 846,
+      "blurDataURL": "data:image/webp;base64,UklGRqIAAABXRUJQVlA4IJYAAACwBACdASoQABQAPu1iqU2ppaOiMAgBMB2JaACdMoR3AdCVBXTYRVGe7GRbLNsQAP7aXSifBQw2T4DtGU+K/Vk7iUINuJtI6h+6YozU8vyUtFwOPxS5e6mhvqumZOg3Moge9i6aTHS6yuhI3spb1PWwTmlK+O4ArmJDqM9mmgWKG6h4MOHy3Qak9O3wnxxUlQ+7scBoAAA=",
+      "variants": {
+        "avif": [
+          {
+            "width": 640,
+            "src": "/media/images/stakeholder-meeting-640.avif"
+          },
+          {
+            "width": 661,
+            "src": "/media/images/stakeholder-meeting-661.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 640,
+            "src": "/media/images/stakeholder-meeting-640.webp"
+          },
+          {
+            "width": 661,
+            "src": "/media/images/stakeholder-meeting-661.webp"
+          }
+        ],
+        "jpg": [
+          {
+            "width": 640,
+            "src": "/media/images/stakeholder-meeting-640.jpg"
+          },
+          {
+            "width": 661,
+            "src": "/media/images/stakeholder-meeting-661.jpg"
+          }
+        ]
+      }
+    },
+    "tech-hub": {
+      "slug": "tech-hub",
+      "kind": "illustrations",
+      "width": 973,
+      "height": 973,
+      "blurDataURL": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAADwAQCdASoQABAAA4BaJZQCdAEPfYY3xAAA/ulYkzUGJciMKoqqXwqjJ3pxODQPUrU/JnCgAAA=",
+      "variants": {
+        "avif": [
+          {
+            "width": 640,
+            "src": "/media/images/tech-hub-640.avif"
+          },
+          {
+            "width": 973,
+            "src": "/media/images/tech-hub-973.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 640,
+            "src": "/media/images/tech-hub-640.webp"
+          },
+          {
+            "width": 973,
+            "src": "/media/images/tech-hub-973.webp"
+          }
+        ],
+        "jpg": [
+          {
+            "width": 640,
+            "src": "/media/images/tech-hub-640.jpg"
+          },
+          {
+            "width": 973,
+            "src": "/media/images/tech-hub-973.jpg"
+          }
+        ]
+      }
+    }
+  },
+  "logos": {
+    "nordrock-logo-navy": {
+      "slug": "nordrock-logo-navy",
+      "width": 803,
+      "height": 532,
+      "png": "/media/logos/nordrock-logo-navy.png",
+      "webp": "/media/logos/nordrock-logo-navy.webp"
+    },
+    "nordrock-logo-white": {
+      "slug": "nordrock-logo-white",
+      "width": 848,
+      "height": 569,
+      "png": "/media/logos/nordrock-logo-white.png",
+      "webp": "/media/logos/nordrock-logo-white.webp"
+    },
+    "nordrock-logo": {
+      "slug": "nordrock-logo",
+      "width": 1200,
+      "height": 892,
+      "png": "/media/logos/nordrock-logo.png",
+      "webp": "/media/logos/nordrock-logo.webp"
+    },
+    "nordrock-mark": {
+      "slug": "nordrock-mark",
+      "width": 708,
+      "height": 385,
+      "png": "/media/logos/nordrock-mark.png",
+      "webp": "/media/logos/nordrock-mark.webp"
+    },
+    "who-we-are-badge": {
+      "slug": "who-we-are-badge",
+      "width": 758,
+      "height": 753,
+      "png": "/media/logos/who-we-are-badge.png",
+      "webp": "/media/logos/who-we-are-badge.webp"
+    }
+  },
+  "videos": {
+    "artisan-pit-mining": {
+      "slug": "artisan-pit-mining",
+      "width": 360,
+      "height": 640,
+      "loops": [
+        {
+          "name": "artisan-pit-mining",
+          "duration": 12,
+          "mp4": "/media/video/artisan-pit-mining-loop.mp4",
+          "poster": {
+            "avif": "/media/video/artisan-pit-mining-loop-poster.avif",
+            "webp": "/media/video/artisan-pit-mining-loop-poster.webp",
+            "jpg": "/media/video/artisan-pit-mining-loop-poster.jpg"
+          },
+          "blurDataURL": "data:image/webp;base64,UklGRtwAAABXRUJQVlA4INAAAABQBACdASoQABwAPu1iqU2ppaOiMAgBMB2JQBYdsX6cHmEqA9chJYR218agAP7HT6qQQ11Z6msw7/Q6e6E2ePs4ikWOFm37iRv0ZBB3127/jmv5yWKpjJ2DIqArvnFs/JmN5A7RoHLVuZDYdDaFCbnUnCNre6xNTG5FuvfWAyCYP9uEcqUL6Y8eJ8eA1WSERSA1oPkPdgi9z7J5e2Dq8n0kZBWSNb+vJ+mp+zUOHfKvv5MkWCNYP0hwyTOiUjYJgaNqLmDs5erplCw3OLR1I/gA"
+        }
+      ],
+      "full": {
+        "duration": 118.793288,
+        "mp4": "/media/video/artisan-pit-mining-full.mp4",
+        "poster": {
+          "avif": "/media/video/artisan-pit-mining-full-poster.avif",
+          "webp": "/media/video/artisan-pit-mining-full-poster.webp",
+          "jpg": "/media/video/artisan-pit-mining-full-poster.jpg"
+        }
+      }
+    },
+    "artisan-gemstone-finds": {
+      "slug": "artisan-gemstone-finds",
+      "width": 360,
+      "height": 640,
+      "loops": [
+        {
+          "name": "artisan-gemstone-finds",
+          "duration": 12,
+          "mp4": "/media/video/artisan-gemstone-finds-loop.mp4",
+          "poster": {
+            "avif": "/media/video/artisan-gemstone-finds-loop-poster.avif",
+            "webp": "/media/video/artisan-gemstone-finds-loop-poster.webp",
+            "jpg": "/media/video/artisan-gemstone-finds-loop-poster.jpg"
+          },
+          "blurDataURL": "data:image/webp;base64,UklGRvQAAABXRUJQVlA4IOgAAADQBACdASoQABwAPu1iqU2ppaOiMAgBMB2JYgCdMoAlsBbxNFSexLjYOaWz0Tn2AAD91faCQay95waJwb/pR46ujrJg4yEs5lLhk4LBmIiwejBIvQOy+Ge729UmWZKJz+DGPMCsSgjaiDhvrdJEaELj9uvlAeAZwgdby52s/UF69pamHznnCeOMoQNNwS/5JRatT6YVfjR+CFqeUUAJSpWHLhguCteGnyyEXfPtfkq/PQJFdY5cLML9LB97RAYEAOfjkbAymeIsTv5x0OxqfHkZGD/NNn/UzZAOIVhSFI1V+8xakjhmEPAA"
+        },
+        {
+          "name": "artisan-gemstone-finds-gems",
+          "duration": 12,
+          "mp4": "/media/video/artisan-gemstone-finds-gems-loop.mp4",
+          "poster": {
+            "avif": "/media/video/artisan-gemstone-finds-gems-loop-poster.avif",
+            "webp": "/media/video/artisan-gemstone-finds-gems-loop-poster.webp",
+            "jpg": "/media/video/artisan-gemstone-finds-gems-loop-poster.jpg"
+          },
+          "blurDataURL": "data:image/webp;base64,UklGRqwAAABXRUJQVlA4IKAAAACQBACdASoQABwAPu1iqk2ppaQiMAgBMB2JYwC7B3gIIALcXooXOEqflUKeqcAA/oxB2EImgra48vclErDSQAdDgCTzrsxNKwWafIGxoQS6q3PZeY4KA/V7n7pDN0FbFjrnZq+k6V0Z9u60YZyV8sLrzJptn0vB9hSnTcJg+YvLMUtXuQhwRNw4jqGSaiYDNr6QvmdEj4cwDgawjK1uUSAA"
+        }
+      ],
+      "full": {
+        "duration": 64.434078,
+        "mp4": "/media/video/artisan-gemstone-finds-full.mp4",
+        "poster": {
+          "avif": "/media/video/artisan-gemstone-finds-full-poster.avif",
+          "webp": "/media/video/artisan-gemstone-finds-full-poster.webp",
+          "jpg": "/media/video/artisan-gemstone-finds-full-poster.jpg"
+        }
+      }
+    },
+    "excavator-operations": {
+      "slug": "excavator-operations",
+      "width": 472,
+      "height": 850,
+      "loops": [
+        {
+          "name": "excavator-operations",
+          "duration": 12,
+          "mp4": "/media/video/excavator-operations-loop.mp4",
+          "poster": {
+            "avif": "/media/video/excavator-operations-loop-poster.avif",
+            "webp": "/media/video/excavator-operations-loop-poster.webp",
+            "jpg": "/media/video/excavator-operations-loop-poster.jpg"
+          },
+          "blurDataURL": "data:image/webp;base64,UklGRq4AAABXRUJQVlA4IKIAAAAQBACdASoQAB0APu1iqU2ppaOiMAgBMB2JQBYdg78iHy9Yg8bKeZVYAADLSqvKl6Ha9rU0Xv+bGrYXvdWTvTx1cOumVo1yn/cWtne+MxpwJ6XWrfAtNLeVkctw9wVUxHRjvxG7XU3yaRJBLQe2sLQUgK2eZDOeWx18HojdttzSNsMrRYaAdDEFS+U/RHO389P0A1jn7bMDofDnJnEkpP4AAAA="
+        }
+      ],
+      "full": null
+    },
+    "site-survey-river": {
+      "slug": "site-survey-river",
+      "width": 480,
+      "height": 864,
+      "loops": [
+        {
+          "name": "site-survey-river",
+          "duration": 13,
+          "mp4": "/media/video/site-survey-river-loop.mp4",
+          "poster": {
+            "avif": "/media/video/site-survey-river-loop-poster.avif",
+            "webp": "/media/video/site-survey-river-loop-poster.webp",
+            "jpg": "/media/video/site-survey-river-loop-poster.jpg"
+          },
+          "blurDataURL": "data:image/webp;base64,UklGRpAAAABXRUJQVlA4IIQAAAAQBACdASoQAB0APu1iqk2ppaQiMAgBMB2JQBOgBA5g0O6Ld/7CGSCWAAD+3uh/admH6bq5CwPwBMgZUphcgqL8Jqd8KaMoo565FEqvtSLZ/bc7si+nQtjdYdQkCiUB9astVBijovuz6gWufBB89WCNOnMTogfp5R/SqTbeOdILhogAAAA="
+        }
+      ],
+      "full": null
+    },
+    "artisan-registration": {
+      "slug": "artisan-registration",
+      "width": 478,
+      "height": 850,
+      "loops": [
+        {
+          "name": "artisan-registration",
+          "duration": 12,
+          "mp4": "/media/video/artisan-registration-loop.mp4",
+          "poster": {
+            "avif": "/media/video/artisan-registration-loop-poster.avif",
+            "webp": "/media/video/artisan-registration-loop-poster.webp",
+            "jpg": "/media/video/artisan-registration-loop-poster.jpg"
+          },
+          "blurDataURL": "data:image/webp;base64,UklGRugAAABXRUJQVlA4INwAAABwBACdASoQABwAPu1iqU2ppaQiMAgBMB2JbACdAYyAxs3Ni83goNRpC7G+QAD+2fNIBJ0zxiVf/gPzm3clCZKZyFkjJJ6emMtpGMN0po296pdZ757LvVZxxurtUzKUKNFuwqaaZHkpHo3ytth7V6Uyhnsn727tFMyT3DvW1igjCde7Ebn2VPs3gY7+QS/ibuPfdcGwrpkisG2r9bCoFf/xBbfZA2z4L2OB2vE2xkcgLAe7h8WqLgkUyB/IHppnK3OMyWZK6/4u+n2HG6IkGJszlS3hXQSOecvsSAAA"
+        }
+      ],
+      "full": null
+    },
+    "site-team-walk": {
+      "slug": "site-team-walk",
+      "width": 478,
+      "height": 850,
+      "loops": [
+        {
+          "name": "site-team-walk",
+          "duration": 15,
+          "mp4": "/media/video/site-team-walk-loop.mp4",
+          "poster": {
+            "avif": "/media/video/site-team-walk-loop-poster.avif",
+            "webp": "/media/video/site-team-walk-loop-poster.webp",
+            "jpg": "/media/video/site-team-walk-loop-poster.jpg"
+          },
+          "blurDataURL": "data:image/webp;base64,UklGRo4AAABXRUJQVlA4IIIAAACwAwCdASoQABwAPu1kqU2ppaQiMAgBMB2JQBOgA0DYGcSWMFyzcAD+6C/UC1E+lOnsE145LirLoza5kT1VFx1qW9ifpzTMN5BOkmv8YJEs3EuCzFc8T2NZYwo96imI7J9CcuH6sDY7yHqrH4WiuskOzggkqgV6BfOLn3QdBmZTvIAA"
+        }
+      ],
+      "full": null
+    },
+    "site-inspection-tour": {
+      "slug": "site-inspection-tour",
+      "width": 478,
+      "height": 850,
+      "loops": [
+        {
+          "name": "site-inspection-tour",
+          "duration": 12,
+          "mp4": "/media/video/site-inspection-tour-loop.mp4",
+          "poster": {
+            "avif": "/media/video/site-inspection-tour-loop-poster.avif",
+            "webp": "/media/video/site-inspection-tour-loop-poster.webp",
+            "jpg": "/media/video/site-inspection-tour-loop-poster.jpg"
+          },
+          "blurDataURL": "data:image/webp;base64,UklGRr4AAABXRUJQVlA4ILIAAACQBACdASoQABwAPu1iqU2ppaQiMAgBMB2JaACdMoAluxWmphD9VrAX6WsAw+AA/udWifvDoVDCNcfSUxUU99/VCf/JPOetHkiqM7ozycG99lIxIGoQNOY3yWGhS92lmqqVhq3zU4n00F1hFKEt3yUFITUHfdbjZ3sbknn3T/SrBTYY3wQxSt4hpt9mtgSedNJzIPjdIRM/FclkXCt2BOBPu6it8x7LSG65mBaaqkDuV4AA"
+        }
+      ],
+      "full": {
+        "duration": 198.684556,
+        "mp4": "/media/video/site-inspection-tour-full.mp4",
+        "poster": {
+          "avif": "/media/video/site-inspection-tour-full-poster.avif",
+          "webp": "/media/video/site-inspection-tour-full-poster.webp",
+          "jpg": "/media/video/site-inspection-tour-full-poster.jpg"
+        }
+      }
+    },
+    "registration-documentation": {
+      "slug": "registration-documentation",
+      "width": 478,
+      "height": 850,
+      "loops": [
+        {
+          "name": "registration-documentation",
+          "duration": 12,
+          "mp4": "/media/video/registration-documentation-loop.mp4",
+          "poster": {
+            "avif": "/media/video/registration-documentation-loop-poster.avif",
+            "webp": "/media/video/registration-documentation-loop-poster.webp",
+            "jpg": "/media/video/registration-documentation-loop-poster.jpg"
+          },
+          "blurDataURL": "data:image/webp;base64,UklGRvIAAABXRUJQVlA4IOYAAAAwBQCdASoQABwAPu1iqk4ppaQiMAgBMB2JbACdMoFWk7y0jQNpEejC0lGkQ2WgaPNfgAD+6/BNYm6uvUdmK8gjSrkKDJC7HP3haDGpH+/gjsLUlIS+OgTTj9S9iNvN8EnrKJfGSAY2Slob9sQAwVEhbL5fpegwEmQT2bLUSVnjE+NqfUGfCOOJV31WSHrOa5JwOLnUZ3BchkCXpE0n/yl7Uo/oteOKVYKYivKMGwrfL9xPotlUyynre/R6WYC9kEews/bbceKyoJB6Dk7+AJhOCUDr8z7AEqH1UBvzFePKOLL0h0AAAA=="
+        }
+      ],
+      "full": null
+    }
+  }
+}

@@ -1,0 +1,7 @@
+.next/
+out/
+node_modules/
+public/
+media-src/
+src/content/media-manifest.json
+package-lock.json
