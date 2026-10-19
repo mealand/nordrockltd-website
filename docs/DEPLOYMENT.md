@@ -54,6 +54,21 @@ Optional **variables** (same page, **Variables** tab) — only if the defaults d
 **Actions → Build and deploy → Run workflow** (branch `main`), or push any commit. When the run
 is green, open https://newsite.nordrockltd.com.
 
+## Contact form
+
+The form on `/contact/` posts to `public/api/contact.php`, which runs on the cPanel host's PHP and
+emails each message to `contact@nordrockltd.com` (reply-to is set to the sender).
+
+1. In cPanel **Email Accounts**, make sure `contact@nordrockltd.com` exists, and create
+   `no-reply@nordrockltd.com` (the sender address; it doesn't need to be read).
+2. In **Email Deliverability**, confirm SPF and DKIM show as valid for `nordrockltd.com` so
+   messages don't land in spam.
+3. After the first deploy, send a test message from the live form.
+
+The endpoint rejects cross-site posts, silently drops bots (honeypot field and a minimum fill
+time), and limits each IP to 5 messages an hour. Addresses and limits are constants at the top of
+`contact.php`.
+
 ## Search engines
 
 The review site is kept out of search results three ways: a `noindex` meta tag on every page, a

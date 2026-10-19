@@ -45,7 +45,6 @@ export function MotionProvider({ children }: { children: React.ReactNode }) {
         options={{
           autoRaf: false,
           lerp: 0.1,
-          anchors: { offset: -80 },
           // Respect reduced motion: Lenis falls back to native scrolling.
           ...(typeof window !== "undefined" &&
           window.matchMedia("(prefers-reduced-motion: reduce)").matches

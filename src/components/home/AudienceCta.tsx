@@ -4,9 +4,14 @@ import { Reveal, RevealGroup } from "@/components/motion/Reveal";
 import { Container } from "@/components/ui/Container";
 import { Eyebrow } from "@/components/ui/Heading";
 import { Section } from "@/components/ui/Section";
+import { cn } from "@/lib/utils";
 
-/** "Work with NordRock" — one route in for each audience. */
-export function AudienceCta() {
+/**
+ * "Work with NordRock" — one route in for each audience.
+ * `exclude` drops the card that links to the current page.
+ */
+export function AudienceCta({ exclude }: { exclude?: string } = {}) {
+  const list = audiences.filter((a) => a.href !== exclude);
   return (
     <Section tone="muted">
       <Container>
@@ -16,8 +21,14 @@ export function AudienceCta() {
             However you connect to Africa&apos;s minerals, there&apos;s a place for you here.
           </h2>
         </Reveal>
-        <RevealGroup className="mt-14 grid gap-5 md:grid-cols-3" stagger={0.1}>
-          {audiences.map((a) => (
+        <RevealGroup
+          className={cn(
+            "mt-14 grid gap-5",
+            list.length === 3 ? "md:grid-cols-3" : "md:grid-cols-2",
+          )}
+          stagger={0.1}
+        >
+          {list.map((a) => (
             <Link
               key={a.title}
               href={a.href}
