@@ -5,13 +5,13 @@ Review URL: `https://newsite.nordrockltd.com` · Plan: [docs/DEVELOPMENT_PLAN.md
 
 ## Commands
 
-| Command          | What it does                                                        |
-| ---------------- | ------------------------------------------------------------------- |
-| `npm run dev`    | Local dev server at http://localhost:3000                           |
-| `npm run build`  | Static export to `out/` (upload this folder)                        |
-| `npm run media`  | Optimize `media-src/` → `public/media/` and update the manifest     |
-| `npm run lint`   | ESLint                                                              |
-| `npm run format` | Prettier                                                            |
+| Command          | What it does                                                    |
+| ---------------- | --------------------------------------------------------------- |
+| `npm run dev`    | Local dev server at http://localhost:3000                       |
+| `npm run build`  | Static export to `out/` (upload this folder)                    |
+| `npm run media`  | Optimize `media-src/` → `public/media/` and update the manifest |
+| `npm run lint`   | ESLint                                                          |
+| `npm run format` | Prettier                                                        |
 
 ## Media pipeline
 
@@ -34,6 +34,12 @@ media-src/
 Exact duplicates are detected by hash and skipped. Only changed sources are re-encoded; pass `-- --force` to rebuild all.
 ffmpeg/ffprobe come from the `ffmpeg-static` / `ffprobe-static` packages, so no system install is needed.
 
+## Deployment
+
+Pushes to `main` build and deploy automatically to `https://newsite.nordrockltd.com` via GitHub
+Actions over FTPS. One-time cPanel and GitHub secrets setup: [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md).
+
 ## Indexing
 
-The review build sends `noindex`. Set `NEXT_PUBLIC_ALLOW_INDEXING=true` at build time once the site moves to `nordrockltd.com`.
+The review build is `noindex` (meta tag, `robots.txt`, and an `X-Robots-Tag` header on the `newsite.`
+host). Set `NEXT_PUBLIC_ALLOW_INDEXING=true` at build time once the site moves to `nordrockltd.com`.

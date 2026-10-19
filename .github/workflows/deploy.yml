@@ -1,0 +1,82 @@
+# Builds the static export and deploys it to cPanel over FTPS.
+#
+# Every push and pull request is type-checked, linted and built. Pushes to `main`
+# (and manual runs) then upload `out/` to the review site, newsite.nordrockltd.com.
+# Uploads are incremental: the action keeps a state file on the server and only
+# sends files that changed.
+#
+# Repository secrets (Settings → Secrets and variables → Actions → Secrets):
+#   FTP_SERVER     e.g. ftp.nordrockltd.com
+#   FTP_USERNAME   the cPanel FTP account created for the subdomain
+#   FTP_PASSWORD
+# Optional repository variables (same page → Variables):
+#   FTP_SERVER_DIR             default "./" — the FTP account's home should BE the
+#                              subdomain's document root; otherwise set e.g. "newsite.nordrockltd.com/"
+#   FTP_PROTOCOL               default "ftps"; use "ftp" only if the host has no TLS
+#   NEXT_PUBLIC_ALLOW_INDEXING set to "true" only when deploying to the main domain
+#
+# See docs/DEPLOYMENT.md for the cPanel side.
+
+name: Build and deploy
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+# Never run two deploys at once; a newer push supersedes a queued one.
+concurrency:
+  group: deploy-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      # Secrets can't be referenced in `if:` directly; expose only whether one is set.
+      HAS_FTP_SECRETS: ${{ secrets.FTP_SERVER != '' }}
+      IS_DEPLOY: ${{ github.event_name != 'pull_request' && github.ref == 'refs/heads/main' }}
+    steps:
+      - name: Check out
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Set up Node.js
+        uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: 24
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Type-check
+        run: npx next typegen && npx tsc --noEmit
+
+      - name: Lint
+        run: npm run lint
+
+      - name: Build static export
+        run: npm run build
+        env:
+          NEXT_PUBLIC_ALLOW_INDEXING: ${{ vars.NEXT_PUBLIC_ALLOW_INDEXING }}
+
+      - name: Deploy to newsite.nordrockltd.com
+        if: env.IS_DEPLOY == 'true' && env.HAS_FTP_SECRETS == 'true'
+        uses: SamKirkland/FTP-Deploy-Action@110f9186c050f71550953127052e77650219c287 # v4.4.0
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          protocol: ${{ vars.FTP_PROTOCOL || 'ftps' }}
+          local-dir: ./out/
+          server-dir: ${{ vars.FTP_SERVER_DIR || './' }}
+          log-level: standard
+
+      - name: Deploy skipped (no FTP secrets yet)
+        if: env.IS_DEPLOY == 'true' && env.HAS_FTP_SECRETS != 'true'
+        run: echo "::notice title=Deploy skipped::Add the FTP_SERVER, FTP_USERNAME and FTP_PASSWORD repository secrets to enable deployment (see docs/DEPLOYMENT.md)."

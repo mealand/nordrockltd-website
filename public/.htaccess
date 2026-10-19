@@ -1,0 +1,58 @@
+# Apache config for the static export on cPanel. Copied into out/ by `next build`.
+
+Options -Indexes -MultiViews
+DirectoryIndex index.html
+ErrorDocument 404 /404.html
+
+# Pages are exported as /page/index.html; mod_dir adds the trailing slash
+# (/what-we-do -> /what-we-do/) to match Next's trailingSlash: true.
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  # Force HTTPS (cPanel AutoSSL covers the subdomain).
+  RewriteCond %{HTTPS} !=on
+  RewriteCond %{HTTP:X-Forwarded-Proto} !https
+  RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+</IfModule>
+
+# The deploy action's sync-state file must not be downloadable.
+<Files ".ftp-deploy-sync-state.json">
+  Require all denied
+</Files>
+
+<IfModule mod_mime.c>
+  AddType image/avif .avif
+  AddType image/webp .webp
+  AddType video/mp4 .mp4
+  AddType font/woff2 .woff2
+  AddType application/manifest+json .webmanifest
+</IfModule>
+
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/plain text/css text/xml application/javascript application/json image/svg+xml application/xml
+</IfModule>
+
+<IfModule mod_headers.c>
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set X-Frame-Options "SAMEORIGIN"
+  Header always set Permissions-Policy "camera=(), microphone=(), geolocation=()"
+
+  # Keep the review site out of search engines; the main domain is unaffected.
+  <If "%{HTTP_HOST} =~ /^newsite\./">
+    Header always set X-Robots-Tag "noindex, nofollow"
+  </If>
+
+  # Hashed build assets never change: cache for a year.
+  <If "%{REQUEST_URI} =~ m#^/_next/static/#">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </If>
+  # Media and icons: a month.
+  <ElseIf "%{REQUEST_URI} =~ m#^/media/|\.(png|ico|woff2)$#">
+    Header set Cache-Control "public, max-age=2592000"
+  </ElseIf>
+  # HTML and route payloads: always revalidate so new deploys show immediately.
+  <Else>
+    Header set Cache-Control "no-cache"
+  </Else>
+</IfModule>
