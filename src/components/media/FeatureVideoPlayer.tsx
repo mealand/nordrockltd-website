@@ -32,7 +32,7 @@ export function FeatureVideoPlayer({ src, poster, title, duration, className }: 
         <button
           type="button"
           onClick={() => setPlaying(true)}
-          className="group absolute inset-0 h-full w-full text-left text-white focus-visible:outline-2 focus-visible:-outline-offset-4 focus-visible:outline-gold"
+          className="group absolute inset-0 h-full w-full text-left text-white focus-visible:outline-2 focus-visible:-outline-offset-4 focus-visible:outline-royal"
           aria-label={`Play video: ${title} (${duration})`}
         >
           <picture>
@@ -47,10 +47,10 @@ export function FeatureVideoPlayer({ src, poster, title, duration, className }: 
           </picture>
           <span className="absolute inset-0 bg-gradient-to-t from-ink/90 via-ink/20 to-ink/10" />
           <span className="absolute inset-0 grid place-items-center">
-            <span className="relative grid size-20 place-items-center rounded-full bg-gold text-ink shadow-xl transition-transform duration-500 group-hover:scale-110">
+            <span className="relative grid size-20 place-items-center rounded-full bg-royal text-white shadow-xl transition-transform duration-500 group-hover:scale-110">
               <span
                 aria-hidden
-                className="absolute inset-0 animate-ping rounded-full bg-gold/40 motion-reduce:hidden"
+                className="absolute inset-0 animate-ping rounded-full bg-royal/40 motion-reduce:hidden"
               />
               <svg aria-hidden viewBox="0 0 24 24" className="relative ml-1 size-7 fill-current">
                 <path d="M7 4.5v15a1 1 0 0 0 1.5.86l12.5-7.5a1 1 0 0 0 0-1.72L8.5 3.64A1 1 0 0 0 7 4.5Z" />

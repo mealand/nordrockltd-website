@@ -1,12 +1,14 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import { ComingSoon } from "@/components/industries/ComingSoon";
 import { IndustryAreas } from "@/components/industries/IndustryAreas";
 import { IndustryFeature } from "@/components/industries/IndustryFeature";
 import { NextIndustry } from "@/components/industries/NextIndustry";
 import { RelatedProducts } from "@/components/industries/RelatedProducts";
 import { PageTransition } from "@/components/motion/PageTransition";
+import { ClosingBanner } from "@/components/sections/ClosingBanner";
 import { PageHero } from "@/components/sections/PageHero";
-import { getIndustry, industryPages } from "@/content/industries";
+import { getIndustry, industryPages, statusLabels } from "@/content/industries";
 
 // Static export: only the listed industries exist.
 export const dynamicParams = false;
@@ -19,7 +21,7 @@ export async function generateMetadata({
   params,
 }: PageProps<"/industries/[slug]">): Promise<Metadata> {
   const industry = getIndustry((await params).slug);
-  return { title: industry?.label, description: industry?.hero.intro };
+  return { title: industry?.label, description: industry?.overview.summary };
 }
 
 export default async function IndustryPage({ params }: PageProps<"/industries/[slug]">) {
@@ -31,17 +33,26 @@ export default async function IndustryPage({ params }: PageProps<"/industries/[s
   return (
     <PageTransition>
       <PageHero
-        eyebrow={`Industries · ${industry.label}`}
+        eyebrow={`Industries | ${industry.label} | ${statusLabels[industry.status]}`}
         title={industry.hero.title}
         intro={industry.hero.intro}
         media={industry.hero.media}
       />
-      <IndustryAreas industry={industry} />
-      <IndustryFeature feature={industry.feature} />
-      <RelatedProducts
-        hrefs={industry.products}
-        title={`The technology behind our ${industry.label.toLowerCase()}.`}
-      />
+      {industry.status === "coming-soon" ? (
+        <ComingSoon label={industry.label} />
+      ) : (
+        <>
+          <IndustryAreas industry={industry} />
+          {industry.feature && <IndustryFeature feature={industry.feature} />}
+          {industry.products.length > 0 && (
+            <RelatedProducts
+              hrefs={industry.products}
+              title={`The platforms behind ${industry.label.toLowerCase()}.`}
+            />
+          )}
+          {industry.closing && <ClosingBanner {...industry.closing} />}
+        </>
+      )}
       <NextIndustry industry={next} />
     </PageTransition>
   );

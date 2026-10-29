@@ -11,7 +11,7 @@ import { contact } from "@/content/site";
 export const metadata: Metadata = {
   title: "Get In Touch",
   description:
-    "Contact NordRock Limited in Abuja — investor, partnership, supply, media, careers and artisan enquiries.",
+    "Contact NordRock Limited in Abuja: investor, partnership, supply, media, careers and artisan enquiries.",
 };
 
 const routes = [
@@ -32,7 +32,7 @@ export default function Page() {
       <PageHero
         eyebrow="Get in touch"
         title="Let's talk."
-        intro="Investor, partnership, media and general enquiries — we'd like to hear from you."
+        intro="Investor, partnership, media and general enquiries. We would like to hear from you."
         media={{ image: "field-team-meeting", label: "NordRock field team meeting outdoors" }}
       />
 
@@ -64,7 +64,7 @@ export default function Page() {
                       </span>
                     ))}
                   </p>
-                  <span className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-gold">
+                  <span className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-royal-300">
                     Open in Google Maps
                     <span aria-hidden className="transition-transform group-hover:translate-x-1">
                       ↗
@@ -83,6 +83,9 @@ export default function Page() {
                         href={p.href}
                         className="font-display mt-3 block text-lg font-medium hover:text-azure-700"
                       >
+                        <span className="mr-2 text-xs font-semibold tracking-wide text-azure-700 uppercase">
+                          {p.region}
+                        </span>
                         {p.label}
                       </a>
                     ))}

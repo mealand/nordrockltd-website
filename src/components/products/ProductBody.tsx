@@ -5,9 +5,13 @@ import { SplitReveal } from "@/components/motion/SplitReveal";
 import { Container } from "@/components/ui/Container";
 import { Eyebrow } from "@/components/ui/Heading";
 import { Section } from "@/components/ui/Section";
+import { Button } from "@/components/ui/Button";
 import { ProductMock } from "./ProductMock";
 
-/** Problem statement (beside the example record for live products) and the feature grid. */
+/**
+ * Problem statement (beside the example record for live products, or "how it works" for
+ * products in development), any required notice, and the feature grid.
+ */
 export function ProductBody({ product, page }: { product: Product; page: ProductPage }) {
   const live = product.status === "live";
   return (
@@ -35,17 +39,41 @@ export function ProductBody({ product, page }: { product: Product; page: Product
               <span className="rounded-full bg-white px-3 py-1 text-xs font-semibold text-azure-700">
                 In development
               </span>
-              <p className="font-display mt-6 text-2xl leading-snug font-semibold tracking-tight">
-                {page.role}
+              <p className="mt-6 text-xs font-semibold tracking-[0.22em] text-azure-700 uppercase">
+                How it works
               </p>
-              <p className="mt-4 text-sm leading-relaxed text-navy/70">
-                NordRock {product.label} is part of our unified technology ecosystem and is
-                currently in development.
+              <p className="font-display mt-3 text-xl leading-snug font-semibold tracking-tight sm:text-2xl">
+                {page.howItWorks ?? page.role}
               </p>
+              {page.cta.note && (
+                <p className="mt-5 text-sm leading-relaxed text-navy/70">{page.cta.note}</p>
+              )}
+              <div className="mt-7">
+                <Button href={page.cta.href} variant="secondary">
+                  {page.cta.label}
+                </Button>
+              </div>
             </Reveal>
           )}
         </Container>
       </Section>
+
+      {page.notice && (
+        <div role="note" className="border-y border-royal/20 bg-sky">
+          <Container className="flex items-start gap-4 py-6 text-sm leading-relaxed text-navy sm:items-center">
+            <span
+              aria-hidden
+              className="grid size-7 shrink-0 place-items-center rounded-full bg-royal text-xs font-bold text-white"
+            >
+              !
+            </span>
+            <p>
+              <strong className="font-semibold">Important: </strong>
+              {page.notice}
+            </p>
+          </Container>
+        </div>
+      )}
 
       <Section tone="navy" className="overflow-clip">
         <div
@@ -67,7 +95,7 @@ export function ProductBody({ product, page }: { product: Product; page: Product
           >
             {page.features.map((f, i) => (
               <div key={f.title} className="h-full p-7 sm:p-8">
-                <span className="font-display text-sm font-semibold text-gold">0{i + 1}</span>
+                <span className="font-display text-sm font-semibold text-royal-300">0{i + 1}</span>
                 <h3 className="font-display mt-4 text-xl font-semibold tracking-tight">
                   {f.title}
                 </h3>

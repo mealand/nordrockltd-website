@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { company, contact, industries, mainNav, products, socials } from "@/content/site";
+import { company, contact, industries, legalLinks, mainNav, products, socials } from "@/content/site";
 import { getLogo } from "@/lib/media";
 import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
@@ -7,9 +7,15 @@ import { Reveal } from "@/components/motion/Reveal";
 import { Magnetic } from "@/components/motion/Magnetic";
 
 const columns = [
-  { title: "Company", links: mainNav.filter((i) => !i.children && i.href !== "/") },
+  {
+    title: "Company",
+    links: [
+      ...mainNav.filter((i) => !i.children && i.href !== "/"),
+      { label: "Compliance", href: "/compliance/" },
+    ],
+  },
   { title: "Industries", links: industries },
-  { title: "Products", links: products },
+  { title: "Platforms", links: products },
 ];
 
 export function Footer() {
@@ -20,7 +26,7 @@ export function Footer() {
       <Container className="border-b border-white/10 py-20 sm:py-28">
         <Reveal className="flex flex-col items-start justify-between gap-10 lg:flex-row lg:items-end">
           <h2 className="font-display max-w-3xl text-4xl leading-[1.05] font-semibold tracking-tight text-balance sm:text-6xl">
-            Building Africa&apos;s traceable mineral future.
+            Traceable supply chains, built in Nigeria.
             <span className="text-sky-300"> Let&apos;s talk.</span>
           </h2>
           <Magnetic>
@@ -52,7 +58,7 @@ export function Footer() {
             <ul className="mt-5 space-y-3 text-sm">
               {col.links.map((l) => (
                 <li key={l.href}>
-                  <Link href={l.href} className="text-white/75 transition-colors hover:text-gold">
+                  <Link href={l.href} className="text-white/75 transition-colors hover:text-royal-300">
                     {l.label}
                   </Link>
                 </li>
@@ -70,7 +76,7 @@ export function Footer() {
               href={contact.address.mapUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="block hover:text-gold"
+              className="block hover:text-royal-300"
             >
               {contact.address.lines.map((line) => (
                 <span key={line} className="block">
@@ -79,11 +85,14 @@ export function Footer() {
               ))}
             </a>
             {contact.phones.map((p) => (
-              <a key={p.href} href={p.href} className="block hover:text-gold">
+              <a key={p.href} href={p.href} className="block hover:text-royal-300">
+                <span className="mr-2 text-xs font-semibold tracking-wide text-sky-300">
+                  {p.region}
+                </span>
                 {p.label}
               </a>
             ))}
-            <a href={`mailto:${contact.email}`} className="block hover:text-gold">
+            <a href={`mailto:${contact.email}`} className="block hover:text-royal-300">
               {contact.email}
             </a>
           </address>
@@ -103,17 +112,19 @@ export function Footer() {
                   href={s.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-gold"
+                  className="hover:text-royal-300"
                 >
                   {s.label}
                 </a>
               </li>
             ))}
-          <li>
-            <Link href="/privacy/" className="hover:text-gold">
-              Privacy
-            </Link>
-          </li>
+          {legalLinks.map((l) => (
+            <li key={l.href}>
+              <Link href={l.href} className="hover:text-royal-300">
+                {l.label}
+              </Link>
+            </li>
+          ))}
         </ul>
       </Container>
 

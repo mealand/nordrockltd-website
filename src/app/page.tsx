@@ -16,24 +16,24 @@ export default function Home() {
     <PageTransition>
       <PageHero
         size="home"
-        eyebrow="NordRock Limited"
-        title="Creating a legitimate mining ecosystem in Africa."
-        intro={company.tagline}
+        eyebrow={company.name}
+        title={company.tagline}
+        intro="We work in metals and mining, agriculture, renewable energy, and real estate & housing. In each, we run the operations, record them on our own platforms and help finance them. Mining is where we started: every batch we sell is traced from the pit to the buyer."
         media={{
-          video: "site-team-walk",
-          label: "NordRock team walking a mine site in safety gear",
+          video: "aerial-exploration",
+          label: "Aerial view over NordRock exploration ground",
         }}
       >
         <Magnetic>
-          <Button href="/what-we-do/">What we do</Button>
+          <Button href="/industries/">Explore our industries</Button>
         </Magnetic>
         <Button href="/contact/" variant="outline" arrow={false}>
-          Get in touch
+          Talk to us
         </Button>
       </PageHero>
       <HomeIntro />
-      <Pillars />
       <IndustriesTeaser />
+      <Pillars />
       <HubSection />
       <ProductsTeaser />
       <PartnersMarquee />

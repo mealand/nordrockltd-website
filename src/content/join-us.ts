@@ -31,7 +31,7 @@ export const joinPaths: JoinPath[] = [
       },
       {
         title: "Diversity & inclusion",
-        text: "We champion inclusion — including gender inclusion across our artisan programmes — and welcome talent from every background.",
+        text: "We champion inclusion, including gender inclusion across our artisan programmes, and welcome talent from every background.",
       },
     ],
     cta: [{ label: "Send us your CV", href: "/contact/?enquiry=careers" }],
@@ -74,7 +74,7 @@ export const joinPaths: JoinPath[] = [
     id: "artisans",
     eyebrow: "Artisans & cooperatives",
     title: "Formalise, get trained, get paid fairly.",
-    body: "Artisanal and small-scale miners are the backbone of Nigeria's mineral sector. We help cooperatives become legal, safe and bankable — and connect them to fair, transparent markets.",
+    body: "Artisanal and small-scale miners are the backbone of Nigeria's mineral sector. We help cooperatives become legal, safe and bankable, and connect them to fair, transparent markets.",
     media: {
       video: "artisan-registration",
       label: "Artisanal miners registering with NordRock at a site office",

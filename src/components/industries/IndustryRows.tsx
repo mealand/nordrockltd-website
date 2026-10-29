@@ -1,14 +1,15 @@
 import Link from "next/link";
-import { industryPages } from "@/content/industries";
-import { HeroMediaFill } from "@/components/media/HeroMediaFill";
+import { industryPages, statusLabels } from "@/content/industries";
+import { Picture } from "@/components/media/Picture";
 import { Parallax } from "@/components/motion/Parallax";
 import { Reveal } from "@/components/motion/Reveal";
+import { Slideshow } from "@/components/motion/Slideshow";
 import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
 import { Section } from "@/components/ui/Section";
 import { cn } from "@/lib/utils";
 
-/** Industries overview: one alternating media/text row per industry. */
+/** Industries overview: one alternating media/text row per industry, with its status. */
 export function IndustryRows() {
   return (
     <Section>
@@ -26,10 +27,17 @@ export function IndustryRows() {
                 >
                   <Parallax strength={14}>
                     <div className="absolute inset-0 transition-transform duration-[1.2s] ease-out-expo group-hover:scale-105">
-                      <HeroMediaFill
-                        media={ind.overview.media}
-                        sizes="(min-width: 1024px) 45vw, 100vw"
-                      />
+                      <Slideshow offset={i * 900}>
+                        {ind.overview.slides.map((slug) => (
+                          <Picture
+                            key={slug}
+                            slug={slug}
+                            alt=""
+                            fill
+                            sizes="(min-width: 1024px) 45vw, 100vw"
+                          />
+                        ))}
+                      </Slideshow>
                     </div>
                   </Parallax>
                   <span className="font-display absolute top-6 left-6 grid size-14 place-items-center rounded-full bg-white/90 text-lg font-semibold text-navy backdrop-blur-sm">
@@ -38,7 +46,10 @@ export function IndustryRows() {
                 </Link>
               </Reveal>
               <Reveal delay={0.15} className={cn(flip && "lg:order-1")}>
-                <h2 className="font-display text-3xl leading-[1.1] font-semibold tracking-tight sm:text-5xl">
+                <span className="inline-block rounded-full bg-sky px-3 py-1 text-xs font-semibold text-azure-700">
+                  {statusLabels[ind.status]}
+                </span>
+                <h2 className="font-display mt-4 text-3xl leading-[1.1] font-semibold tracking-tight sm:text-5xl">
                   {ind.label}
                 </h2>
                 <p className="mt-5 text-lg leading-relaxed text-stone-500">
@@ -47,7 +58,7 @@ export function IndustryRows() {
                 <ul className="mt-8 divide-y divide-stone-200 border-y border-stone-200">
                   {ind.overview.points.map((pt) => (
                     <li key={pt} className="flex items-center gap-4 py-3.5 text-navy">
-                      <span aria-hidden className="size-1.5 rounded-full bg-gold" />
+                      <span aria-hidden className="size-1.5 rounded-full bg-royal" />
                       {pt}
                     </li>
                   ))}

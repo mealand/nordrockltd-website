@@ -43,7 +43,7 @@ export function PartnersMarquee() {
                 className="font-display mx-6 flex items-center gap-12 text-xl font-semibold whitespace-nowrap text-navy/70 sm:text-3xl"
               >
                 {name}
-                <span className="text-base text-gold">✦</span>
+                <span className="text-base text-royal">✦</span>
               </span>
             ))}
           </Marquee>

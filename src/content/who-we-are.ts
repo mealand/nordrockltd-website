@@ -1,54 +1,112 @@
 // Who We Are copy. Sources: the live nordrockltd.com/who-we-are page (typos fixed),
 // Website/Website Contents.pdf (vision, mission, values, governance), the
 // certificate of incorporation and KMDC letter of intent (dates), and the
-// public-safe milestones from the strategy document (no figures).
+// public-safe milestones from the strategy document (no figures), and the October 2026
+// brief (introduction, vision, mission, values, leadership). No dashes in copy.
 import type { ImageSlug, VideoSlug } from "@/lib/media";
 
 export const overview = {
-  eyebrow: "NordRock Limited",
-  title: "A Nigerian indigenous minerals company, built on partnership and execution.",
+  eyebrow: "Introduction",
+  title: "Built on partnership and execution.",
   body: [
-    "NordRock Limited is a Nigerian indigenous minerals operations and trading company unlocking Nigeria's vast mineral endowment. We deal in strategic, critical minerals — including copper, lithium, beryllium, coltan and nickel — that power the energy transition, technology and defence.",
-    "We collaborate with artisanal miners, mining leaseholders and landowners — whether active, dormant or under capacity — to structure bankable projects, mobilise capital, and deploy modern processing and operational discipline.",
+    "We started NordRock because artisanal miners in Nigeria produce valuable minerals but sell them through informal channels, at low prices and without records. International buyers want that supply but cannot accept the risk. We sit between the two: we formalise the supply, and we prove it.",
+    "We work with artisanal miners, mining leaseholders and landowners, whether their sites are active, dormant or under capacity, to structure projects, bring in capital, and run modern processing with operational discipline.",
   ],
   quote:
-    "Actively de-risking sourcing and supply, enhancing artisanal skills, protecting long-term investments and introducing unparalleled innovation to the critical mineral industry.",
+    "Lowering the risk in sourcing and supply, building artisanal skills, protecting long-term investment and bringing new technology to the critical minerals industry.",
 };
 
 export const vision =
-  "To transform Africa's commodities trading sector into a globally competitive powerhouse by creating structured, sustainable and profitable systems that empower producers, governments and markets.";
+  "Supply chains in which every small producer, whether a miner or a farmer, is registered, paid fairly and able to sell to international buyers.";
 
 export const mission = {
-  intro:
-    "At NordRock, we harmonise the capacities, characteristics and currency of commodities through innovative structures and models that:",
+  statement:
+    "To build and run traceable supply chains across our four industries, starting with gold and critical minerals, with a verifiable record behind everything we sell.",
+  intro: "In practice, that means we:",
   points: [
     "Formalise and legitimise Africa's commodities markets",
     "Unlock fair value for producers and participants",
-    "Propel renewable energy, metals and minerals into global relevance",
-    "Deliver sustainable prosperity to stakeholders, communities and nations",
+    "Bring renewable energy, metals and minerals into global markets",
+    "Deliver lasting prosperity to stakeholders, communities and nations",
   ],
 };
 
+// The four values from the October 2026 brief, merged with the earlier five as principles.
 export const values = [
   {
-    title: "Integrity & legitimacy",
-    text: "We pioneer lawful, transparent and ethical systems that disincentivise informal and illegal trade.",
+    title: "Show the record",
+    text: "If we cannot document it, we do not claim it.",
   },
   {
-    title: "Innovation & structure",
-    text: "We design modern models and technology-powered solutions that standardise and scale commodities operations.",
+    title: "Pay at the pit",
+    text: "Miners are paid fairly, on time and directly.",
   },
   {
-    title: "Empowerment & equity",
-    text: "We champion fair trade and inclusivity for small and medium-scale producers and emerging markets.",
+    title: "No children, no mercury",
+    text: "Zero tolerance for child labour, and active work to remove mercury from gold processing.",
   },
   {
-    title: "Sustainability & responsibility",
-    text: "We prioritise long-term value creation for customers, partners, communities and the environment.",
+    title: "Work with the community",
+    text: "Host communities and landowners are part of every site agreement.",
+  },
+];
+
+export const principles = [
+  "Integrity and legitimacy",
+  "Innovation and structure",
+  "Empowerment and equity",
+  "Sustainability and responsibility",
+  "Excellence and leadership",
+];
+
+export type Leader = {
+  name: string;
+  role: string;
+  photo: ImageSlug;
+  bio: string;
+  linkedin?: string;
+};
+
+export const leadership: Leader[] = [
+  {
+    name: "Tola Otegbeye",
+    role: "Chief Executive Officer",
+    photo: "tola-otegbeye",
+    bio: "More than 10 years of experience in metals and mining. MEng Oil and Gas; MSc Sustainable Metallurgy.",
+    linkedin: "https://www.linkedin.com/in/omotola-otegbeye-9a505015a/",
   },
   {
-    title: "Excellence & leadership",
-    text: "We are committed to expertise, bold strategy and setting new standards in global commodities trading.",
+    name: "Emmanuel Dangana",
+    role: "Chief Technology Officer",
+    photo: "emmanuel-dangana",
+    bio: "10 years plus experience in information and communications technologies, including artificial intelligence, blockchain and cybersecurity, and over 6 years in the defence and intelligence sector.",
+    linkedin: "https://www.linkedin.com/in/emmanuel-dangana",
+  },
+  {
+    name: "Tobi Oyedeji",
+    role: "Chief Financial Officer",
+    photo: "tobi-oyedeji",
+    bio: "More than 9 years in finance and capital markets.",
+  },
+  {
+    name: "Bankole Otegbeye",
+    role: "Legal",
+    photo: "bankole-otegbeye",
+    bio: "More than 9 years in corporate and financial law; qualified in Nigeria, England and Wales.",
+    linkedin: "https://www.linkedin.com/in/dbankoleotegbeye/",
+  },
+  {
+    name: "Opemiotan Omolara",
+    role: "Banking and Operations",
+    photo: "opemiotan-omolara",
+    bio: "More than 15 years in banking and financial services.",
+  },
+  {
+    name: "Tunde Oyinlola",
+    role: "Geospatial and Mining Operations",
+    photo: "tunde-oyinlola",
+    bio: "More than 8 years of experience; BSc Geology.",
+    linkedin: "https://www.linkedin.com/in/tundeoyinlola/",
   },
 ];
 
@@ -74,15 +132,15 @@ export const focusAreas: {
 }[] = [
   {
     title: "Innovation",
-    text: "Our AI and blockchain technologies secure traceability and digital trading — modernising mineral operations and governance, and eliminating opacity across the value chain.",
+    text: "Our own platforms record every participant and every batch, so mineral operations can be governed and checked at each step of the value chain.",
     media: {
-      image: "tech-hub",
-      alt: "Illustration of a digitally monitored mineral processing hub",
+      image: "plant-operator",
+      alt: "Operator running mineral processing machinery",
     },
   },
   {
     title: "Artisan engagement",
-    text: "We engage grassroots miners and host communities directly — formalising operations, improving livelihoods, and embedding traceability, safety and fair market access.",
+    text: "We work directly with miners and host communities: formalising operations, improving livelihoods, and building in traceability, safety and fair market access.",
     media: {
       video: "artisan-registration",
       label: "Artisanal miners registering with NordRock at a site office",
@@ -92,8 +150,8 @@ export const focusAreas: {
     title: "Strategic partnerships",
     text: "We partner with government mineral agencies, local private institutions, and Western, Asian and European organisations for investment, expertise transfer and investor confidence.",
     media: {
-      image: "partnership-handshake",
-      alt: "Illustration of two site engineers shaking hands",
+      image: "field-crew-sluice",
+      alt: "NordRock field crew and partners working a sluice together",
     },
   },
 ];
@@ -104,7 +162,7 @@ export const strategy = {
   items: [
     {
       title: "Grassroots mineral operations intelligence",
-      text: "Real-time insight into ground-level operations — including risks and how economic value flows — through direct engagement with landowners, artisanal miners, host communities and other stakeholders.",
+      text: "Real-time insight into ground-level operations, including risks and how economic value flows, through direct engagement with landowners, artisanal miners, host communities and other stakeholders.",
     },
     {
       title: "Long-term partnership strategy",
@@ -112,7 +170,7 @@ export const strategy = {
     },
     {
       title: "Renewable energy integration",
-      text: "Solar-powered mine and processing sites with AI-optimised energy management — cutting costs and emissions while generating verifiable ESG data.",
+      text: "Solar-powered mine and processing sites with metered output, cutting costs and emissions while producing energy records buyers can check.",
     },
   ],
 };
@@ -146,7 +204,7 @@ export const milestones = [
   {
     date: "2026",
     title: "Technology platforms go live",
-    text: "TraceChain mineral traceability and AgroTrace agricultural traceability launch.",
+    text: "TraceChain mineral traceability and ATiMS agricultural traceability launch.",
   },
 ];
 

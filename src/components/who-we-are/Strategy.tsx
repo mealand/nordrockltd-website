@@ -30,7 +30,7 @@ export function Strategy() {
           <RevealGroup as="ol" className="mt-10 space-y-2" stagger={0.1}>
             {strategy.items.map((s, i) => (
               <div key={s.title} className="flex gap-6 border-t border-stone-200 py-6">
-                <span className="font-display text-3xl font-semibold text-gold sm:text-4xl">
+                <span className="font-display text-3xl font-semibold text-royal sm:text-4xl">
                   0{i + 1}
                 </span>
                 <div>

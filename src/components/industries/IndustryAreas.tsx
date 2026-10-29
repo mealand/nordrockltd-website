@@ -10,6 +10,7 @@ import { cn } from "@/lib/utils";
 /** The industry's opening statement and its focus areas (photo cards or numbered cards). */
 export function IndustryAreas({ industry }: { industry: Industry }) {
   const { statement, areas } = industry;
+  if (!statement) return null;
   const withImages = areas.every((a) => a.image);
   return (
     <Section>
@@ -33,7 +34,7 @@ export function IndustryAreas({ industry }: { industry: Industry }) {
           as="ol"
           className={cn(
             "mt-14 grid gap-5 lg:mt-20",
-            areas.length === 4 ? "sm:grid-cols-2 lg:grid-cols-4" : "md:grid-cols-3",
+            areas.length === 4 ? "sm:grid-cols-2 lg:grid-cols-4" : "md:grid-cols-2 lg:grid-cols-3",
           )}
           stagger={0.08}
         >
@@ -53,7 +54,7 @@ export function IndustryAreas({ industry }: { industry: Industry }) {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-ink/80 via-transparent to-transparent" />
                   <h3 className="font-display absolute inset-x-0 bottom-0 p-6 text-2xl font-semibold text-white">
-                    <span className="block text-sm text-gold">0{i + 1}</span>
+                    <span className="block text-sm text-royal-300">0{i + 1}</span>
                     {a.title}
                   </h3>
                 </div>
@@ -64,7 +65,7 @@ export function IndustryAreas({ industry }: { industry: Industry }) {
                 key={a.title}
                 className="h-full rounded-3xl bg-stone-50 p-7 ring-1 ring-navy/5 transition-colors duration-500 hover:bg-sky"
               >
-                <span className="font-display text-sm font-semibold text-gold">0{i + 1}</span>
+                <span className="font-display text-sm font-semibold text-azure-700">0{i + 1}</span>
                 <h3 className="font-display mt-6 text-2xl font-semibold tracking-tight">
                   {a.title}
                 </h3>

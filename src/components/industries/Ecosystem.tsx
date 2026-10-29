@@ -34,12 +34,12 @@ export function Ecosystem() {
               </span>
               <span
                 aria-hidden
-                className="hidden h-px flex-1 bg-gradient-to-r from-gold to-transparent sm:block"
+                className="hidden h-px flex-1 bg-gradient-to-r from-royal to-transparent sm:block"
               />
               <span className="text-white/85">
                 {l.text} <span className="sr-only">for {l.to}</span>
               </span>
-              <span aria-hidden className="font-display shrink-0 text-sm font-semibold text-gold">
+              <span aria-hidden className="font-display shrink-0 text-sm font-semibold text-royal-300">
                 → {l.to}
               </span>
             </div>

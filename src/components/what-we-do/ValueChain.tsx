@@ -18,7 +18,7 @@ export function ValueChain() {
         intro={
           <Container wide className="pb-10 lg:pt-16">
             <Reveal y={16}>
-              <Eyebrow>From pit to buyer</Eyebrow>
+              <Eyebrow>Metals and Mining | Seven stages</Eyebrow>
             </Reveal>
             <div className="mt-4 flex flex-col justify-between gap-4 lg:flex-row lg:items-end">
               <Heading className="max-w-2xl">One traceable value chain.</Heading>
@@ -41,7 +41,7 @@ export function ValueChain() {
               <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/30 to-transparent" />
             </div>
             <div className="relative p-6 lg:absolute lg:inset-x-0 lg:bottom-0 lg:p-8">
-              <p className="font-display text-sm font-semibold text-gold">
+              <p className="font-display text-sm font-semibold text-royal-300">
                 {String(i + 1).padStart(2, "0")} / {String(valueChain.length).padStart(2, "0")}
               </p>
               <h3 className="font-display mt-2 text-2xl font-semibold">{step.title}</h3>

@@ -54,6 +54,45 @@
         ]
       }
     },
+    "bagged-ore-field": {
+      "slug": "bagged-ore-field",
+      "kind": "photos",
+      "width": 720,
+      "height": 540,
+      "blurDataURL": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAADQAQCdASoQAAwAA4BaJQBOgCDNTUuQAADgN0OFjWqEuj8u0zAlorh5B3BLMgpgEONVVJIyX5IVfbS+mQuxB5/I4gSdZJFIZXmF91/WgYU2tx4omy3mOE9KBYAAAA==",
+      "variants": {
+        "avif": [
+          {
+            "width": 640,
+            "src": "/media/images/bagged-ore-field-640.avif"
+          },
+          {
+            "width": 720,
+            "src": "/media/images/bagged-ore-field-720.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 640,
+            "src": "/media/images/bagged-ore-field-640.webp"
+          },
+          {
+            "width": 720,
+            "src": "/media/images/bagged-ore-field-720.webp"
+          }
+        ],
+        "jpg": [
+          {
+            "width": 640,
+            "src": "/media/images/bagged-ore-field-640.jpg"
+          },
+          {
+            "width": 720,
+            "src": "/media/images/bagged-ore-field-720.jpg"
+          }
+        ]
+      }
+    },
     "excavation-pit": {
       "slug": "excavation-pit",
       "kind": "photos",
@@ -135,6 +174,162 @@
         ]
       }
     },
+    "excavator-clearing": {
+      "slug": "excavator-clearing",
+      "kind": "photos",
+      "width": 1080,
+      "height": 607,
+      "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAADQAQCdASoQAAkAA4BaJZACdADDo8nYQAD+o3wXG730+X3HUeySPOY+2aQeRnqjRsFHhVXnh4jTn0BqNzcV3A7KXewtV3TSHdOY6dOolaUoAA==",
+      "variants": {
+        "avif": [
+          {
+            "width": 640,
+            "src": "/media/images/excavator-clearing-640.avif"
+          },
+          {
+            "width": 1080,
+            "src": "/media/images/excavator-clearing-1080.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 640,
+            "src": "/media/images/excavator-clearing-640.webp"
+          },
+          {
+            "width": 1080,
+            "src": "/media/images/excavator-clearing-1080.webp"
+          }
+        ],
+        "jpg": [
+          {
+            "width": 640,
+            "src": "/media/images/excavator-clearing-640.jpg"
+          },
+          {
+            "width": 1080,
+            "src": "/media/images/excavator-clearing-1080.jpg"
+          }
+        ]
+      }
+    },
+    "excavator-ore-face": {
+      "slug": "excavator-ore-face",
+      "kind": "photos",
+      "width": 715,
+      "height": 715,
+      "blurDataURL": "data:image/webp;base64,UklGRn4AAABXRUJQVlA4IHIAAADQAQCdASoQABAAA4BaJbACdAC8kVtbwAD2dFkVeoTMTXEC3WbmfPzUFY/JKOwP2SucbwiJmhxY/sfE2wM2P+YpUzdXvhj6PSP1NAFLezhnK4meciC4u3+LLPs9j/Yy5OPDfZv1qibBt+m4tJh25RgwAAA=",
+      "variants": {
+        "avif": [
+          {
+            "width": 640,
+            "src": "/media/images/excavator-ore-face-640.avif"
+          },
+          {
+            "width": 715,
+            "src": "/media/images/excavator-ore-face-715.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 640,
+            "src": "/media/images/excavator-ore-face-640.webp"
+          },
+          {
+            "width": 715,
+            "src": "/media/images/excavator-ore-face-715.webp"
+          }
+        ],
+        "jpg": [
+          {
+            "width": 640,
+            "src": "/media/images/excavator-ore-face-640.jpg"
+          },
+          {
+            "width": 715,
+            "src": "/media/images/excavator-ore-face-715.jpg"
+          }
+        ]
+      }
+    },
+    "excavator-pit-dig": {
+      "slug": "excavator-pit-dig",
+      "kind": "photos",
+      "width": 720,
+      "height": 540,
+      "blurDataURL": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAAAQAgCdASoQAAwAA4BaJZACdAD2Hyer+FYAAP7zKmKRyoNm04yAHOJGj1BsKGM2TpYmCQ48ChuH7Ifu93KVRMetYNvgCDiKTC4K7+nPEZltc6Vt4SAAAA==",
+      "variants": {
+        "avif": [
+          {
+            "width": 640,
+            "src": "/media/images/excavator-pit-dig-640.avif"
+          },
+          {
+            "width": 720,
+            "src": "/media/images/excavator-pit-dig-720.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 640,
+            "src": "/media/images/excavator-pit-dig-640.webp"
+          },
+          {
+            "width": 720,
+            "src": "/media/images/excavator-pit-dig-720.webp"
+          }
+        ],
+        "jpg": [
+          {
+            "width": 640,
+            "src": "/media/images/excavator-pit-dig-640.jpg"
+          },
+          {
+            "width": 720,
+            "src": "/media/images/excavator-pit-dig-720.jpg"
+          }
+        ]
+      }
+    },
+    "excavator-track": {
+      "slug": "excavator-track",
+      "kind": "photos",
+      "width": 1080,
+      "height": 607,
+      "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAADwAQCdASoQAAkAA4BaJZACdAEKueuQTwAA/rgnqCKV00GGZjoKXGz1TxkAs+USJaxFGaQYrczIEzUDIR9fYolV35bwtZZAMhFNF/q9G9dAAA==",
+      "variants": {
+        "avif": [
+          {
+            "width": 640,
+            "src": "/media/images/excavator-track-640.avif"
+          },
+          {
+            "width": 1080,
+            "src": "/media/images/excavator-track-1080.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 640,
+            "src": "/media/images/excavator-track-640.webp"
+          },
+          {
+            "width": 1080,
+            "src": "/media/images/excavator-track-1080.webp"
+          }
+        ],
+        "jpg": [
+          {
+            "width": 640,
+            "src": "/media/images/excavator-track-640.jpg"
+          },
+          {
+            "width": 1080,
+            "src": "/media/images/excavator-track-1080.jpg"
+          }
+        ]
+      }
+    },
     "excavators-haul-road": {
       "slug": "excavators-haul-road",
       "kind": "photos",
@@ -158,6 +353,45 @@
           {
             "width": 540,
             "src": "/media/images/excavators-haul-road-540.jpg"
+          }
+        ]
+      }
+    },
+    "field-crew-sluice": {
+      "slug": "field-crew-sluice",
+      "kind": "photos",
+      "width": 720,
+      "height": 540,
+      "blurDataURL": "data:image/webp;base64,UklGRnQAAABXRUJQVlA4IGgAAABQAgCdASoQAAwAA4BaJZgCdAYv1v745VmHfsAA/tPaLmFeRZ3hPsH7vrWIp5s+KfwrvjAs9aCpdZJNN841q3tCoUbjimgCjSNhwwXdEk9zXv9RQeJNPyXjYJYLH0a2mCVjA1h4ugAAAA==",
+      "variants": {
+        "avif": [
+          {
+            "width": 640,
+            "src": "/media/images/field-crew-sluice-640.avif"
+          },
+          {
+            "width": 720,
+            "src": "/media/images/field-crew-sluice-720.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 640,
+            "src": "/media/images/field-crew-sluice-640.webp"
+          },
+          {
+            "width": 720,
+            "src": "/media/images/field-crew-sluice-720.webp"
+          }
+        ],
+        "jpg": [
+          {
+            "width": 640,
+            "src": "/media/images/field-crew-sluice-640.jpg"
+          },
+          {
+            "width": 720,
+            "src": "/media/images/field-crew-sluice-720.jpg"
           }
         ]
       }
@@ -197,6 +431,45 @@
           {
             "width": 960,
             "src": "/media/images/field-team-meeting-960.jpg"
+          }
+        ]
+      }
+    },
+    "forest-pond": {
+      "slug": "forest-pond",
+      "kind": "photos",
+      "width": 1080,
+      "height": 607,
+      "blurDataURL": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAAAwAgCdASoQAAkAA4BaJZgCdAEfoh7cXAAgAAD+74qyqYGP1TxDp5TndIsWB6Vc9kyJ30HsBV6vTeTm+l/KPHH4aaeHFXFTJXptE52AAAA=",
+      "variants": {
+        "avif": [
+          {
+            "width": 640,
+            "src": "/media/images/forest-pond-640.avif"
+          },
+          {
+            "width": 1080,
+            "src": "/media/images/forest-pond-1080.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 640,
+            "src": "/media/images/forest-pond-640.webp"
+          },
+          {
+            "width": 1080,
+            "src": "/media/images/forest-pond-1080.webp"
+          }
+        ],
+        "jpg": [
+          {
+            "width": 640,
+            "src": "/media/images/forest-pond-640.jpg"
+          },
+          {
+            "width": 1080,
+            "src": "/media/images/forest-pond-1080.jpg"
           }
         ]
       }
@@ -329,6 +602,162 @@
           {
             "width": 432,
             "src": "/media/images/ore-weighing-432.jpg"
+          }
+        ]
+      }
+    },
+    "plant-conveyor": {
+      "slug": "plant-conveyor",
+      "kind": "photos",
+      "width": 1010,
+      "height": 478,
+      "blurDataURL": "data:image/webp;base64,UklGRkYAAABXRUJQVlA4IDoAAADQAQCdASoQAAcAA4BaJZwAAxXC19AdAAD+7QsnhlmTY+cEEP1DUN83f+/ncSaaqq5/Vbbcea7xa4AA",
+      "variants": {
+        "avif": [
+          {
+            "width": 640,
+            "src": "/media/images/plant-conveyor-640.avif"
+          },
+          {
+            "width": 1010,
+            "src": "/media/images/plant-conveyor-1010.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 640,
+            "src": "/media/images/plant-conveyor-640.webp"
+          },
+          {
+            "width": 1010,
+            "src": "/media/images/plant-conveyor-1010.webp"
+          }
+        ],
+        "jpg": [
+          {
+            "width": 640,
+            "src": "/media/images/plant-conveyor-640.jpg"
+          },
+          {
+            "width": 1010,
+            "src": "/media/images/plant-conveyor-1010.jpg"
+          }
+        ]
+      }
+    },
+    "plant-machinery": {
+      "slug": "plant-machinery",
+      "kind": "photos",
+      "width": 1009,
+      "height": 477,
+      "blurDataURL": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAADwAQCdASoQAAcAA4BaJYwAAsdAHsbuNNgA3lbMQPML4AKdhf/ExRsgSbNCg06ptfVAV79eVQIO/LrIwsKCgRa/m+egAA==",
+      "variants": {
+        "avif": [
+          {
+            "width": 640,
+            "src": "/media/images/plant-machinery-640.avif"
+          },
+          {
+            "width": 1009,
+            "src": "/media/images/plant-machinery-1009.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 640,
+            "src": "/media/images/plant-machinery-640.webp"
+          },
+          {
+            "width": 1009,
+            "src": "/media/images/plant-machinery-1009.webp"
+          }
+        ],
+        "jpg": [
+          {
+            "width": 640,
+            "src": "/media/images/plant-machinery-640.jpg"
+          },
+          {
+            "width": 1009,
+            "src": "/media/images/plant-machinery-1009.jpg"
+          }
+        ]
+      }
+    },
+    "plant-operator": {
+      "slug": "plant-operator",
+      "kind": "photos",
+      "width": 998,
+      "height": 475,
+      "blurDataURL": "data:image/webp;base64,UklGRkwAAABXRUJQVlA4IEAAAACwAQCdASoQAAgAA4BaJZQAAbiDVYwAAN5mP5njpPJDtZCCwYR43Zw5/KDMFNEjlE4itJcWpGhlgr0hfPxD+IAA",
+      "variants": {
+        "avif": [
+          {
+            "width": 640,
+            "src": "/media/images/plant-operator-640.avif"
+          },
+          {
+            "width": 998,
+            "src": "/media/images/plant-operator-998.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 640,
+            "src": "/media/images/plant-operator-640.webp"
+          },
+          {
+            "width": 998,
+            "src": "/media/images/plant-operator-998.webp"
+          }
+        ],
+        "jpg": [
+          {
+            "width": 640,
+            "src": "/media/images/plant-operator-640.jpg"
+          },
+          {
+            "width": 998,
+            "src": "/media/images/plant-operator-998.jpg"
+          }
+        ]
+      }
+    },
+    "site-generator": {
+      "slug": "site-generator",
+      "kind": "photos",
+      "width": 1080,
+      "height": 607,
+      "blurDataURL": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAABQAgCdASoQAAkAA4BaJZgCdH8AFwZoHjVxHQAA/pGq7pgr3EWgXc7vbB3Mly6YiR/AAy4fIYs1prVJ6HnCq+nyff42fH9I5Qyf1XJost4sLoAN7Mg8IqwAAAA=",
+      "variants": {
+        "avif": [
+          {
+            "width": 640,
+            "src": "/media/images/site-generator-640.avif"
+          },
+          {
+            "width": 1080,
+            "src": "/media/images/site-generator-1080.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 640,
+            "src": "/media/images/site-generator-640.webp"
+          },
+          {
+            "width": 1080,
+            "src": "/media/images/site-generator-1080.webp"
+          }
+        ],
+        "jpg": [
+          {
+            "width": 640,
+            "src": "/media/images/site-generator-640.jpg"
+          },
+          {
+            "width": 1080,
+            "src": "/media/images/site-generator-1080.jpg"
           }
         ]
       }
@@ -488,6 +917,45 @@
           {
             "width": 720,
             "src": "/media/images/smelting-furnace-720.jpg"
+          }
+        ]
+      }
+    },
+    "wash-plant-screen": {
+      "slug": "wash-plant-screen",
+      "kind": "photos",
+      "width": 720,
+      "height": 540,
+      "blurDataURL": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAADwAQCdASoQAAwAA4BaJaACdAEIdhwZAAAA+XxVo8oe6YglI2P8ThN+U2HtOeu/pmK28qHXUuIW8MelbOmHYoYAPcm+3+ktAG9lz84YHW8nOUJ2RiHEwViH8yAAAA==",
+      "variants": {
+        "avif": [
+          {
+            "width": 640,
+            "src": "/media/images/wash-plant-screen-640.avif"
+          },
+          {
+            "width": 720,
+            "src": "/media/images/wash-plant-screen-720.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 640,
+            "src": "/media/images/wash-plant-screen-640.webp"
+          },
+          {
+            "width": 720,
+            "src": "/media/images/wash-plant-screen-720.webp"
+          }
+        ],
+        "jpg": [
+          {
+            "width": 640,
+            "src": "/media/images/wash-plant-screen-640.jpg"
+          },
+          {
+            "width": 720,
+            "src": "/media/images/wash-plant-screen-720.jpg"
           }
         ]
       }
@@ -920,6 +1388,168 @@
           }
         ]
       }
+    },
+    "bankole-otegbeye": {
+      "slug": "bankole-otegbeye",
+      "kind": "portraits",
+      "width": 480,
+      "height": 480,
+      "blurDataURL": "data:image/webp;base64,UklGRnwAAABXRUJQVlA4IHAAAABwAgCdASoQABAAA4BaJYgCdAYvDy/6DYSBNQAAAP6foF9WLf3HpNr029x6BTh4LKa+JlFBIu0MgXfQ4Z2aPqwqJmXrOieTcByA/xyeJR3T8V/DsJF4Pan4GFWKUUxtLwV1OdmUWdqA9uL1gwxMAAAA",
+      "variants": {
+        "avif": [
+          {
+            "width": 480,
+            "src": "/media/images/bankole-otegbeye-480.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 480,
+            "src": "/media/images/bankole-otegbeye-480.webp"
+          }
+        ],
+        "jpg": [
+          {
+            "width": 480,
+            "src": "/media/images/bankole-otegbeye-480.jpg"
+          }
+        ]
+      }
+    },
+    "emmanuel-dangana": {
+      "slug": "emmanuel-dangana",
+      "kind": "portraits",
+      "width": 480,
+      "height": 480,
+      "blurDataURL": "data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAAAwAgCdASoQABAAA4BaJZwAD5PxcAU49eMBAAD+9Qd3D55MaAvUPr3zThOmbLuTcXMPDTl5XcN0ce2Jl5fIJPsHe3UFskAgGwZ9STcBsMSE5DOF90rzlS3Adgj7XK+QGYw+5eAA",
+      "variants": {
+        "avif": [
+          {
+            "width": 480,
+            "src": "/media/images/emmanuel-dangana-480.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 480,
+            "src": "/media/images/emmanuel-dangana-480.webp"
+          }
+        ],
+        "jpg": [
+          {
+            "width": 480,
+            "src": "/media/images/emmanuel-dangana-480.jpg"
+          }
+        ]
+      }
+    },
+    "opemiotan-omolara": {
+      "slug": "opemiotan-omolara",
+      "kind": "portraits",
+      "width": 480,
+      "height": 480,
+      "blurDataURL": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAADwAQCdASoQABAAA4BaJZwCsAEachRC4EAA/vHgl9D3IT34Tvntl1PlFNq14n00ELzDraCvB2R+ARAdMjNODY7km4kgq+3XIRKHVcle+gTKBMS2ZMrkZddPmGbzH64AAAA=",
+      "variants": {
+        "avif": [
+          {
+            "width": 480,
+            "src": "/media/images/opemiotan-omolara-480.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 480,
+            "src": "/media/images/opemiotan-omolara-480.webp"
+          }
+        ],
+        "jpg": [
+          {
+            "width": 480,
+            "src": "/media/images/opemiotan-omolara-480.jpg"
+          }
+        ]
+      }
+    },
+    "tobi-oyedeji": {
+      "slug": "tobi-oyedeji",
+      "kind": "portraits",
+      "width": 480,
+      "height": 480,
+      "blurDataURL": "data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAABQAgCdASoQABAAA4BaJYgCdAEXeZJCmu/kkgAA/u/Myk9YdghgRADzPGAOaugH1v7KF2NWnuafT6E9Ynqg2f7CbcOLWqDHm/4hZbiuyWAcZt23WuZs5hak2wvcE+YA3kN/YXfAmeeh/QAA",
+      "variants": {
+        "avif": [
+          {
+            "width": 480,
+            "src": "/media/images/tobi-oyedeji-480.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 480,
+            "src": "/media/images/tobi-oyedeji-480.webp"
+          }
+        ],
+        "jpg": [
+          {
+            "width": 480,
+            "src": "/media/images/tobi-oyedeji-480.jpg"
+          }
+        ]
+      }
+    },
+    "tola-otegbeye": {
+      "slug": "tola-otegbeye",
+      "kind": "portraits",
+      "width": 480,
+      "height": 480,
+      "blurDataURL": "data:image/webp;base64,UklGRoAAAABXRUJQVlA4IHQAAACQAgCdASoQABAAA4BaJQBOj+AVIHulTwftTXeuAAD9vLnb3lTEDxi6BpfUUfiSm6bxhZZy6Cx+DCSL/30UGoCwaUxrW8uO772W7VMXPcdCR/jQWukbOLld2mfHscLM+4PHsiGJyra5pWlylmcndHQ+YnZ4AA==",
+      "variants": {
+        "avif": [
+          {
+            "width": 480,
+            "src": "/media/images/tola-otegbeye-480.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 480,
+            "src": "/media/images/tola-otegbeye-480.webp"
+          }
+        ],
+        "jpg": [
+          {
+            "width": 480,
+            "src": "/media/images/tola-otegbeye-480.jpg"
+          }
+        ]
+      }
+    },
+    "tunde-oyinlola": {
+      "slug": "tunde-oyinlola",
+      "kind": "portraits",
+      "width": 480,
+      "height": 480,
+      "blurDataURL": "data:image/webp;base64,UklGRnwAAABXRUJQVlA4IHAAAABQAgCdASoQABAAA4BaJbACdAYv/bU7LNPr6AAA/undI7qETgDZd7QJYFDCzfzsR2IORuiBzu274eaVMC4jCwZ1tmctX4Z0aF3WXgVgU9jw/SJpsEXjCQXob42viIxMT7AHMALHAUW8aksiSLJHYAAA",
+      "variants": {
+        "avif": [
+          {
+            "width": 480,
+            "src": "/media/images/tunde-oyinlola-480.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 480,
+            "src": "/media/images/tunde-oyinlola-480.webp"
+          }
+        ],
+        "jpg": [
+          {
+            "width": 480,
+            "src": "/media/images/tunde-oyinlola-480.jpg"
+          }
+        ]
+      }
     }
   },
   "logos": {
@@ -1143,6 +1773,120 @@
             "jpg": "/media/video/registration-documentation-loop-poster.jpg"
           },
           "blurDataURL": "data:image/webp;base64,UklGRvIAAABXRUJQVlA4IOYAAAAwBQCdASoQABwAPu1iqk4ppaQiMAgBMB2JbACdMoFWk7y0jQNpEejC0lGkQ2WgaPNfgAD+6/BNYm6uvUdmK8gjSrkKDJC7HP3haDGpH+/gjsLUlIS+OgTTj9S9iNvN8EnrKJfGSAY2Slob9sQAwVEhbL5fpegwEmQT2bLUSVnjE+NqfUGfCOOJV31WSHrOa5JwOLnUZ3BchkCXpE0n/yl7Uo/oteOKVYKYivKMGwrfL9xPotlUyynre/R6WYC9kEews/bbceKyoJB6Dk7+AJhOCUDr8z7AEqH1UBvzFePKOLL0h0AAAA=="
+        }
+      ],
+      "full": null
+    },
+    "aerial-exploration": {
+      "slug": "aerial-exploration",
+      "width": 1280,
+      "height": 720,
+      "loops": [
+        {
+          "name": "aerial-exploration",
+          "duration": 13,
+          "mp4": "/media/video/aerial-exploration-loop.mp4",
+          "poster": {
+            "avif": "/media/video/aerial-exploration-loop-poster.avif",
+            "webp": "/media/video/aerial-exploration-loop-poster.webp",
+            "jpg": "/media/video/aerial-exploration-loop-poster.jpg"
+          },
+          "blurDataURL": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAADQAQCdASoQAAkAA4BaJaACdAC6zyO1oAD+uoHd3xCktc5TWzSLk4mIH/0ESbdAMAtg1DT60ql7lqvI289rBJcn9CAAAA=="
+        }
+      ],
+      "full": null
+    },
+    "aerial-pit-walls": {
+      "slug": "aerial-pit-walls",
+      "width": 1280,
+      "height": 720,
+      "loops": [
+        {
+          "name": "aerial-pit-walls",
+          "duration": 14,
+          "mp4": "/media/video/aerial-pit-walls-loop.mp4",
+          "poster": {
+            "avif": "/media/video/aerial-pit-walls-loop-poster.avif",
+            "webp": "/media/video/aerial-pit-walls-loop-poster.webp",
+            "jpg": "/media/video/aerial-pit-walls-loop-poster.jpg"
+          },
+          "blurDataURL": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAADQAQCdASoQAAkAA4BaJZgCdADyoqTGAAD6nqOOTnzPnqVR3flzPuejT32/rIXswjENR4KNJBV2IRyX1t8R4KirGKWMrjlJvaXmN9lBwAA="
+        }
+      ],
+      "full": null
+    },
+    "artisanal-field-panorama": {
+      "slug": "artisanal-field-panorama",
+      "width": 1280,
+      "height": 604,
+      "loops": [
+        {
+          "name": "artisanal-field-panorama",
+          "duration": 11.9529,
+          "mp4": "/media/video/artisanal-field-panorama-loop.mp4",
+          "poster": {
+            "avif": "/media/video/artisanal-field-panorama-loop-poster.avif",
+            "webp": "/media/video/artisanal-field-panorama-loop-poster.webp",
+            "jpg": "/media/video/artisanal-field-panorama-loop-poster.jpg"
+          },
+          "blurDataURL": "data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAACwAQCdASoQAAgAA4BaJYgCdAEPPQAAAN4na7DUjmCzVVkQQBM6ni8Fndh2QLWq8ZyAAA=="
+        }
+      ],
+      "full": null
+    },
+    "mine-field-pan": {
+      "slug": "mine-field-pan",
+      "width": 1280,
+      "height": 720,
+      "loops": [
+        {
+          "name": "mine-field-pan",
+          "duration": 10,
+          "mp4": "/media/video/mine-field-pan-loop.mp4",
+          "poster": {
+            "avif": "/media/video/mine-field-pan-loop-poster.avif",
+            "webp": "/media/video/mine-field-pan-loop-poster.webp",
+            "jpg": "/media/video/mine-field-pan-loop-poster.jpg"
+          },
+          "blurDataURL": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAADQAQCdASoQAAkAA4BaJaACdADD2buqYAD+GTuQI5mze/3H8qxXw8wto0jrcWQ45hI+xYAA"
+        }
+      ],
+      "full": null
+    },
+    "processing-plant": {
+      "slug": "processing-plant",
+      "width": 1280,
+      "height": 604,
+      "loops": [
+        {
+          "name": "processing-plant",
+          "duration": 13,
+          "mp4": "/media/video/processing-plant-loop.mp4",
+          "poster": {
+            "avif": "/media/video/processing-plant-loop-poster.avif",
+            "webp": "/media/video/processing-plant-loop-poster.webp",
+            "jpg": "/media/video/processing-plant-loop-poster.jpg"
+          },
+          "blurDataURL": "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAADQAQCdASoQAAgAA4BaJZQAAuhdy1AMAAD++Iji1hSP5KtHOXgDhb/UvhCCcnwA"
+        }
+      ],
+      "full": null
+    },
+    "aggregation-warehouse": {
+      "slug": "aggregation-warehouse",
+      "width": 576,
+      "height": 1024,
+      "loops": [
+        {
+          "name": "aggregation-warehouse",
+          "duration": 12,
+          "mp4": "/media/video/aggregation-warehouse-loop.mp4",
+          "poster": {
+            "avif": "/media/video/aggregation-warehouse-loop-poster.avif",
+            "webp": "/media/video/aggregation-warehouse-loop-poster.webp",
+            "jpg": "/media/video/aggregation-warehouse-loop-poster.jpg"
+          },
+          "blurDataURL": "data:image/webp;base64,UklGRtAAAABXRUJQVlA4IMQAAACQBACdASoQABwAPu1iqU2ppaOiMAgBMB2JbACdMoFWADk/GqrQhOxBpBPqaAAA9zYJVfBemcsG/ffFcpJ9LecC7zwMC33/9ofU1/s637fCx0CMqlkDUyEuHAxpONVqdRnIwl4utg4JJTXkt2mh2iysYJLLFk39qMyqGPgm0N508FcCRXiScW/JOwggLQEHixIdg3wANWU5XHwrND169/EC/e9zijUBTqYTh+pejwPckVqioXPPLwzHIlVPLRX+scQKWRQA"
         }
       ],
       "full": null

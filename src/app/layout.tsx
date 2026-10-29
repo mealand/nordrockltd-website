@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Sora } from "next/font/google";
+import { Mulish, Roboto } from "next/font/google";
 import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
 import { MotionProvider } from "@/components/motion/MotionProvider";
@@ -7,8 +7,9 @@ import { company, contact } from "@/content/site";
 import { getLogo } from "@/lib/media";
 import "./globals.css";
 
-const inter = Inter({ variable: "--font-inter", subsets: ["latin"] });
-const sora = Sora({ variable: "--font-sora", subsets: ["latin"] });
+// The original nordrockltd.com typography: Muli (now Mulish) for headings and menus, Roboto for body copy.
+const mulish = Mulish({ variable: "--font-mulish", subsets: ["latin"] });
+const roboto = Roboto({ variable: "--font-roboto", subsets: ["latin"], weight: ["300", "400", "500", "700"] });
 
 // Keep the review deployment (newsite.nordrockltd.com) out of search results.
 // Flip NEXT_PUBLIC_ALLOW_INDEXING=true when the site moves to the main domain.
@@ -17,7 +18,7 @@ const allowIndexing = process.env.NEXT_PUBLIC_ALLOW_INDEXING === "true";
 export const metadata: Metadata = {
   metadataBase: new URL(company.url),
   title: {
-    default: `${company.name} — Critical Minerals, Technology & Renewable Energy`,
+    default: `${company.name} | Metals and Mining, Agriculture, Renewable Energy and Real Estate`,
     template: `%s | ${company.name}`,
   },
   description: company.description,
@@ -54,7 +55,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   const mark = getLogo("nordrock-mark");
 
   return (
-    <html lang="en" className={`${inter.variable} ${sora.variable} h-full antialiased`}>
+    <html lang="en" className={`${mulish.variable} ${roboto.variable} h-full antialiased`}>
       <body className="flex min-h-full flex-col font-sans">
         <script
           type="application/ld+json"
@@ -64,7 +65,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         />
         <a
           href="#main"
-          className="sr-only z-[100] rounded-full bg-gold px-5 py-3 font-semibold text-ink focus:not-sr-only focus:fixed focus:top-4 focus:left-4"
+          className="sr-only z-[100] rounded-full bg-royal px-5 py-3 font-semibold text-white focus:not-sr-only focus:fixed focus:top-4 focus:left-4"
         >
           Skip to content
         </a>

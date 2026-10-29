@@ -6,7 +6,7 @@ import { Container } from "@/components/ui/Container";
 import { Eyebrow } from "@/components/ui/Heading";
 import { Section } from "@/components/ui/Section";
 
-/** Intro statement followed by the six service cards. */
+/** Metals and Mining services: intro statement followed by the six service cards. */
 export function ServicesGrid() {
   return (
     <Section>
@@ -23,6 +23,7 @@ export function ServicesGrid() {
           </div>
           <Reveal delay={0.2}>
             <p className="leading-relaxed text-stone-500">{intro.body}</p>
+            <p className="mt-4 text-sm text-azure-700">{intro.note}</p>
           </Reveal>
         </div>
 

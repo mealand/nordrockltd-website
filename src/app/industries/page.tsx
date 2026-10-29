@@ -7,7 +7,7 @@ import { PageHero } from "@/components/sections/PageHero";
 export const metadata: Metadata = {
   title: "Industries",
   description:
-    "NordRock works across mineral operations, technology and renewable energy — three industries that strengthen each other.",
+    "NordRock works in metals and mining, agriculture, renewable energy, and real estate and housing, with one way of working across all four.",
 };
 
 export default function Page() {
@@ -15,9 +15,9 @@ export default function Page() {
     <PageTransition>
       <PageHero
         eyebrow="Industries"
-        title="Minerals, technology and energy for Africa's future."
-        intro="Mineral operations at our core, with technology and renewable energy powering what comes next."
-        media={{ video: "artisan-pit-mining", label: "Artisanal miners working a mineral pit" }}
+        title="Four industries, one way of working."
+        intro="In each industry we run the operations, record them on our own platforms and help finance them. Mining is where we started."
+        media={{ video: "aerial-exploration", label: "Aerial view over exploration ground" }}
       />
       <IndustryRows />
       <Ecosystem />

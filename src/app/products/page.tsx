@@ -1,29 +1,36 @@
 import type { Metadata } from "next";
 import { PageTransition } from "@/components/motion/PageTransition";
-import { EcosystemFlow } from "@/components/products/EcosystemFlow";
 import { LiveProducts } from "@/components/products/LiveProducts";
+import { PlatformGroups } from "@/components/products/PlatformGroups";
+import { ClosingBanner } from "@/components/sections/ClosingBanner";
 import { PageHero } from "@/components/sections/PageHero";
 
 export const metadata: Metadata = {
-  title: "Products",
+  title: "Platforms",
   description:
-    "TraceChain, AgroTrace and NordRock's pipeline of blockchain and AI platforms for traceable minerals, agriculture and energy.",
+    "TraceChain, ATiMS and the tools NordRock is building around them: the systems behind our four industries.",
 };
 
 export default function Page() {
   return (
     <PageTransition>
       <PageHero
-        eyebrow="Products"
-        title="Technology that makes every mineral traceable."
-        intro="NordRock is not just a mining company but a mining technology ecosystem — proprietary platforms built on blockchain, AI and IoT."
+        eyebrow="Platforms"
+        title="The systems behind our four industries."
+        intro="Remote sites and small producers need tools that work without signal, identify every person in the chain and produce records a buyer can check. We built our own, starting with what our mining business needed."
         media={{
-          image: "tech-hub",
-          label: "Illustration of a digitally monitored mineral processing hub",
+          video: "processing-plant",
+          label: "Processing plant machinery beside bagged concentrate",
         }}
       />
+      <PlatformGroups />
       <LiveProducts />
-      <EcosystemFlow />
+      <ClosingBanner
+        title="See TraceChain in action."
+        button="Request a demo"
+        href="/contact/?enquiry=demo"
+        media={{ video: "artisanal-field-panorama", label: "Artisanal miners across a mining field" }}
+      />
     </PageTransition>
   );
 }

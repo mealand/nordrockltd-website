@@ -8,6 +8,7 @@
 // Folders under media-src/:
 //   photos/         operational photos   -> AVIF + WebP + JPG at IMAGE_WIDTHS
 //   illustrations/  AI artwork           -> same, watermark corner trimmed
+//   portraits/      leadership headshots -> same, pre-cropped square; no denoise
 //   logos/          brand marks (alpha)  -> trimmed PNG + WebP
 //   videos/         phone clips          -> silent H.264 MP4 loops + posters
 
@@ -25,6 +26,8 @@ import {
   VIDEOS,
   VIDEO_ENCODE,
   VIDEO_FILTER,
+  WIDE_FILTER,
+  LIFT_FILTER,
 } from "./media.config.mjs";
 
 const run = promisify(execFile);
@@ -150,22 +153,22 @@ async function probe(file) {
   return { width: j.streams[0].width, height: j.streams[0].height, duration: Number(j.format.duration) };
 }
 
-async function encode(input, outFile, { start, duration, crf, maxrate, bufsize }) {
+async function encode(input, outFile, { start, duration, crf, maxrate, bufsize, filter = VIDEO_FILTER }) {
   const seek = start != null ? ["-ss", String(start)] : [];
   const len = duration != null ? ["-t", String(duration)] : [];
   await run(ffmpegPath, [
     "-y", "-v", "error", ...seek, "-i", input, ...len,
     "-an", // strip audio
-    "-vf", VIDEO_FILTER,
+    "-vf", filter,
     "-c:v", "libx264", "-preset", "slow", "-crf", String(crf),
     "-maxrate", maxrate, "-bufsize", bufsize, "-profile:v", "high",
     "-pix_fmt", "yuv420p", "-movflags", "+faststart", outFile,
   ]);
 }
 
-async function poster(input, at, outBase) {
+async function poster(input, at, outBase, filter = VIDEO_FILTER) {
   const frame = `${outBase}-poster.png`;
-  await run(ffmpegPath, ["-y", "-v", "error", "-ss", String(at), "-i", input, "-frames:v", "1", "-vf", VIDEO_FILTER, frame]);
+  await run(ffmpegPath, ["-y", "-v", "error", "-ss", String(at), "-i", input, "-frames:v", "1", "-vf", filter, frame]);
   const buf = await fs.readFile(frame);
   await fs.rm(frame);
   await Promise.all([
@@ -185,16 +188,23 @@ async function processVideo(cfg) {
   const outDir = path.join(OUT, "video");
   await fs.mkdir(outDir, { recursive: true });
   const info = await probe(input);
-  const entry = { slug: cfg.slug, width: info.width + (info.width % 2 ? -1 : 0), height: info.height, loops: [], full: null };
+  const entry = { slug: cfg.slug, width: 0, height: 0, loops: [], full: null };
+  const filter = cfg.lift ? LIFT_FILTER : cfg.wide ? WIDE_FILTER : VIDEO_FILTER;
+  const loopEncode = cfg.wide ? VIDEO_ENCODE.wide : VIDEO_ENCODE.loop;
 
   for (const loop of cfg.loops) {
     const name = loop.suffix ? `${cfg.slug}-${loop.suffix}` : cfg.slug;
     const outBase = path.join(outDir, `${name}-loop`);
     const duration = Math.min(loop.duration, info.duration - loop.start);
     if (await stale(input, `${outBase}.mp4`)) {
-      await encode(input, `${outBase}.mp4`, { start: loop.start, duration, ...VIDEO_ENCODE.loop });
+      await encode(input, `${outBase}.mp4`, { start: loop.start, duration, filter, ...loopEncode });
     }
-    const { blurDataURL: blur } = await poster(input, loop.start + 0.5, outBase);
+    // Read dimensions from the output so rotated phone clips report their displayed shape.
+    if (!entry.width) {
+      const { width, height } = await probe(`${outBase}.mp4`);
+      Object.assign(entry, { width, height });
+    }
+    const { blurDataURL: blur } = await poster(input, loop.start + 0.5, outBase, filter);
     entry.loops.push({
       name,
       duration,
@@ -207,9 +217,9 @@ async function processVideo(cfg) {
   if (cfg.full) {
     const outBase = path.join(outDir, `${cfg.slug}-full`);
     if (await stale(input, `${outBase}.mp4`)) {
-      await encode(input, `${outBase}.mp4`, VIDEO_ENCODE.full);
+      await encode(input, `${outBase}.mp4`, { ...VIDEO_ENCODE.full, filter });
     }
-    await poster(input, Math.min(2, info.duration / 2), outBase);
+    await poster(input, Math.min(2, info.duration / 2), outBase, filter);
     entry.full = {
       duration: info.duration,
       mp4: rel(`${outBase}.mp4`),
@@ -226,7 +236,7 @@ const seen = new Map();
 const manifest = { images: {}, logos: {}, videos: {} };
 
 console.log("Images");
-for (const kind of ["photos", "illustrations"]) {
+for (const kind of ["photos", "illustrations", "portraits"]) {
   for (const file of await listFiles(path.join(SRC, kind), [".jpg", ".jpeg", ".png", ".webp"])) {
     const img = await processImage(file, kind, seen);
     if (img) manifest.images[img.slug] = img;

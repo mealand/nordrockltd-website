@@ -54,7 +54,7 @@ function Minerals({ feature }: { feature: Extract<Feature, { type: "minerals" }>
               {g.minerals.map((m) => (
                 <li
                   key={m}
-                  className="font-display rounded-full bg-white/[0.06] px-5 py-2.5 text-base font-medium ring-1 ring-white/15 transition-colors duration-300 hover:bg-gold hover:text-ink"
+                  className="font-display rounded-full bg-white/[0.06] px-5 py-2.5 text-base font-medium ring-1 ring-white/15 transition-colors duration-300 hover:bg-royal hover:text-white"
                 >
                   {m}
                 </li>
@@ -79,7 +79,7 @@ function Stack({ feature }: { feature: Extract<Feature, { type: "stack" }> }) {
             className="grid gap-2 rounded-3xl bg-white/[0.05] p-6 ring-1 ring-white/10 sm:ms-[calc(var(--step)*1.5rem)] sm:grid-cols-[3rem_minmax(0,14rem)_minmax(0,1fr)] sm:items-center sm:gap-8 sm:p-7"
             style={{ "--step": i } as React.CSSProperties}
           >
-            <span className="font-display text-sm font-semibold text-gold">0{i + 1}</span>
+            <span className="font-display text-sm font-semibold text-royal-300">0{i + 1}</span>
             <div>
               <h3 className="font-display text-xl font-semibold">{l.name}</h3>
               <p className="text-sm text-sky-300">{l.role}</p>

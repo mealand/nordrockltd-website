@@ -57,7 +57,7 @@ export function Overview() {
             delay={0.3}
             className="relative -mt-16 ml-auto max-w-sm rounded-3xl bg-navy p-7 text-white shadow-2xl shadow-navy/30 sm:-mt-20 sm:mr-6"
           >
-            <span aria-hidden className="font-display block text-5xl leading-none text-gold">
+            <span aria-hidden className="font-display block text-5xl leading-none text-royal-300">
               “
             </span>
             <p className="font-display mt-1 text-lg leading-snug font-medium">{overview.quote}</p>

@@ -40,16 +40,12 @@ export default async function ProductPage({ params }: PageProps<"/products/[slug
   return (
     <PageTransition>
       <PageHero
-        eyebrow={`NordRock ${product.label} · ${live ? "Live" : "In development"}`}
+        eyebrow={`NordRock ${product.label} | ${live ? "Live" : "In development"}`}
         title={page.hero.title}
         intro={page.hero.intro}
         media={page.hero.media}
       >
-        {live && product.url ? (
-          <Button href={product.url}>Open {product.label} ↗</Button>
-        ) : (
-          <Button href="/contact/">Talk to our team</Button>
-        )}
+        <Button href={page.cta.href}>{page.cta.label}</Button>
       </PageHero>
       <ProductBody product={product} page={page} />
       {page.journey && <ProductJourney title={page.journey.title} stages={page.journey.stages} />}

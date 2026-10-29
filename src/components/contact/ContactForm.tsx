@@ -11,6 +11,11 @@ export const enquiries = [
   { value: "general", label: "General enquiry" },
   { value: "investor", label: "Investor relations" },
   { value: "partnership", label: "Partnership & supply" },
+  { value: "minerals", label: "Mineral specification" },
+  { value: "agriculture", label: "Agriculture" },
+  { value: "demo", label: "Platform demo" },
+  { value: "interest", label: "Register interest in a platform" },
+  { value: "pilot", label: "GreenGrid pilot list" },
   { value: "media", label: "Media" },
   { value: "careers", label: "Careers" },
   { value: "artisan", label: "Artisans & cooperatives" },
@@ -143,7 +148,7 @@ function ContactForm({ initialEnquiry }: { initialEnquiry: Enquiry }) {
               </svg>
             </span>
             <h3 className="font-display mt-6 text-3xl font-semibold tracking-tight">
-              Thank you — message received.
+              Thank you. Message received.
             </h3>
             <p className="mt-3 max-w-md leading-relaxed text-stone-500">
               Our team will get back to you shortly at the email address you provided.

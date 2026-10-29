@@ -37,24 +37,21 @@ export function ProductAudiences({ product, page }: { product: Product; page: Pr
                 : `Interested in NordRock ${product.label}?`}
             </h2>
             <p className="mt-3 max-w-xl text-white/75">
-              {live
-                ? "Open the live platform, or talk to our team about onboarding and partnerships."
-                : "Talk to our team about pilots, partnerships and early access."}
+              {page.cta.note ??
+                "See the platform with our team, or talk to us about onboarding and partnerships."}
             </p>
           </div>
           <div className="flex shrink-0 flex-wrap gap-4">
-            {live && product.url && (
-              <Magnetic>
-                <Button href={product.url}>Open {product.label} ↗</Button>
-              </Magnetic>
-            )}
-            <Button href="/contact/" variant={live ? "outline" : "primary"}>
+            <Magnetic>
+              <Button href={page.cta.href}>{page.cta.label}</Button>
+            </Magnetic>
+            <Button href="/contact/" variant="outline">
               Contact us
             </Button>
           </div>
         </Reveal>
 
-        <nav aria-label="Other products" className="mt-16">
+        <nav aria-label="Other platforms" className="mt-16">
           <p className="text-xs font-semibold tracking-[0.22em] text-azure-700 uppercase">
             More from NordRock
           </p>

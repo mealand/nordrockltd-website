@@ -115,7 +115,7 @@ export function MobileNav({
                           <span
                             aria-hidden
                             className={cn(
-                              "text-gold transition-transform",
+                              "text-royal-300 transition-transform",
                               expanded === item.href && "rotate-45",
                             )}
                           >
@@ -155,7 +155,7 @@ export function MobileNav({
                         aria-current={isActive(pathname, item.href) ? "page" : undefined}
                         className={cn(
                           "font-display block py-4 text-2xl font-semibold",
-                          isActive(pathname, item.href) && "text-gold",
+                          isActive(pathname, item.href) && "text-royal-300",
                         )}
                       >
                         {item.label}
@@ -177,6 +177,7 @@ export function MobileNav({
               </a>
               {contact.phones.map((p) => (
                 <a key={p.href} href={p.href} className="block hover:text-white">
+                  <span className="mr-2 text-xs font-semibold text-sky-300">{p.region}</span>
                   {p.label}
                 </a>
               ))}

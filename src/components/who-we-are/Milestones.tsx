@@ -8,7 +8,7 @@ import { Container } from "@/components/ui/Container";
 import { Eyebrow } from "@/components/ui/Heading";
 import { Section } from "@/components/ui/Section";
 
-/** Vertical timeline whose gold line fills as the visitor scrolls through it. */
+/** Vertical timeline whose blue line fills as the visitor scrolls through it. */
 export function Milestones() {
   const listRef = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
@@ -27,7 +27,7 @@ export function Milestones() {
               Giant steps in our first months.
             </h2>
             <p className="mt-6 max-w-sm leading-relaxed text-navy/75">
-              From incorporation to international offtake and live technology platforms — and set up
+              From incorporation to international offtake and live technology platforms, and set up
               for even bigger milestones.
             </p>
           </Reveal>
@@ -38,7 +38,7 @@ export function Milestones() {
           <span aria-hidden className="absolute top-2 bottom-2 left-[7px] w-0.5 bg-navy/10" />
           <motion.span
             aria-hidden
-            className="absolute top-2 bottom-2 left-[7px] w-0.5 origin-top bg-gold"
+            className="absolute top-2 bottom-2 left-[7px] w-0.5 origin-top bg-royal"
             style={{ scaleY: progress }}
           />
           <ol>
@@ -46,7 +46,7 @@ export function Milestones() {
               <li key={m.title} className="relative pb-12 pl-12 last:pb-0">
                 <span
                   aria-hidden
-                  className="absolute top-1.5 left-0 size-4 rounded-full border-2 border-gold bg-sky"
+                  className="absolute top-1.5 left-0 size-4 rounded-full border-2 border-royal bg-sky"
                 />
                 <Reveal y={20}>
                   <p className="text-xs font-semibold tracking-[0.22em] text-azure-700 uppercase">

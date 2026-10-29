@@ -14,11 +14,11 @@ export default function Page() {
     <PageTransition>
       <PageHero
         eyebrow="Join us"
-        title="Build Africa's mineral future with us."
-        intro="Whether you're looking for a career, a long-term supply partner, or a fair market for your minerals — there's a place for you in the NordRock network."
+        title="Build traceable supply chains with us."
+        intro="Whether you are looking for a career, a long-term supply partner, or a fair market for what you produce, there is a place for you in the NordRock network."
         media={{
-          image: "artisan-briefing-1",
-          label: "Artisanal miners at a NordRock engagement session",
+          video: "aerial-pit-walls",
+          label: "Aerial view over an artisanal mine site",
         }}
       />
       <JoinIndex />

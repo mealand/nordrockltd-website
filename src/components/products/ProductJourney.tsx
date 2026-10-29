@@ -25,7 +25,7 @@ export function ProductJourney({ title, stages }: { title: string; stages: strin
         >
           <motion.span
             aria-hidden
-            className="absolute top-3 bottom-3 left-[11px] w-0.5 origin-top bg-gold md:top-[11px] md:right-0 md:bottom-auto md:left-0 md:h-0.5 md:w-auto md:origin-left"
+            className="absolute top-3 bottom-3 left-[11px] w-0.5 origin-top bg-royal md:top-[11px] md:right-0 md:bottom-auto md:left-0 md:h-0.5 md:w-auto md:origin-left"
             variants={{ hidden: { scale: 0 }, shown: { scale: 1 } }}
             transition={{ duration: 0.4 + stages.length * 0.18, ease: EASE }}
           />
@@ -40,7 +40,7 @@ export function ProductJourney({ title, stages }: { title: string; stages: strin
                 variants={{ hidden: { opacity: 0, y: 12 }, shown: { opacity: 1, y: 0 } }}
                 transition={{ duration: 0.6, ease: EASE }}
               >
-                <span className="grid size-6 shrink-0 place-items-center rounded-full border-2 border-gold bg-sky">
+                <span className="grid size-6 shrink-0 place-items-center rounded-full border-2 border-royal bg-sky">
                   <span className="size-2 rounded-full bg-navy" />
                 </span>
                 <div>

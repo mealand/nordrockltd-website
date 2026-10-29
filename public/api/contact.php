@@ -23,6 +23,11 @@ const ENQUIRIES = [
     'general' => 'General enquiry',
     'investor' => 'Investor relations',
     'partnership' => 'Partnership & supply',
+    'minerals' => 'Mineral specification',
+    'agriculture' => 'Agriculture',
+    'demo' => 'Platform demo',
+    'interest' => 'Register interest in a platform',
+    'pilot' => 'GreenGrid pilot list',
     'media' => 'Media',
     'careers' => 'Careers',
     'artisan' => 'Artisans & cooperatives',
@@ -138,7 +143,7 @@ if ($errors) {
 
 // ---- Send ---------------------------------------------------------------------
 
-$subject = sprintf('[%s] %s — %s', ENQUIRIES[$enquiry], $name, $organisation !== '' ? $organisation : 'nordrockltd.com');
+$subject = sprintf('[%s] %s | %s', ENQUIRIES[$enquiry], $name, $organisation !== '' ? $organisation : 'nordrockltd.com');
 $body = implode("\n", [
     'New message from the NordRock website contact form.',
     '',

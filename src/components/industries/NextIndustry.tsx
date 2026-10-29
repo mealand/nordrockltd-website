@@ -8,7 +8,7 @@ export function NextIndustry({ industry }: { industry: Industry }) {
   return (
     <Link
       href={`/industries/${industry.slug}/`}
-      className="group relative isolate block overflow-hidden bg-ink text-white focus-visible:outline-2 focus-visible:-outline-offset-4 focus-visible:outline-gold"
+      className="group relative isolate block overflow-hidden bg-ink text-white focus-visible:outline-2 focus-visible:-outline-offset-4 focus-visible:outline-royal"
     >
       <div className="absolute inset-0 -z-10 opacity-40 transition-all duration-[1.2s] ease-out-expo group-hover:scale-105 group-hover:opacity-60">
         <HeroMediaFill media={industry.overview.media} sizes="100vw" />
@@ -29,7 +29,7 @@ export function NextIndustry({ industry }: { industry: Industry }) {
         </div>
         <span
           aria-hidden
-          className="grid size-16 shrink-0 place-items-center rounded-full bg-gold text-2xl text-ink transition-transform duration-500 group-hover:translate-x-2"
+          className="grid size-16 shrink-0 place-items-center rounded-full bg-royal text-2xl text-white transition-transform duration-500 group-hover:translate-x-2"
         >
           →
         </span>

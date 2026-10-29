@@ -22,16 +22,17 @@ export function ProductsTeaser() {
       />
       <Container className="relative">
         <Reveal y={16}>
-          <Eyebrow>Products</Eyebrow>
+          <Eyebrow>Platforms</Eyebrow>
         </Reveal>
         <SplitReveal
-          text="Not just a mining company — a mining technology ecosystem."
+          text="Our own platforms, built for remote sites and small producers."
           className="font-display mt-5 max-w-4xl text-3xl leading-[1.1] font-semibold tracking-tight sm:text-5xl"
         />
         <Reveal delay={0.2}>
           <p className="mt-6 max-w-2xl leading-relaxed text-white/75">
-            Proprietary platforms built on blockchain and AI bring transparency to every
-            transaction, from artisanal pits to international buyers — and beyond minerals.
+            TraceChain records minerals from pit to buyer. ATiMS does the same for farm produce.
+            The tools we are building around them use that data to score partners, find deposits
+            and meter power.
           </p>
         </Reveal>
 
@@ -63,18 +64,16 @@ export function ProductsTeaser() {
                 <ul className="relative mt-6 space-y-3 text-sm text-white/85">
                   {d.points.map((pt) => (
                     <li key={pt} className="flex gap-3">
-                      <span aria-hidden className="mt-2 size-1.5 shrink-0 rounded-full bg-gold" />
+                      <span aria-hidden className="mt-2 size-1.5 shrink-0 rounded-full bg-royal" />
                       {pt}
                     </li>
                   ))}
                 </ul>
                 <div className="relative mt-auto flex flex-wrap gap-3 pt-10">
                   <Button href={p.href}>Learn more</Button>
-                  {p.url && (
-                    <Button href={p.url} variant="outline" arrow={false}>
-                      Open {p.label} ↗
-                    </Button>
-                  )}
+                  <Button href="/contact/?enquiry=demo" variant="outline">
+                    Request a demo
+                  </Button>
                 </div>
               </article>
             );
@@ -104,7 +103,7 @@ export function ProductsTeaser() {
               <p className="mt-2 text-sm leading-relaxed text-white/70">{p.description}</p>
               <span
                 aria-hidden
-                className="mt-5 inline-block text-gold transition-transform duration-300 group-hover:translate-x-1"
+                className="mt-5 inline-block text-royal-300 transition-transform duration-300 group-hover:translate-x-1"
               >
                 →
               </span>

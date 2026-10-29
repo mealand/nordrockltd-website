@@ -40,7 +40,7 @@ export function Header({ mark }: { mark: LogoAsset }) {
       className={cn(
         "fixed inset-x-0 top-0 z-50 transition-[transform,background-color,color,box-shadow] duration-500 ease-out-expo",
         solid
-          ? "bg-white/90 text-navy shadow-[0_1px_0_rgba(29,37,69,0.08)] backdrop-blur-md"
+          ? "bg-white/90 text-navy shadow-[0_1px_0_rgba(27,42,92,0.08)] backdrop-blur-md"
           : "bg-gradient-to-b from-ink/60 to-transparent text-white",
         hidden && !menuOpen && "-translate-y-full",
       )}
@@ -51,10 +51,11 @@ export function Header({ mark }: { mark: LogoAsset }) {
           solid ? "h-16" : "h-20",
         )}
       >
+        {/* Mark above the wordmark, as on the original nordrockltd.com. */}
         <Link
           href="/"
-          aria-label="NordRock — home"
-          className="flex shrink-0 items-center gap-2.5 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-azure"
+          aria-label="NordRock, home"
+          className="flex shrink-0 flex-col items-center leading-none focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-azure"
         >
           <picture>
             <source type="image/webp" srcSet={mark.webp} />
@@ -63,10 +64,17 @@ export function Header({ mark }: { mark: LogoAsset }) {
               alt=""
               width={mark.width}
               height={mark.height}
-              className={cn("w-auto transition-[height] duration-500", solid ? "h-7" : "h-9")}
+              className={cn("w-auto transition-[height] duration-500", solid ? "h-6" : "h-8")}
             />
           </picture>
-          <span className="font-display text-xl font-bold tracking-tight">NordRock</span>
+          <span
+            className={cn(
+              "font-display mt-1 font-extrabold tracking-tight transition-[font-size] duration-500",
+              solid ? "text-[0.8rem]" : "text-[0.95rem]",
+            )}
+          >
+            NordRock
+          </span>
         </Link>
 
         <nav aria-label="Main" className="hidden xl:block">
@@ -100,7 +108,7 @@ function DesktopItem({
   const linkClass = cn(
     "relative inline-flex items-center gap-1 rounded-full px-3 py-2 text-[0.8125rem] font-medium tracking-wide transition-colors",
     "focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-azure",
-    "after:absolute after:inset-x-3 after:bottom-1 after:h-px after:origin-left after:bg-gold after:transition-transform after:duration-300",
+    "after:absolute after:inset-x-3 after:bottom-1 after:h-px after:origin-left after:bg-royal after:transition-transform after:duration-300",
     active ? "after:scale-x-100" : "after:scale-x-0 hover:after:scale-x-100",
   );
 
@@ -112,7 +120,7 @@ function DesktopItem({
           className={cn(
             "rounded-full px-5 py-2.5 text-[0.8125rem] font-semibold transition-colors",
             "focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-azure",
-            solid ? "bg-navy text-white hover:bg-navy-700" : "bg-gold text-ink hover:bg-sky",
+            solid ? "bg-navy text-white hover:bg-navy-700" : "bg-royal text-white hover:bg-royal-600",
           )}
         >
           {item.label}

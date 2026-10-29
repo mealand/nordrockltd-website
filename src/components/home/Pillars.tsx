@@ -30,7 +30,7 @@ export function Pillars() {
           />
           <Reveal delay={0.2}>
             <p className="mt-6 max-w-md leading-relaxed text-white/75">
-              Technology, people and capital working together — so every mineral that leaves an
+              Technology, people and capital working together, so every mineral that leaves an
               artisanal site is legal, traceable and fairly valued.
             </p>
             <div className="mt-8">
@@ -57,7 +57,7 @@ export function Pillars() {
                       />
                     </Parallax>
                     <div className="absolute inset-0 bg-gradient-to-t from-navy via-navy/10 to-transparent" />
-                    <span className="font-display absolute top-5 left-6 text-sm font-semibold text-gold">
+                    <span className="font-display absolute top-5 left-6 text-sm font-semibold text-royal-300">
                       0{i + 1}
                     </span>
                   </div>
@@ -71,7 +71,7 @@ export function Pillars() {
                         <li key={pt} className="flex gap-3">
                           <span
                             aria-hidden
-                            className="mt-2 size-1.5 shrink-0 rounded-full bg-gold"
+                            className="mt-2 size-1.5 shrink-0 rounded-full bg-royal"
                           />
                           {pt}
                         </li>

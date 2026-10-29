@@ -13,6 +13,12 @@ ErrorDocument 404 /404.html
   RewriteCond %{HTTPS} !=on
   RewriteCond %{HTTP:X-Forwarded-Proto} !https
   RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+  # Renamed pages (October 2026 update).
+  RewriteRule ^why-choose-us/?$ /why-us/ [L,R=301]
+  RewriteRule ^industries/mineral-operations/?$ /industries/metals-and-mining/ [L,R=301]
+  RewriteRule ^industries/technology/?$ /products/ [L,R=301]
+  RewriteRule ^products/agrotrace/?$ /products/atims/ [L,R=301]
 </IfModule>
 
 # The deploy action's sync-state file must not be downloadable.

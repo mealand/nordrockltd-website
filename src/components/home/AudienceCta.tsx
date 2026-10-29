@@ -7,7 +7,7 @@ import { Section } from "@/components/ui/Section";
 import { cn } from "@/lib/utils";
 
 /**
- * "Work with NordRock" — one route in for each audience.
+ * "Work with NordRock": one route in for each audience.
  * `exclude` drops the card that links to the current page.
  */
 export function AudienceCta({ exclude }: { exclude?: string } = {}) {
@@ -36,7 +36,7 @@ export function AudienceCta({ exclude }: { exclude?: string } = {}) {
             >
               <span
                 aria-hidden
-                className="absolute inset-x-0 top-0 h-1 origin-left scale-x-0 bg-gold transition-transform duration-500 group-hover:scale-x-100"
+                className="absolute inset-x-0 top-0 h-1 origin-left scale-x-0 bg-royal transition-transform duration-500 group-hover:scale-x-100"
               />
               <h3 className="font-display text-2xl font-semibold tracking-tight">{a.title}</h3>
               <p className="mt-3 leading-relaxed text-stone-500">{a.text}</p>

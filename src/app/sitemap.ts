@@ -13,10 +13,13 @@ const pages = [
   ...industryPages.map((i) => `/industries/${i.slug}/`),
   "/products/",
   ...productPages.map((p) => `/products/${p.slug}/`),
-  "/why-choose-us/",
+  "/why-us/",
   "/join-us/",
   "/contact/",
+  "/compliance/",
   "/privacy/",
+  "/terms/",
+  "/cookies/",
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {

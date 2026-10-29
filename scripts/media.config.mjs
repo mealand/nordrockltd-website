@@ -28,6 +28,14 @@ export const VIDEOS = [
   { src: "clip-7.mp4", slug: "site-team-walk", loops: [{ start: 0, duration: 15 }] },
   { src: "clip-8.mp4", slug: "site-inspection-tour", loops: [{ start: 100, duration: 12 }], full: true },
   { src: "clip-9.mp4", slug: "registration-documentation", loops: [{ start: 0, duration: 12 }] },
+  // Landscape clips from new-content (Oct 2026), suited to full-bleed desktop heroes.
+  // tin1.mp4 is left out: its scale display shows a unit price.
+  { src: "exploration.mp4", slug: "aerial-exploration", loops: [{ start: 0, duration: 13 }], wide: true },
+  { src: "mines3.mp4", slug: "aerial-pit-walls", loops: [{ start: 0, duration: 14 }], wide: true },
+  { src: "mines2.mp4", slug: "artisanal-field-panorama", loops: [{ start: 0, duration: 12 }], wide: true, lift: true },
+  { src: "mines1.mp4", slug: "mine-field-pan", loops: [{ start: 0, duration: 10 }], wide: true, lift: true },
+  { src: "processing.mp4", slug: "processing-plant", loops: [{ start: 13, duration: 13 }], wide: true },
+  { src: "pr1.mp4", slug: "aggregation-warehouse", loops: [{ start: 0, duration: 12 }] },
 ];
 
 // The sources are noisy phone clips. Denoising (rather than sharpening) is what
@@ -36,9 +44,17 @@ export const VIDEOS = [
 export const VIDEO_FILTER =
   "hqdn3d=4:3:6:4.5,eq=contrast=1.05:saturation=1.08,scale=trunc(iw/2)*2:trunc(ih/2)*2,fps=24";
 
+// `wide` clips are cut to 1280px for full-bleed desktop heroes and need a higher cap
+// than the small portrait loops. `lift` adds contrast/saturation to flat, overcast footage.
+export const WIDE_FILTER =
+  "hqdn3d=3:2:5:4,eq=contrast=1.06:saturation=1.1,scale=1280:-2,fps=24";
+export const LIFT_FILTER =
+  "hqdn3d=3:2:5:4,eq=contrast=1.22:saturation=1.35:brightness=-0.03,scale=1280:-2,fps=24";
+
 // H.264 only — VP9/WebM came out larger on this footage and plays nowhere H.264 doesn't.
 // The bitrate cap matters more than CRF here; 500k is visually identical to source at ~1MB/15s.
 export const VIDEO_ENCODE = {
   loop: { crf: 30, maxrate: "500k", bufsize: "1000k" },
   full: { crf: 31, maxrate: "400k", bufsize: "800k" },
+  wide: { crf: 27, maxrate: "1400k", bufsize: "2800k" },
 };

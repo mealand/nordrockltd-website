@@ -90,7 +90,7 @@ export function PageHero({
       />
       <div
         aria-hidden
-        className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_15%_100%,rgba(42,159,216,0.28),transparent_55%)]"
+        className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_15%_100%,rgba(30,111,224,0.32),transparent_55%)]"
       />
 
       <Container

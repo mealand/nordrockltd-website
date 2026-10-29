@@ -28,7 +28,7 @@ export function Governance() {
             <ul className="mt-5 grid gap-x-8 gap-y-3 sm:grid-cols-2">
               {governance.oversees.map((o) => (
                 <li key={o} className="flex gap-3 text-navy">
-                  <span aria-hidden className="mt-2 size-1.5 shrink-0 rounded-full bg-gold" />
+                  <span aria-hidden className="mt-2 size-1.5 shrink-0 rounded-full bg-royal" />
                   {o}
                 </li>
               ))}

@@ -19,14 +19,14 @@ import { ValueChain } from "@/components/what-we-do/ValueChain";
 export const metadata: Metadata = { title: "Styleguide", robots: { index: false, follow: false } };
 
 const colors = [
-  ["navy", "#1D2545", "bg-navy text-white"],
-  ["ink", "#0F1428", "bg-ink text-white"],
-  ["sky", "#DEF5FF", "bg-sky text-navy"],
-  ["sky-300", "#9FDCF5", "bg-sky-300 text-navy"],
-  ["azure-700", "#1767A0", "bg-azure-700 text-white"],
-  ["gold", "#C9A54C", "bg-gold text-ink"],
-  ["stone-50", "#F6F7F9", "bg-stone-50 text-navy"],
-  ["stone-500", "#5F6679", "bg-stone-500 text-white"],
+  ["navy", "#1B2A5C", "bg-navy text-white"],
+  ["ink", "#0C1D44", "bg-ink text-white"],
+  ["sky", "#E8F2FC", "bg-sky text-navy"],
+  ["sky-300", "#A9CDF6", "bg-sky-300 text-navy"],
+  ["azure-700", "#1A5FC4", "bg-azure-700 text-white"],
+  ["royal", "#1E6FE0", "bg-royal text-white"],
+  ["stone-50", "#F5F8FC", "bg-stone-50 text-navy"],
+  ["stone-500", "#5B6679", "bg-stone-500 text-white"],
 ];
 
 export default function Styleguide() {
@@ -54,7 +54,7 @@ export default function Styleguide() {
           <Eyebrow className="mt-20">Typography</Eyebrow>
           <div className="mt-8 space-y-6">
             <Heading as="h2" size="xl">
-              Display XL — Sora
+              Display XL: Mulish
             </Heading>
             <Heading as="h3" size="lg">
               Display large heading
@@ -63,7 +63,7 @@ export default function Styleguide() {
               Display medium heading
             </Heading>
             <p className="max-w-2xl text-lg leading-relaxed text-stone-500">
-              Body copy is set in Inter. NordRock is building Africa&apos;s first integrated mining
+              Body copy is set in Roboto. NordRock is building Africa&apos;s first integrated mining
               ecosystem, connecting artisanal miners, logistics operators, processing facilities,
               government agencies and communities into one coordinated system.
             </p>
@@ -102,7 +102,7 @@ export default function Styleguide() {
             ].map((x) => (
               <div key={x.l} className="border-t border-white/15 pt-6">
                 <dt className="text-sm text-white/70">{x.l}</dt>
-                <dd className="font-display mt-2 text-5xl font-semibold text-gold">
+                <dd className="font-display mt-2 text-5xl font-semibold text-royal-300">
                   <Counter value={x.v} suffix={x.s} />
                 </dd>
               </div>
@@ -153,7 +153,7 @@ export default function Styleguide() {
               key={w}
               className="font-display mx-8 text-3xl font-semibold whitespace-nowrap text-navy/80 sm:text-5xl"
             >
-              {w} <span className="text-gold">✦</span>
+              {w} <span className="text-royal-300">✦</span>
             </span>
           ))}
         </Marquee>

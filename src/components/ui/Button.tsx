@@ -2,7 +2,7 @@ import Link from "next/link";
 import { cn, isExternal } from "@/lib/utils";
 
 const variants = {
-  primary: "bg-gold text-ink hover:bg-sky",
+  primary: "bg-royal text-white hover:bg-royal-600",
   secondary: "bg-navy text-white hover:bg-navy-700",
   outline: "border border-current hover:bg-white hover:text-navy",
   ghost: "px-0! hover:text-(--accent)",

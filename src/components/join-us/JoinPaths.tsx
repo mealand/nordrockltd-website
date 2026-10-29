@@ -27,7 +27,7 @@ export function JoinIndex() {
               className="group flex items-center justify-between gap-4 border-stone-200 py-6 sm:border-l sm:px-6 sm:first:border-l-0 sm:first:pl-0"
             >
               <span>
-                <span className="font-display block text-sm font-semibold text-gold">0{i + 1}</span>
+                <span className="font-display block text-sm font-semibold text-royal">0{i + 1}</span>
                 <span className="font-display text-lg font-semibold text-navy">{p.eyebrow}</span>
               </span>
               <span
@@ -149,7 +149,7 @@ export function JoinPaths() {
                           dark ? "border-white/15" : "border-navy/15",
                         )}
                       >
-                        <span className="font-display text-2xl font-semibold text-gold">
+                        <span className="font-display text-2xl font-semibold text-royal">
                           {si + 1}
                         </span>
                         <span className="leading-snug font-medium">{s}</span>

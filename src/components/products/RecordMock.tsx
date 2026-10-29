@@ -71,7 +71,7 @@ export function RecordMock({
               className="grid size-6 shrink-0 place-items-center rounded-full bg-stone-200 text-white"
               variants={{
                 hidden: { backgroundColor: "#e3e6ec" },
-                shown: { backgroundColor: i === stages.length - 1 ? "#c9a54c" : "#1767a0" },
+                shown: { backgroundColor: i === stages.length - 1 ? "#1e6fe0" : "#1a5fc4" },
               }}
               transition={{ duration: 0.4 }}
             >

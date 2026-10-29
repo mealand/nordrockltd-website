@@ -1,6 +1,6 @@
 import { cn } from "@/lib/utils";
 
-/** Small uppercase label above a heading, with a gold rule. */
+/** Small uppercase label above a heading, with a royal-blue rule. */
 export function Eyebrow({
   children,
   className,
@@ -15,7 +15,7 @@ export function Eyebrow({
         className,
       )}
     >
-      <span aria-hidden className="h-px w-8 bg-gold" />
+      <span aria-hidden className="h-px w-8 bg-royal" />
       {children}
     </p>
   );

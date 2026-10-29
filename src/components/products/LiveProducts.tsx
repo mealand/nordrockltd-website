@@ -38,18 +38,16 @@ export function LiveProducts() {
                   <ul className="mt-7 grid gap-3 text-sm text-white/85 sm:grid-cols-2">
                     {page.features.slice(0, 4).map((f) => (
                       <li key={f.title} className="flex gap-3">
-                        <span aria-hidden className="mt-2 size-1.5 shrink-0 rounded-full bg-gold" />
+                        <span aria-hidden className="mt-2 size-1.5 shrink-0 rounded-full bg-royal" />
                         {f.title}
                       </li>
                     ))}
                   </ul>
                   <div className="mt-9 flex flex-wrap gap-3">
                     <Button href={p.href}>Explore {p.label}</Button>
-                    {p.url && (
-                      <Button href={p.url} variant="outline" arrow={false}>
-                        Open app ↗
-                      </Button>
-                    )}
+                    <Button href={page.cta.href} variant="outline">
+                      {page.cta.label}
+                    </Button>
                   </div>
                 </Reveal>
               </div>

@@ -1,25 +1,27 @@
 @import "tailwindcss";
 
-/* NordRock brand tokens. Navy and sky come from the existing brand
-   (Website/colors.txt); ink and gold extend it for dark sections and accents.
-   Text pairings are WCAG AA checked: azure-700 on white/stone/sky ≥ 5.3:1,
-   sky-300 on navy/ink ≥ 10:1, ink on gold ≥ 5.3:1, stone-500 on stone-50 ≥ 4.6:1. */
+/* NordRock brand tokens, taken from the company's LinkedIn artwork (Oct 2026):
+   deep navy headlines, a royal blue accent, a dark blue band for dark sections
+   and soft sky whites. Text pairings are WCAG AA checked: azure-700 on white/stone/sky
+   >= 5.5:1, white on royal >= 4.8:1, royal-300 and sky-300 on navy/ink >= 7:1,
+   stone-500 on stone-50 >= 4.6:1. */
 @theme {
-  --color-navy: #1d2545;
-  --color-navy-700: #2a3460;
-  --color-ink: #0f1428;
-  --color-sky: #def5ff;
-  --color-sky-300: #9fdcf5;
-  --color-azure: #2a9fd8; /* decorative only (lines, icons, glows) — not body text */
-  --color-azure-700: #1767a0;
-  --color-gold: #c9a54c;
-  --color-gold-600: #a8862f;
-  --color-stone-50: #f6f7f9;
-  --color-stone-200: #e3e6ec;
-  --color-stone-500: #5f6679;
+  --color-navy: #1b2a5c;
+  --color-navy-700: #24397a;
+  --color-ink: #0c1d44;
+  --color-sky: #e8f2fc;
+  --color-sky-300: #a9cdf6;
+  --color-azure: #3b86ef; /* decorative only (lines, icons, glows), not body text */
+  --color-azure-700: #1a5fc4;
+  --color-royal: #1e6fe0;
+  --color-royal-600: #175bc0;
+  --color-royal-300: #8dbdff;
+  --color-stone-50: #f5f8fc;
+  --color-stone-200: #e1e8f2;
+  --color-stone-500: #5b6679;
 
-  --font-sans: var(--font-inter);
-  --font-display: var(--font-sora);
+  --font-sans: var(--font-roboto);
+  --font-display: var(--font-mulish);
 
   --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
   --animate-marquee: marquee var(--marquee-duration, 40s) linear infinite;
@@ -27,6 +29,14 @@
   @keyframes marquee {
     to {
       transform: translateX(-50%);
+    }
+  }
+  @keyframes ken-burns {
+    from {
+      transform: scale(1.12) translate3d(-1.5%, 1%, 0);
+    }
+    to {
+      transform: scale(1) translate3d(0, 0, 0);
     }
   }
 }
@@ -45,8 +55,8 @@ body {
 }
 
 ::selection {
-  background: var(--color-gold);
-  color: var(--color-ink);
+  background: var(--color-royal);
+  color: #ffffff;
 }
 
 /* Anchor jumps land below the fixed header. */

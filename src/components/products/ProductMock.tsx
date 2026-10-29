@@ -16,7 +16,7 @@ const examples: Record<
       { label: "Assay", value: "Certificate attached" },
     ],
   },
-  agrotrace: {
+  atims: {
     idLabel: "Batch ID",
     id: "AT-CR-SES-0219",
     fields: [
