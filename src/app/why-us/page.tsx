@@ -19,10 +19,7 @@ export default function Page() {
         eyebrow="Why us"
         title="A partner built for legitimacy and long-term value."
         intro="Strategic partnerships, our own technology and firm ESG standards."
-        media={{
-          image: "stakeholder-meeting",
-          label: "Partners and community leaders meeting around a map",
-        }}
+        media={{ image: "wash-plant-sluice", label: "Mineral wash plant at a NordRock-supported site" }}
       />
       <Reasons />
       <Partnerships />

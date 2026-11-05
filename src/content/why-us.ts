@@ -7,14 +7,14 @@ export const reasons: { title: string; text: string; image: ImageSlug; alt: stri
   {
     title: "Partnerships with key stakeholders",
     text: "NordRock is built on alliances with government agencies, private-sector leaders and key stakeholders across the mining industry, which brings transparency, regulatory support and secure investment.",
-    image: "boardroom-meeting",
-    alt: "Government, community and business representatives meeting around a map",
+    image: "artisan-briefing-2",
+    alt: "NordRock meeting a large group of artisanal miners and community stakeholders",
   },
   {
     title: "Technology implementation",
     text: "From blockchain-backed traceability to data-driven exploration and processing, we use our own technology to set a higher standard for mining in Africa.",
-    image: "digital-assets1",
-    alt: "A hand holding a glowing stack of digital ledger blocks",
+    image: "plant-machinery",
+    alt: "Mineral processing machinery inside a NordRock-supported plant",
   },
   {
     title: "ESG compliance",
