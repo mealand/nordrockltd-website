@@ -80,7 +80,7 @@ export const industryPages: Industry[] = [
       },
       {
         title: "Trading",
-        text: "Long-term offtake with international refiners and buyers, including Ulba Metallurgical Plant and MiRESSO, with prices linked to assay results.",
+        text: "Long-term offtake with international refiners and buyers, including Ulba Metallurgical Plant, with prices linked to assay results.",
         image: "gold-nuggets",
         alt: "A handful of gold nuggets",
       },

@@ -36,7 +36,7 @@ export const partnerGroups = [
   },
   {
     title: "Offtake & industry",
-    partners: ["Ulba Metallurgical Plant", "MiRESSO"],
+    partners: ["Ulba Metallurgical Plant"],
   },
   {
     title: "International development",

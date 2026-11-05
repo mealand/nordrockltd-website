@@ -193,11 +193,6 @@ export const milestones = [
   },
   {
     date: "Nov 2025",
-    title: "Long-term supply agreement",
-    text: "Agreement to supply beryl ore to MiRESSO, a Japanese fusion-energy company.",
-  },
-  {
-    date: "Nov 2025",
     title: "KMDC partnership deepens",
     text: "Memorandum of understanding to scale traceable critical mineral hubs across Kaduna State.",
   },

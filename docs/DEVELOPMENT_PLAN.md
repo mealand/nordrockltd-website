@@ -6,7 +6,7 @@ NordRock's current site (nordrockltd.com) is a half-finished WordPress build on 
 **Decisions confirmed:**
 - **Framework:** Next.js (React) with static export.
 - **Hosting:** the cPanel host, on the `newsite` subdomain, deployed by GitHub Action over FTP.
-- **Partners:** name them (KMDC, Ulba, MiRESSO, EPRM), but publish no contract values, tonnages, margins, valuation, funding asks or projections.
+- **Partners:** name them (KMDC, Ulba, EPRM), but publish no contract values, tonnages, margins, valuation, funding asks or projections.
 - **Stats:** drop the unverified placeholder statistics from the old "Website Contents" draft (earnings, headcount, country count).
 
 ## 1. Content audit: real vs. demo (from the live site)
@@ -145,7 +145,7 @@ nordrockltd-website/
 
 ## 7. Content gaps you'll need to fill
 - Leadership names, titles and photos (`Team.pdf` is empty). The page ships with the governance description and a placeholder grid until you supply these.
-- Partner logo files (KMDC, Ulba, MiRESSO, EPRM, etc.) and permission to show them.
+- Partner logo files (KMDC, Ulba, EPRM, etc.) and permission to show them.
 - Social media links (LinkedIn, X) and any open job roles.
 - Confirm the Belgian number (+32) and whether to list a second office.
 
