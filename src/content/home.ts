@@ -103,16 +103,15 @@ export const hub = {
 };
 
 // Organisations shown on the live site's partner strip, plus offtake partners. Logos come
-// from each organisation's own website. SPREZZ Integrated publishes no logo yet, so its
-// name is set as text until one is supplied.
-export const partners: { name: string; logo: LogoSlug | null }[] = [
+// from each organisation's own website; the SPREZZ Integrated logo was supplied by NordRock.
+export const partners: { name: string; logo: LogoSlug }[] = [
   { name: "Kaduna State Government", logo: "partner-kaduna-state" },
   { name: "Kaduna Mining Development Company", logo: "partner-kmdc" },
   { name: "Ogun State Government", logo: "partner-ogun-state" },
   { name: "Nigeria Mining Cadastre Office", logo: "partner-mining-cadastre" },
   { name: "Ulba Metallurgical Plant", logo: "partner-ulba" },
   { name: "CKAA Synergy Limited", logo: "partner-ckaa" },
-  { name: "SPREZZ Integrated", logo: null },
+  { name: "SPREZZ Integrated", logo: "partner-sprezz" },
   { name: "JETRO", logo: "partner-jetro" },
   { name: "BIO", logo: "partner-bio" },
   { name: "Austrian Development Agency", logo: "partner-ada" },

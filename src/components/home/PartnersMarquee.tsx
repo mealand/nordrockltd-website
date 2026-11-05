@@ -37,31 +37,23 @@ export function PartnersMarquee() {
           <Marquee key={r} duration={45} reverse={r === 1}>
             {/* Each row is listed twice so the strip stays full on very wide screens. */}
             {[...row, ...row].map((p, i) => {
-              const logo = p.logo && getLogo(p.logo);
+              const logo = getLogo(p.logo);
               return (
                 <span key={`${p.name}-${i}`} className="mx-5 flex w-44 flex-col items-center gap-3">
                   <span className="flex h-20 w-full items-center justify-center">
-                    {logo ? (
-                      <picture className="contents">
-                        <source type="image/webp" srcSet={logo.webp} />
-                        <img
-                          src={logo.png}
-                          alt=""
-                          width={logo.width}
-                          height={logo.height}
-                          loading="lazy"
-                          className="max-h-full w-auto max-w-full object-contain"
-                        />
-                      </picture>
-                    ) : (
-                      <span className="font-display text-center text-2xl leading-tight font-semibold tracking-tight text-navy">
-                        {p.name}
-                      </span>
-                    )}
+                    <picture className="contents">
+                      <source type="image/webp" srcSet={logo.webp} />
+                      <img
+                        src={logo.png}
+                        alt=""
+                        width={logo.width}
+                        height={logo.height}
+                        loading="lazy"
+                        className="max-h-full w-auto max-w-full object-contain"
+                      />
+                    </picture>
                   </span>
-                  {logo && (
-                    <span className="text-center text-xs leading-snug text-stone-500">{p.name}</span>
-                  )}
+                  <span className="text-center text-xs leading-snug text-stone-500">{p.name}</span>
                 </span>
               );
             })}
