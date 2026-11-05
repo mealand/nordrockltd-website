@@ -91,24 +91,35 @@ export function Leadership() {
           itemClassName="h-full"
           stagger={0.05}
         >
-          {team.map((m) => (
-            <a
-              key={m.name}
-              href={m.linkedin}
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label={`${m.name}, ${m.role}, on LinkedIn`}
-              className="group flex h-full items-center gap-4 rounded-2xl p-2 transition-colors hover:bg-sky focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-azure"
-            >
-              <span className="relative size-20 shrink-0 overflow-hidden rounded-full bg-navy">
-                <Picture slug={m.photo} alt="" fill sizes="80px" imgClassName="object-top" />
-              </span>
-              <span>
-                <span className="font-display block font-semibold tracking-tight">{m.name}</span>
-                <span className="mt-0.5 block text-sm leading-snug text-azure-700">{m.role}</span>
-              </span>
-            </a>
-          ))}
+          {team.map((m) => {
+            const card = (
+              <>
+                <span className="relative size-20 shrink-0 overflow-hidden rounded-full bg-navy">
+                  <Picture slug={m.photo} alt="" fill sizes="80px" imgClassName="object-top" />
+                </span>
+                <span>
+                  <span className="font-display block font-semibold tracking-tight">{m.name}</span>
+                  <span className="mt-0.5 block text-sm leading-snug text-azure-700">{m.role}</span>
+                </span>
+              </>
+            );
+            return m.linkedin ? (
+              <a
+                key={m.name}
+                href={m.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={`${m.name}, ${m.role}, on LinkedIn`}
+                className="group flex h-full items-center gap-4 rounded-2xl p-2 transition-colors hover:bg-sky focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-azure"
+              >
+                {card}
+              </a>
+            ) : (
+              <div key={m.name} className="flex h-full items-center gap-4 p-2">
+                {card}
+              </div>
+            );
+          })}
         </RevealGroup>
       </Container>
     </Section>

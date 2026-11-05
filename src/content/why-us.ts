@@ -13,14 +13,14 @@ export const reasons: { title: string; text: string; image: ImageSlug; alt: stri
   {
     title: "Technology implementation",
     text: "From blockchain-backed traceability to data-driven exploration and processing, we use our own technology to set a higher standard for mining in Africa.",
-    image: "digital-assets1",
-    alt: "A hand holding a glowing stack of digital ledger blocks",
+    image: "site-inspection-team",
+    alt: "NordRock field team on a mine site, one member checking site data on a phone",
   },
   {
     title: "ESG compliance",
     text: "Every operation upholds the highest standards of sustainability and accountability. We integrate responsible mining practices, community development and inclusive governance to create long-term value for people, the planet and our partners.",
-    image: "community-engagement",
-    alt: "Artisanal miners and community members sorting ore at a table under a tree",
+    image: "site-inspection-pond",
+    alt: "NordRock team in safety gear inspecting a pond beside a mine site",
   },
 ];
 

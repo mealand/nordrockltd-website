@@ -98,7 +98,7 @@ export const leadership: Leader[] = [
   },
 ];
 
-export const team: { name: string; role: string; photo: ImageSlug; linkedin: string }[] = [
+export const team: { name: string; role: string; photo: ImageSlug; linkedin?: string }[] = [
   {
     name: "Victory Augustine",
     role: "Marketing and Communication Manager",
@@ -121,7 +121,6 @@ export const team: { name: string; role: string; photo: ImageSlug; linkedin: str
     name: "Bello Solomon",
     role: "Mining Operations Coordinator",
     photo: "bello-solomon",
-    linkedin: "https://www.linkedin.com/in/bello-solomon-55263b1b4/",
   },
   {
     name: "Shalom Adamu",
@@ -131,7 +130,7 @@ export const team: { name: string; role: string; photo: ImageSlug; linkedin: str
   },
   {
     name: "Simon Peter Doka",
-    role: "Marketing Coordinator",
+    role: "Product Manager",
     photo: "simon-peter-doka",
     linkedin: "https://www.linkedin.com/in/simon-doka-59661b1a2/",
   },
