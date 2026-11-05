@@ -22,7 +22,10 @@ export default function Page() {
         eyebrow="Compliance"
         title="How we source responsibly, in writing."
         intro="Our policies set out what we do, what we will not do and how we check."
-        media={{ image: "gold-nuggets", label: "A handful of responsibly sourced gold nuggets" }}
+        media={{
+          image: "site-office-registration",
+          label: "NordRock team completing written records at a site office",
+        }}
       />
 
       <Section>

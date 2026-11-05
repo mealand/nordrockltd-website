@@ -133,7 +133,7 @@ export default function Page() {
     <LegalPage
       title="Privacy policy."
       intro="How NordRock Limited handles information submitted through this website."
-      media={{ image: "excavator-clearing", label: "Excavator clearing land beside palm trees" }}
+      media={{ image: "digital-assets1", label: "A hand holding a glowing stack of data blocks" }}
       updated={UPDATED}
       sections={sections}
       footnote="Questions about this policy?"

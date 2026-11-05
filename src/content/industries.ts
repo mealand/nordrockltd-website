@@ -140,7 +140,7 @@ export const industryPages: Industry[] = [
       title: "Traceable produce from small-scale farms.",
       intro:
         "We have taken the model we built in mining to agriculture. ATiMS records each farmer, farm and harvest.",
-      media: { image: "forest-pond", label: "Green farmland and palms beside a pond in Nigeria" },
+      media: { image: "agriculture", label: "Tractors and farmers working crop rows at sunrise" },
     },
     statement: {
       eyebrow: "ATiMS: Agro-Trace Integrated Management System",
@@ -206,13 +206,13 @@ export const industryPages: Industry[] = [
       title: "Run a cooperative, processing plant or export business?",
       button: "Talk to our agriculture team",
       href: "/contact/?enquiry=agriculture",
-      media: { image: "forest-pond", label: "Green farmland beside a pond" },
+      media: { image: "agriculture4", label: "A farmer with a tablet recording a dairy herd" },
     },
     overview: {
       summary: "Produce from small-scale farmers, traced on ATiMS.",
-      media: { image: "forest-pond", label: "Green farmland and palms beside a pond" },
+      media: { image: "agriculture", label: "Tractors and farmers working crop rows at sunrise" },
       points: ["Farmer and farm registry", "Harvest traceability", "Export compliance"],
-      slides: ["forest-pond", "field-team-meeting"],
+      slides: ["agriculture", "agriculture1", "agriculture2", "agriculture3", "agriculture4"],
     },
   },
   {
@@ -223,7 +223,7 @@ export const industryPages: Industry[] = [
       title: "Reliable power for mine sites and processing plants.",
       intro:
         "We are developing solar and hybrid microgrids for mining sites, processing plants and host communities, with metered output recorded on TraceChain.",
-      media: { image: "site-generator", label: "Generator alternator at a remote mine site" },
+      media: { image: "renewable-energy", label: "Aerial view of solar panels among green trees" },
     },
     statement: {
       eyebrow: "Why energy matters",
@@ -277,19 +277,19 @@ export const industryPages: Industry[] = [
       button: "Join the GreenGrid pilot list",
       href: "/contact/?enquiry=pilot",
       media: {
-        video: "processing-plant",
-        label: "Processing plant machinery beside bagged concentrate",
+        image: "renewable-energy2",
+        label: "Two engineers in hard hats looking at wind turbines at sunset",
       },
     },
     overview: {
       summary: "Solar and hybrid power for mining sites and processing plants. In development.",
-      media: { image: "site-generator", label: "Generator alternator at a remote site" },
+      media: { image: "renewable-energy1", label: "Solar panels and wind turbines at sunset" },
       points: [
         "Solar and hybrid microgrids",
         "Metered output on TraceChain",
         "Power for host communities",
       ],
-      slides: ["site-generator", "plant-machinery", "plant-conveyor"],
+      slides: ["renewable-energy", "renewable-energy1", "renewable-energy2", "renewable-energy3"],
     },
   },
   {
@@ -299,15 +299,15 @@ export const industryPages: Industry[] = [
     hero: {
       title: "Real estate and housing.",
       intro: "Coming soon.",
-      media: { image: "excavator-clearing", label: "Excavator clearing land beside palm trees" },
+      media: { image: "real-estate", label: "Aerial view of a planned housing estate" },
     },
     areas: [],
     products: [],
     overview: {
       summary: "Coming soon.",
-      media: { image: "excavator-clearing", label: "Excavator clearing land beside palm trees" },
+      media: { image: "real-estate", label: "Aerial view of a planned housing estate" },
       points: ["Coming soon"],
-      slides: ["excavator-clearing", "excavator-track"],
+      slides: ["real-estate"],
     },
   },
 ];

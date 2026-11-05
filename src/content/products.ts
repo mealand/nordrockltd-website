@@ -95,7 +95,7 @@ export const productPages: ProductPage[] = [
       title: "Traceability and compliance for farm produce.",
       intro:
         "ATiMS, our Agro-Trace Integrated Management System, records each farmer, farm and harvest, and checks every batch against the rules of the market it is going to.",
-      media: { image: "field-team-meeting", label: "NordRock field team meeting outdoors" },
+      media: { image: "agriculture4", label: "A farmer with a tablet recording a dairy herd" },
     },
     problem: {
       title: "Export markets demand proof. Most farm supply chains cannot provide it.",
@@ -202,7 +202,7 @@ export const productPages: ProductPage[] = [
       title: "Every trade recorded. Every partner scored.",
       intro:
         "SmartTrade uses the transaction history in TraceChain to score each aggregator on delivery, quality and documentation.",
-      media: { image: "wash-plant", label: "Wash plant processing ore at a mine site" },
+      media: { image: "digital-assets", label: "Trading dashboards with charts on a glass screen" },
     },
     problem: {
       title: "Trading with fragmented suppliers carries hidden risk.",
@@ -276,7 +276,7 @@ export const productPages: ProductPage[] = [
       title: "Clean power for mining, measured kilowatt by kilowatt.",
       intro:
         "GreenGrid pairs solar and hybrid systems with metering that records output on TraceChain.",
-      media: { image: "plant-machinery", label: "Processing machinery inside a plant" },
+      media: { image: "renewable-energy1", label: "Solar panels and wind turbines at sunset" },
     },
     problem: {
       title: "Mining runs on diesel where the grid fails, and the energy footprint is hard to prove.",

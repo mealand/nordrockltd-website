@@ -2,6 +2,7 @@ import { pillars } from "@/content/home";
 import { Picture } from "@/components/media/Picture";
 import { Parallax } from "@/components/motion/Parallax";
 import { Reveal } from "@/components/motion/Reveal";
+import { Slideshow } from "@/components/motion/Slideshow";
 import { SplitReveal } from "@/components/motion/SplitReveal";
 import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
@@ -48,13 +49,18 @@ export function Pillars() {
                 <article className="group overflow-hidden rounded-3xl bg-white/[0.04] ring-1 ring-white/10 transition-colors duration-500 hover:bg-white/[0.07]">
                   <div className="relative aspect-[16/10] overflow-hidden">
                     <Parallax strength={16}>
-                      <Picture
-                        slug={p.image}
-                        alt={p.alt}
-                        fill
-                        sizes="(min-width: 1024px) 50vw, 100vw"
-                        imgClassName="transition-transform duration-[1.2s] ease-out-expo group-hover:scale-105"
-                      />
+                      <Slideshow offset={i * 1200}>
+                        {p.images.map((img) => (
+                          <Picture
+                            key={img.slug}
+                            slug={img.slug}
+                            alt={img.alt}
+                            fill
+                            sizes="(min-width: 1024px) 50vw, 100vw"
+                            imgClassName="transition-transform duration-[1.2s] ease-out-expo group-hover:scale-105"
+                          />
+                        ))}
+                      </Slideshow>
                     </Parallax>
                     <div className="absolute inset-0 bg-gradient-to-t from-navy via-navy/10 to-transparent" />
                     <span className="font-display absolute top-5 left-6 text-sm font-semibold text-royal-300">

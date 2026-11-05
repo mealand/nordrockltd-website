@@ -36,6 +36,32 @@ export const VIDEOS = [
   { src: "mines1.mp4", slug: "mine-field-pan", loops: [{ start: 0, duration: 10 }], wide: true, lift: true },
   { src: "processing.mp4", slug: "processing-plant", loops: [{ start: 13, duration: 13 }], wide: true },
   { src: "pr1.mp4", slug: "aggregation-warehouse", loops: [{ start: 0, duration: 12 }] },
+  // Stabilised and enhanced cuts (Nov 2026). Windows are the calmest stretch of each
+  // clip; hero-mining-holes keeps only the part of the drone shot showing the holes.
+  {
+    src: "mines3.mp4",
+    slug: "hero-mining-holes",
+    loops: [{ start: 6.5, duration: 9.5 }],
+    stabilize: { smoothing: 24 },
+    filter: "hero-wide",
+    encode: "heroWide",
+  },
+  {
+    src: "clip-3.mp4",
+    slug: "hero-excavator-dig",
+    loops: [{ start: 20, duration: 12 }],
+    stabilize: { smoothing: 24 },
+    filter: "hero-portrait",
+    encode: "heroPortrait",
+  },
+  {
+    src: "clip-8.mp4",
+    slug: "site-inspection-steady",
+    loops: [{ start: 86, duration: 20 }],
+    stabilize: { smoothing: 30 },
+    filter: "hero-portrait",
+    encode: "heroPortrait",
+  },
 ];
 
 // The sources are noisy phone clips. Denoising (rather than sharpening) is what
@@ -51,10 +77,20 @@ export const WIDE_FILTER =
 export const LIFT_FILTER =
   "hqdn3d=3:2:5:4,eq=contrast=1.22:saturation=1.35:brightness=-0.03,scale=1280:-2,fps=24";
 
+// Denoise first, then a mild unsharp after the Lanczos resize, for clips shown large.
+export const NAMED_FILTERS = {
+  "hero-wide":
+    "hqdn3d=3:2:5:4,eq=contrast=1.06:saturation=1.12,scale=1600:-2:flags=lanczos,unsharp=5:5:0.4,fps=24",
+  "hero-portrait":
+    "hqdn3d=4:3:6:4.5,eq=contrast=1.06:saturation=1.1,scale=720:-2:flags=lanczos,unsharp=5:5:0.4,fps=24",
+};
+
 // H.264 only — VP9/WebM came out larger on this footage and plays nowhere H.264 doesn't.
 // The bitrate cap matters more than CRF here; 500k is visually identical to source at ~1MB/15s.
 export const VIDEO_ENCODE = {
   loop: { crf: 30, maxrate: "500k", bufsize: "1000k" },
   full: { crf: 31, maxrate: "400k", bufsize: "800k" },
   wide: { crf: 27, maxrate: "1400k", bufsize: "2800k" },
+  heroWide: { crf: 26, maxrate: "2000k", bufsize: "4000k" },
+  heroPortrait: { crf: 27, maxrate: "1000k", bufsize: "2000k" },
 };

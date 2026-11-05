@@ -1,5 +1,7 @@
 import Link from "next/link";
 import { productDetails } from "@/content/home";
+import { Picture } from "@/components/media/Picture";
+import { Parallax } from "@/components/motion/Parallax";
 import { products } from "@/content/site";
 import { Reveal, RevealGroup } from "@/components/motion/Reveal";
 import { SplitReveal } from "@/components/motion/SplitReveal";
@@ -36,7 +38,18 @@ export function ProductsTeaser() {
           </p>
         </Reveal>
 
-        <RevealGroup className="mt-14 grid gap-6 lg:grid-cols-2" stagger={0.15}>
+        <Reveal className="relative mt-12 aspect-[16/10] overflow-hidden rounded-3xl ring-1 ring-white/10 sm:aspect-[21/9]">
+          <Parallax strength={26}>
+            <Picture
+              slug="platforms-network"
+              alt="A chain of ledger blocks linking points across a contour map"
+              fill
+              sizes="(min-width: 1280px) 1200px, 100vw"
+            />
+          </Parallax>
+        </Reveal>
+
+        <RevealGroup className="mt-6 grid gap-6 lg:grid-cols-2" stagger={0.15}>
           {live.map((p) => {
             const d = productDetails[p.href];
             return (

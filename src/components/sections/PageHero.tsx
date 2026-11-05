@@ -1,5 +1,6 @@
 import { getImage, getVideo, type ImageSlug, type VideoSlug } from "@/lib/media";
 import { cn } from "@/lib/utils";
+import { HeroCarousel, type HeroSlide } from "@/components/media/HeroCarousel";
 import { Picture } from "@/components/media/Picture";
 import { VideoLoop } from "@/components/media/VideoLoop";
 import { Parallax } from "@/components/motion/Parallax";
@@ -12,7 +13,7 @@ export type HeroMedia =
   { video: VideoSlug; loop?: number; label: string } | { image: ImageSlug; label: string };
 
 /** Below this width a source is too soft to stretch across a desktop screen. */
-const FULL_BLEED_MIN_WIDTH = 960;
+const FULL_BLEED_MIN_WIDTH = 940;
 
 /**
  * Dark hero with a video or photo. Every page opens with one so the transparent
@@ -34,30 +35,36 @@ export function PageHero({
   eyebrow?: string;
   title: string;
   intro?: string;
-  media: HeroMedia;
+  media: HeroMedia | { slides: HeroSlide[] };
   /** "home" fills the viewport; "page" is a shorter interior-page hero. */
   size?: "home" | "page";
   /** Extra content under the intro, e.g. buttons. */
   children?: React.ReactNode;
 }) {
-  const isVideo = "video" in media;
-  const dims = isVideo ? getVideo(media.video) : getImage(media.image);
-  const framed = dims.height > dims.width || dims.width < FULL_BLEED_MIN_WIDTH;
-  const backdrop = isVideo
-    ? getVideo(media.video).loops[media.loop ?? 0].poster.jpg
-    : getImage(media.image).variants.jpg[0].src;
+  const dims =
+    "slides" in media ? null : "video" in media ? getVideo(media.video) : getImage(media.image);
+  const framed = dims !== null && (dims.height > dims.width || dims.width < FULL_BLEED_MIN_WIDTH);
+  const backdrop =
+    "slides" in media
+      ? ""
+      : "video" in media
+        ? getVideo(media.video).loops[media.loop ?? 0].poster.jpg
+        : getImage(media.image).variants.jpg[0].src;
 
-  const mediaEl = isVideo ? (
-    <VideoLoop slug={media.video} loop={media.loop} label={media.label} priority />
-  ) : (
-    <Picture
-      slug={media.image}
-      alt={media.label}
-      fill
-      priority
-      sizes={framed ? "(min-width: 1024px) 420px, 100vw" : "100vw"}
-    />
-  );
+  const mediaEl =
+    "slides" in media ? (
+      <HeroCarousel slides={media.slides} />
+    ) : "video" in media ? (
+      <VideoLoop slug={media.video} loop={media.loop} label={media.label} priority />
+    ) : (
+      <Picture
+        slug={media.image}
+        alt={media.label}
+        fill
+        priority
+        sizes={framed ? "(min-width: 1024px) 420px, 100vw" : "100vw"}
+      />
+    );
 
   return (
     <section

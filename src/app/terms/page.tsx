@@ -127,7 +127,7 @@ export default function Page() {
     <LegalPage
       title="Terms of use."
       intro="The terms that apply when you use this website."
-      media={{ image: "plant-conveyor", label: "Conveyor inside a mineral processing plant" }}
+      media={{ image: "boardroom-meeting", label: "People reviewing documents around a table" }}
       updated={UPDATED}
       sections={sections}
       footnote="Questions about these terms?"

@@ -1,7 +1,7 @@
 // Home page copy. Sources: the live nordrockltd.com home page and the public-safe
 // parts of the strategy document (no financial or contract figures; see
 // docs/DEVELOPMENT_PLAN.md §1). No dashes in copy.
-import type { ImageSlug } from "@/lib/media";
+import type { ImageSlug, LogoSlug } from "@/lib/media";
 
 export const intro = {
   eyebrow: "Our goal",
@@ -21,8 +21,8 @@ export const pillars: {
   title: string;
   summary: string;
   points: string[];
-  image: ImageSlug;
-  alt: string;
+  /** One image shows still; several play as a slideshow. */
+  images: { slug: ImageSlug; alt: string }[];
 }[] = [
   {
     title: "Digital & physical assets",
@@ -33,8 +33,10 @@ export const pillars: {
       "Assay-linked contract optimisation and price indexation",
       "Nigeria's first indigenous critical mineral concentration hub",
     ],
-    image: "plant-operator",
-    alt: "Operator running mineral processing machinery",
+    images: [
+      { slug: "digital-assets", alt: "Trading dashboards with charts on a glass screen" },
+      { slug: "digital-assets1", alt: "A hand holding a glowing stack of digital ledger blocks" },
+    ],
   },
   {
     title: "Artisan engagement",
@@ -45,8 +47,12 @@ export const pillars: {
       "Mercury-free processing, safety training and PPE grants",
       "Zero tolerance for child labour, with third-party auditing",
     ],
-    image: "artisan-briefing-2",
-    alt: "NordRock briefing a large group of artisanal miners on site",
+    images: [
+      { slug: "artisan-briefing-1", alt: "NordRock briefing artisanal miners on site" },
+      { slug: "artisan-briefing-2", alt: "NordRock briefing a large group of artisanal miners" },
+      { slug: "field-team-meeting", alt: "NordRock field team meeting outdoors" },
+      { slug: "artisan-engagements", alt: "Artisanal miners washing ore on wooden sluices" },
+    ],
   },
   {
     title: "Trade finance solutions",
@@ -57,8 +63,9 @@ export const pillars: {
       "Trade credit for faster cash flow and expansion",
       "Audit and governance guardrails that create bankable assets",
     ],
-    image: "gold-dust-weighing",
-    alt: "Gold concentrate being weighed on a digital scale",
+    images: [
+      { slug: "agriculture1", alt: "A farmer beside a map of Africa laid out in fresh produce" },
+    ],
   },
 ];
 
@@ -95,18 +102,21 @@ export const hub = {
   ],
 };
 
-// Organisations shown on the live site's partner strip, plus offtake partners.
-export const partners = [
-  "Kaduna State Government",
-  "Kaduna Mining Development Company",
-  "Ogun State Government",
-  "Nigeria Mining Cadastre Office",
-  "Ulba Metallurgical Plant",
-  "MiRESSO",
-  "JETRO",
-  "BIO",
-  "Austrian Development Agency",
-  "Africa Policy Research Institute",
+// Organisations shown on the live site's partner strip, plus offtake partners. Logos come
+// from each organisation's own website. SPREZZ Integrated publishes no logo yet, so its
+// name is set as text until one is supplied.
+export const partners: { name: string; logo: LogoSlug | null }[] = [
+  { name: "Kaduna State Government", logo: "partner-kaduna-state" },
+  { name: "Kaduna Mining Development Company", logo: "partner-kmdc" },
+  { name: "Ogun State Government", logo: "partner-ogun-state" },
+  { name: "Nigeria Mining Cadastre Office", logo: "partner-mining-cadastre" },
+  { name: "Ulba Metallurgical Plant", logo: "partner-ulba" },
+  { name: "CKAA Synergy Limited", logo: "partner-ckaa" },
+  { name: "SPREZZ Integrated", logo: null },
+  { name: "JETRO", logo: "partner-jetro" },
+  { name: "BIO", logo: "partner-bio" },
+  { name: "Austrian Development Agency", logo: "partner-ada" },
+  { name: "Africa Policy Research Institute", logo: "partner-apri" },
 ];
 
 export const audiences = [

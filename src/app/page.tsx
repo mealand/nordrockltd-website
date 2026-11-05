@@ -20,8 +20,12 @@ export default function Home() {
         title={company.tagline}
         intro="We work in metals and mining, agriculture, renewable energy, and real estate & housing. In each, we run the operations, record them on our own platforms and help finance them. Mining is where we started: every batch we sell is traced from the pit to the buyer."
         media={{
-          video: "aerial-exploration",
-          label: "Aerial view over NordRock exploration ground",
+          slides: [
+            { video: "hero-mining-holes", label: "Drone view of mining holes in a pit wall" },
+            { image: "hero-wash-plant", label: "Excavator beside a wash plant screen on site" },
+            { video: "hero-excavator-dig", label: "Excavator digging at a mine site" },
+            { image: "hero-haul-road", label: "Excavators and a truck on a red earth haul road" },
+          ],
         }}
       >
         <Magnetic>

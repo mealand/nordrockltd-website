@@ -15,6 +15,7 @@
 import { execFile } from "node:child_process";
 import { createHash } from "node:crypto";
 import fs from "node:fs/promises";
+import os from "node:os";
 import path from "node:path";
 import { promisify } from "node:util";
 import ffmpegPath from "ffmpeg-static";
@@ -28,6 +29,7 @@ import {
   VIDEO_FILTER,
   WIDE_FILTER,
   LIFT_FILTER,
+  NAMED_FILTERS,
 } from "./media.config.mjs";
 
 const run = promisify(execFile);
@@ -153,7 +155,24 @@ async function probe(file) {
   return { width: j.streams[0].width, height: j.streams[0].height, duration: Number(j.format.duration) };
 }
 
-async function encode(input, outFile, { start, duration, crf, maxrate, bufsize, filter = VIDEO_FILTER }) {
+/**
+ * First vid.stab pass: measures camera motion over the window the encode will use.
+ * ffmpeg filter arguments can't hold a Windows path, so both passes run from a temp
+ * folder and refer to the transforms file by its bare name.
+ */
+async function detectShake(input, { start, duration }, cwd) {
+  await run(
+    ffmpegPath,
+    [
+      "-y", "-v", "error", "-ss", String(start), "-i", input, "-t", String(duration),
+      "-vf", "vidstabdetect=shakiness=8:accuracy=15:stepsize=6:result=shake.trf",
+      "-an", "-f", "null", "-",
+    ],
+    { cwd },
+  );
+}
+
+async function encode(input, outFile, { start, duration, crf, maxrate, bufsize, filter = VIDEO_FILTER, cwd }) {
   const seek = start != null ? ["-ss", String(start)] : [];
   const len = duration != null ? ["-t", String(duration)] : [];
   await run(ffmpegPath, [
@@ -163,7 +182,7 @@ async function encode(input, outFile, { start, duration, crf, maxrate, bufsize, 
     "-c:v", "libx264", "-preset", "slow", "-crf", String(crf),
     "-maxrate", maxrate, "-bufsize", bufsize, "-profile:v", "high",
     "-pix_fmt", "yuv420p", "-movflags", "+faststart", outFile,
-  ]);
+  ], { cwd });
 }
 
 async function poster(input, at, outBase, filter = VIDEO_FILTER) {
@@ -189,22 +208,35 @@ async function processVideo(cfg) {
   await fs.mkdir(outDir, { recursive: true });
   const info = await probe(input);
   const entry = { slug: cfg.slug, width: 0, height: 0, loops: [], full: null };
-  const filter = cfg.lift ? LIFT_FILTER : cfg.wide ? WIDE_FILTER : VIDEO_FILTER;
-  const loopEncode = cfg.wide ? VIDEO_ENCODE.wide : VIDEO_ENCODE.loop;
+  const filter = cfg.filter
+    ? NAMED_FILTERS[cfg.filter]
+    : cfg.lift ? LIFT_FILTER : cfg.wide ? WIDE_FILTER : VIDEO_FILTER;
+  const loopEncode = cfg.encode ? VIDEO_ENCODE[cfg.encode] : cfg.wide ? VIDEO_ENCODE.wide : VIDEO_ENCODE.loop;
 
   for (const loop of cfg.loops) {
     const name = loop.suffix ? `${cfg.slug}-${loop.suffix}` : cfg.slug;
     const outBase = path.join(outDir, `${name}-loop`);
     const duration = Math.min(loop.duration, info.duration - loop.start);
     if (await stale(input, `${outBase}.mp4`)) {
-      await encode(input, `${outBase}.mp4`, { start: loop.start, duration, filter, ...loopEncode });
+      if (cfg.stabilize) {
+        const cwd = await fs.mkdtemp(path.join(os.tmpdir(), "nordrock-stab-"));
+        const steady = `vidstabtransform=input=shake.trf:smoothing=${cfg.stabilize.smoothing}:optzoom=1:interpol=bicubic,${filter}`;
+        await detectShake(input, { start: loop.start, duration }, cwd);
+        await encode(input, `${outBase}.mp4`, { start: loop.start, duration, filter: steady, cwd, ...loopEncode });
+        await fs.rm(cwd, { recursive: true });
+      } else {
+        await encode(input, `${outBase}.mp4`, { start: loop.start, duration, filter, ...loopEncode });
+      }
     }
     // Read dimensions from the output so rotated phone clips report their displayed shape.
     if (!entry.width) {
       const { width, height } = await probe(`${outBase}.mp4`);
       Object.assign(entry, { width, height });
     }
-    const { blurDataURL: blur } = await poster(input, loop.start + 0.5, outBase, filter);
+    // A stabilised frame only exists in the encode, so its poster comes from there.
+    const { blurDataURL: blur } = cfg.stabilize
+      ? await poster(`${outBase}.mp4`, 0.5, outBase, "null")
+      : await poster(input, loop.start + 0.5, outBase, filter);
     entry.loops.push({
       name,
       duration,

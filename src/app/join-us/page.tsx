@@ -17,8 +17,8 @@ export default function Page() {
         title="Build traceable supply chains with us."
         intro="Whether you are looking for a career, a long-term supply partner, or a fair market for what you produce, there is a place for you in the NordRock network."
         media={{
-          video: "aerial-pit-walls",
-          label: "Aerial view over an artisanal mine site",
+          image: "artisans-hardhats",
+          label: "A team in hard hats and overalls inspecting ore at a mine site",
         }}
       />
       <JoinIndex />

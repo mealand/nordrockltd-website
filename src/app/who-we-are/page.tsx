@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { PageTransition } from "@/components/motion/PageTransition";
 import { PageHero } from "@/components/sections/PageHero";
 import { Challenges } from "@/components/who-we-are/Challenges";
-import { Governance } from "@/components/who-we-are/Governance";
 import { Leadership } from "@/components/who-we-are/Leadership";
 import { Milestones } from "@/components/who-we-are/Milestones";
 import { Overview } from "@/components/who-we-are/Overview";
@@ -33,7 +32,6 @@ export default function Page() {
       <Challenges />
       <Strategy />
       <Milestones />
-      <Governance />
     </PageTransition>
   );
 }

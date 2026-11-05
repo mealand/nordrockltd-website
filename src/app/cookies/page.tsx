@@ -73,7 +73,7 @@ export default function Page() {
     <LegalPage
       title="Cookie notice."
       intro="What this website stores on your device, and why."
-      media={{ image: "plant-machinery", label: "Machinery inside a mineral processing plant" }}
+      media={{ image: "digital-assets", label: "Website data shown as charts on a glass screen" }}
       updated={UPDATED}
       sections={sections}
       footnote="Questions about cookies?"

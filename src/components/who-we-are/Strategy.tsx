@@ -1,22 +1,18 @@
 import { strategy } from "@/content/who-we-are";
-import { FeatureVideo } from "@/components/media/FeatureVideo";
+import { VideoLoop } from "@/components/media/VideoLoop";
 import { Reveal, RevealGroup } from "@/components/motion/Reveal";
 import { SplitReveal } from "@/components/motion/SplitReveal";
 import { Container } from "@/components/ui/Container";
 import { Eyebrow } from "@/components/ui/Heading";
 import { Section } from "@/components/ui/Section";
 
-/** The operational excellence model, beside full site-inspection footage. */
+/** The operational excellence model, beside a stabilised site-inspection loop. */
 export function Strategy() {
   return (
     <Section>
       <Container className="grid items-center gap-14 lg:grid-cols-[auto_minmax(0,1fr)] lg:gap-24">
-        <Reveal className="order-2 mx-auto w-full max-w-sm lg:order-1 lg:w-[22rem]">
-          <FeatureVideo
-            slug="site-inspection-tour"
-            title="On site: a NordRock inspection tour"
-            className="aspect-[9/16] rounded-[2rem] shadow-2xl shadow-navy/20"
-          />
+        <Reveal className="relative order-2 mx-auto aspect-[9/16] w-full max-w-sm overflow-hidden rounded-[2rem] shadow-2xl shadow-navy/20 lg:order-1 lg:w-[22rem]">
+          <VideoLoop slug="site-inspection-steady" label="On site: a NordRock inspection tour" />
         </Reveal>
 
         <div className="order-1 lg:order-2">

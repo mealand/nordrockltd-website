@@ -1,5 +1,5 @@
 // Who We Are copy. Sources: the live nordrockltd.com/who-we-are page (typos fixed),
-// Website/Website Contents.pdf (vision, mission, values, governance), the
+// Website/Website Contents.pdf (vision, mission, values), the
 // certificate of incorporation and KMDC letter of intent (dates), and the
 // public-safe milestones from the strategy document (no figures), and the October 2026
 // brief (introduction, vision, mission, values, leadership). No dashes in copy.
@@ -134,24 +134,24 @@ export const focusAreas: {
     title: "Innovation",
     text: "Our own platforms record every participant and every batch, so mineral operations can be governed and checked at each step of the value chain.",
     media: {
-      image: "plant-operator",
-      alt: "Operator running mineral processing machinery",
+      image: "tech-hub",
+      alt: "A digital operations hub overlooking a mine site",
     },
   },
   {
     title: "Artisan engagement",
     text: "We work directly with miners and host communities: formalising operations, improving livelihoods, and building in traceability, safety and fair market access.",
     media: {
-      video: "artisan-registration",
-      label: "Artisanal miners registering with NordRock at a site office",
+      image: "community-engagement",
+      alt: "Artisanal miners and community members sorting ore at a table under a tree",
     },
   },
   {
     title: "Strategic partnerships",
     text: "We partner with government mineral agencies, local private institutions, and Western, Asian and European organisations for investment, expertise transfer and investor confidence.",
     media: {
-      image: "field-crew-sluice",
-      alt: "NordRock field crew and partners working a sluice together",
+      image: "partnership-handshake-blue",
+      alt: "Two partners in hard hats shaking hands above an open pit mine",
     },
   },
 ];
@@ -207,21 +207,3 @@ export const milestones = [
     text: "TraceChain mineral traceability and ATiMS agricultural traceability launch.",
   },
 ];
-
-export const governance = {
-  eyebrow: "Governance",
-  title: "Led by a board built for accountability.",
-  body: "Our Board of Directors, serving in executive and non-executive capacities, is supported by our executive officers and financial management team.",
-  oversees: [
-    "Financial results",
-    "Strategic leadership",
-    "Significant investments and divestments",
-    "Enterprise-wide risk oversight",
-    "Capital allocation and operating budgets",
-    "Long-term business planning",
-  ],
-  structure: [
-    { title: "Board of Directors", children: [] as string[] },
-    { title: "Management", children: ["Executive officers", "Financial management"] },
-  ],
-};
