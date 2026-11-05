@@ -1,5 +1,6 @@
 import { getProductPage } from "@/content/products";
 import { products } from "@/content/site";
+import { ParallaxBackdrop } from "@/components/media/ParallaxBackdrop";
 import { Reveal } from "@/components/motion/Reveal";
 import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
@@ -12,10 +13,7 @@ export function LiveProducts() {
   const live = products.filter((p) => p.status === "live");
   return (
     <Section tone="ink" className="overflow-clip">
-      <div
-        aria-hidden
-        className="pointer-events-none absolute inset-0 [mask-image:radial-gradient(ellipse_at_top,black,transparent_70%)] opacity-[0.07] [background-image:linear-gradient(white_1px,transparent_1px),linear-gradient(90deg,white_1px,transparent_1px)] [background-size:56px_56px]"
-      />
+      <ParallaxBackdrop slug="bg-circuit" tone="ink" />
       <Container className="relative space-y-24 lg:space-y-32">
         {live.map((p, i) => {
           const page = getProductPage(p.href.split("/").filter(Boolean).at(-1)!)!;

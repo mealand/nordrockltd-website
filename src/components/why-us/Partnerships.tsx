@@ -1,4 +1,5 @@
 import { kmdc, partnerGroups } from "@/content/why-us";
+import { ParallaxBackdrop } from "@/components/media/ParallaxBackdrop";
 import { Counter } from "@/components/motion/Counter";
 import { Reveal, RevealGroup } from "@/components/motion/Reveal";
 import { SplitReveal } from "@/components/motion/SplitReveal";
@@ -10,10 +11,7 @@ import { Section } from "@/components/ui/Section";
 export function Partnerships() {
   return (
     <Section tone="navy" className="overflow-clip">
-      <div
-        aria-hidden
-        className="pointer-events-none absolute -top-40 -right-40 size-[40rem] rounded-full bg-azure/20 blur-3xl"
-      />
+      <ParallaxBackdrop slug="bg-globe" />
       <Container className="relative">
         <Reveal y={16}>
           <Eyebrow>Strategic partnerships</Eyebrow>

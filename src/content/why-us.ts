@@ -13,14 +13,14 @@ export const reasons: { title: string; text: string; image: ImageSlug; alt: stri
   {
     title: "Technology implementation",
     text: "From blockchain-backed traceability to data-driven exploration and processing, we use our own technology to set a higher standard for mining in Africa.",
-    image: "plant-machinery",
-    alt: "Mineral processing machinery inside a NordRock-supported plant",
+    image: "digital-assets1",
+    alt: "A hand holding a glowing stack of digital ledger blocks",
   },
   {
     title: "ESG compliance",
     text: "Every operation upholds the highest standards of sustainability and accountability. We integrate responsible mining practices, community development and inclusive governance to create long-term value for people, the planet and our partners.",
-    image: "forest-pond",
-    alt: "Green vegetation and water beside a mine site",
+    image: "community-engagement",
+    alt: "Artisanal miners and community members sorting ore at a table under a tree",
   },
 ];
 
@@ -54,7 +54,7 @@ export const kmdc = {
   title: "NordRock × Kaduna Mining Development Company",
   body: "Our strategic partnership with KMDC, the official mineral development agency of Kaduna State, combines a decade of operating experience with NordRock's technology, operations and global offtake. KMDC brings assets and licensing; NordRock brings traceability, processing and market access.",
   stats: [
-    { value: 61, suffix: "", label: "Mineral titles" },
+    { value: 100, suffix: "%", label: "Compliance with OECD Standards on Responsible Sourcing" },
     { value: 23, suffix: "", label: "Local government areas across Kaduna State" },
     { value: 8, suffix: "+", label: "Critical minerals, plus gold" },
   ],

@@ -72,7 +72,7 @@ export default function Page() {
                   </span>
                 </a>
 
-                <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2">
+                <div className="grid gap-4">
                   <div className="rounded-3xl bg-stone-50 p-7 ring-1 ring-navy/5">
                     <p className="text-xs font-semibold tracking-[0.22em] text-azure-700 uppercase">
                       Call
@@ -81,7 +81,7 @@ export default function Page() {
                       <a
                         key={p.href}
                         href={p.href}
-                        className="font-display mt-3 block text-lg font-medium hover:text-azure-700"
+                        className="font-display mt-3 block text-lg font-medium whitespace-nowrap hover:text-azure-700"
                       >
                         <span className="mr-2 text-xs font-semibold tracking-wide text-azure-700 uppercase">
                           {p.region}
@@ -96,7 +96,7 @@ export default function Page() {
                     </p>
                     <a
                       href={`mailto:${contact.email}`}
-                      className="font-display mt-3 block text-lg font-medium break-all hover:text-azure-700"
+                      className="font-display mt-3 block text-lg font-medium whitespace-nowrap hover:text-azure-700"
                     >
                       {contact.email}
                     </a>

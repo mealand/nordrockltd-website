@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { productDetails } from "@/content/home";
-import { Picture } from "@/components/media/Picture";
-import { Parallax } from "@/components/motion/Parallax";
+import { ParallaxBackdrop } from "@/components/media/ParallaxBackdrop";
 import { products } from "@/content/site";
 import { Reveal, RevealGroup } from "@/components/motion/Reveal";
 import { SplitReveal } from "@/components/motion/SplitReveal";
@@ -18,13 +17,7 @@ export function ProductsTeaser() {
   return (
     <Section tone="ink" className="overflow-clip">
       {/* Ledger chain artwork behind the whole section, with a scrim for legibility. */}
-      <Parallax strength={24}>
-        <Picture slug="platforms-network" alt="" fill sizes="100vw" />
-      </Parallax>
-      <div
-        aria-hidden
-        className="pointer-events-none absolute inset-0 bg-gradient-to-b from-ink/70 via-ink/35 to-ink/80"
-      />
+      <ParallaxBackdrop slug="platforms-network" tone="ink" />
       <Container className="relative">
         <Reveal y={16}>
           <Eyebrow>Platforms</Eyebrow>

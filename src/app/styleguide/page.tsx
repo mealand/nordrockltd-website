@@ -97,7 +97,7 @@ export default function Styleguide() {
           <dl className="mt-14 grid gap-10 sm:grid-cols-3">
             {[
               { v: 10, s: "+", l: "Minerals supplied" },
-              { v: 61, s: "", l: "Mineral titles via partnership" },
+              { v: 100, s: "%", l: "Compliance with OECD Standards" },
               { v: 10000, s: "+", l: "Artisans to onboard" },
             ].map((x) => (
               <div key={x.l} className="border-t border-white/15 pt-6">

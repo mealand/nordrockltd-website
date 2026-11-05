@@ -1,4 +1,5 @@
 import { pillars } from "@/content/home";
+import { ParallaxBackdrop } from "@/components/media/ParallaxBackdrop";
 import { Picture } from "@/components/media/Picture";
 import { Parallax } from "@/components/motion/Parallax";
 import { Reveal } from "@/components/motion/Reveal";
@@ -16,10 +17,7 @@ import { Section } from "@/components/ui/Section";
 export function Pillars() {
   return (
     <Section tone="navy" className="overflow-clip">
-      <div
-        aria-hidden
-        className="pointer-events-none absolute -top-40 -right-40 size-[40rem] rounded-full bg-azure/20 blur-3xl"
-      />
+      <ParallaxBackdrop slug="bg-hexes" />
       <Container className="relative grid gap-14 lg:grid-cols-[minmax(0,5fr)_minmax(0,7fr)] lg:gap-20">
         <div className="lg:sticky lg:top-28 lg:self-start">
           <Reveal y={16}>

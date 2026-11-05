@@ -1,3 +1,4 @@
+import { ParallaxBackdrop } from "@/components/media/ParallaxBackdrop";
 import type { ProductPage } from "@/content/products";
 import type { Product } from "@/content/site";
 import { Reveal, RevealGroup } from "@/components/motion/Reveal";
@@ -76,10 +77,7 @@ export function ProductBody({ product, page }: { product: Product; page: Product
       )}
 
       <Section tone="navy" className="overflow-clip">
-        <div
-          aria-hidden
-          className="pointer-events-none absolute -top-40 -left-40 size-[36rem] rounded-full bg-azure/20 blur-3xl"
-        />
+        <ParallaxBackdrop slug="bg-blocks" />
         <Container className="relative">
           <Reveal y={16}>
             <Eyebrow>{live ? "What it does" : "Core functions"}</Eyebrow>
@@ -90,7 +88,7 @@ export function ProductBody({ product, page }: { product: Product; page: Product
           <RevealGroup
             as="ol"
             className="mt-14 grid gap-px overflow-hidden rounded-3xl bg-white/10 sm:grid-cols-2 lg:grid-cols-3"
-            itemClassName="bg-navy"
+            itemClassName="bg-navy/80"
             stagger={0.07}
           >
             {page.features.map((f, i) => (

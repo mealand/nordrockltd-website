@@ -1,4 +1,4 @@
-import { leadership } from "@/content/who-we-are";
+import { leadership, team } from "@/content/who-we-are";
 import { Picture } from "@/components/media/Picture";
 import { Reveal, RevealGroup } from "@/components/motion/Reveal";
 import { SplitReveal } from "@/components/motion/SplitReveal";
@@ -8,7 +8,8 @@ import { Section } from "@/components/ui/Section";
 
 /**
  * Leadership cards. Every portrait gets the same square crop, a soft navy tint
- * that lifts on hover, and the bio sliding up over the photo.
+ * that lifts on hover, and the bio sliding up over the photo. The wider team
+ * follows as a list of thumbnails.
  */
 export function Leadership() {
   return (
@@ -26,15 +27,14 @@ export function Leadership() {
           </div>
           <Reveal delay={0.2}>
             <p className="leading-relaxed text-stone-500">
-              Metallurgy, technology, finance, law, banking and geoscience, with a named lead for
-              every workstream.
+              Law, technology, banking and geoscience, with a named lead for every workstream.
             </p>
           </Reveal>
         </div>
 
         <RevealGroup
           as="ul"
-          className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3"
+          className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4"
           itemClassName="h-full"
           stagger={0.08}
         >
@@ -45,7 +45,7 @@ export function Leadership() {
                   slug={l.photo}
                   alt={`Portrait of ${l.name}`}
                   fill
-                  sizes="(min-width: 1024px) 30vw, (min-width: 640px) 50vw, 100vw"
+                  sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw"
                   imgClassName="object-top saturate-[0.85] transition-[scale,filter] duration-[1.2s] ease-out-expo group-hover:scale-105 group-hover:saturate-100"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-ink/90 via-navy/20 to-navy/10 mix-blend-multiply" />
@@ -77,6 +77,37 @@ export function Leadership() {
                 {l.bio}
               </p>
             </article>
+          ))}
+        </RevealGroup>
+
+        <Reveal y={16} className="mt-20 border-t border-stone-200 pt-12 lg:mt-24">
+          <h3 className="font-display text-2xl font-semibold tracking-tight sm:text-3xl">
+            Team members
+          </h3>
+        </Reveal>
+        <RevealGroup
+          as="ul"
+          className="mt-8 grid gap-x-6 gap-y-4 sm:grid-cols-2 lg:grid-cols-4"
+          itemClassName="h-full"
+          stagger={0.05}
+        >
+          {team.map((m) => (
+            <a
+              key={m.name}
+              href={m.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={`${m.name}, ${m.role}, on LinkedIn`}
+              className="group flex h-full items-center gap-4 rounded-2xl p-2 transition-colors hover:bg-sky focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-azure"
+            >
+              <span className="relative size-20 shrink-0 overflow-hidden rounded-full bg-navy">
+                <Picture slug={m.photo} alt="" fill sizes="80px" imgClassName="object-top" />
+              </span>
+              <span>
+                <span className="font-display block font-semibold tracking-tight">{m.name}</span>
+                <span className="mt-0.5 block text-sm leading-snug text-azure-700">{m.role}</span>
+              </span>
+            </a>
           ))}
         </RevealGroup>
       </Container>

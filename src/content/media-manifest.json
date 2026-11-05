@@ -1440,6 +1440,516 @@
         ]
       }
     },
+    "bg-arcs": {
+      "slug": "bg-arcs",
+      "kind": "illustrations",
+      "width": 2090,
+      "height": 1178,
+      "blurDataURL": "data:image/webp;base64,UklGRjwAAABXRUJQVlA4IDAAAADwAQCdASoQAAkAA4BaJbACdAEPDubjMoAA/vd7qSIj2URzHwJz1a6papDsm+4LgAA=",
+      "variants": {
+        "avif": [
+          {
+            "width": 640,
+            "src": "/media/images/bg-arcs-640.avif"
+          },
+          {
+            "width": 1280,
+            "src": "/media/images/bg-arcs-1280.avif"
+          },
+          {
+            "width": 1920,
+            "src": "/media/images/bg-arcs-1920.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 640,
+            "src": "/media/images/bg-arcs-640.webp"
+          },
+          {
+            "width": 1280,
+            "src": "/media/images/bg-arcs-1280.webp"
+          },
+          {
+            "width": 1920,
+            "src": "/media/images/bg-arcs-1920.webp"
+          }
+        ],
+        "jpg": [
+          {
+            "width": 640,
+            "src": "/media/images/bg-arcs-640.jpg"
+          },
+          {
+            "width": 1280,
+            "src": "/media/images/bg-arcs-1280.jpg"
+          },
+          {
+            "width": 1920,
+            "src": "/media/images/bg-arcs-1920.jpg"
+          }
+        ]
+      }
+    },
+    "bg-blocks": {
+      "slug": "bg-blocks",
+      "kind": "illustrations",
+      "width": 2090,
+      "height": 1178,
+      "blurDataURL": "data:image/webp;base64,UklGRkoAAABXRUJQVlA4ID4AAABwAQCdASoQAAkAA4BaJbACdAFAAAD+8Ms2c0/utcGoz3kfMVLzWZfUcv4xeVu8vkTPY/gh+FuSDxQocvAAAA==",
+      "variants": {
+        "avif": [
+          {
+            "width": 640,
+            "src": "/media/images/bg-blocks-640.avif"
+          },
+          {
+            "width": 1280,
+            "src": "/media/images/bg-blocks-1280.avif"
+          },
+          {
+            "width": 1920,
+            "src": "/media/images/bg-blocks-1920.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 640,
+            "src": "/media/images/bg-blocks-640.webp"
+          },
+          {
+            "width": 1280,
+            "src": "/media/images/bg-blocks-1280.webp"
+          },
+          {
+            "width": 1920,
+            "src": "/media/images/bg-blocks-1920.webp"
+          }
+        ],
+        "jpg": [
+          {
+            "width": 640,
+            "src": "/media/images/bg-blocks-640.jpg"
+          },
+          {
+            "width": 1280,
+            "src": "/media/images/bg-blocks-1280.jpg"
+          },
+          {
+            "width": 1920,
+            "src": "/media/images/bg-blocks-1920.jpg"
+          }
+        ]
+      }
+    },
+    "bg-circuit": {
+      "slug": "bg-circuit",
+      "kind": "illustrations",
+      "width": 2090,
+      "height": 1178,
+      "blurDataURL": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAAAQAgCdASoQAAkAA4BaJbACdAEPhxZ/D/gAAP72kgKW4yhq8NxfZ8LpbvftEfGGf6K0ze8oAAA=",
+      "variants": {
+        "avif": [
+          {
+            "width": 640,
+            "src": "/media/images/bg-circuit-640.avif"
+          },
+          {
+            "width": 1280,
+            "src": "/media/images/bg-circuit-1280.avif"
+          },
+          {
+            "width": 1920,
+            "src": "/media/images/bg-circuit-1920.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 640,
+            "src": "/media/images/bg-circuit-640.webp"
+          },
+          {
+            "width": 1280,
+            "src": "/media/images/bg-circuit-1280.webp"
+          },
+          {
+            "width": 1920,
+            "src": "/media/images/bg-circuit-1920.webp"
+          }
+        ],
+        "jpg": [
+          {
+            "width": 640,
+            "src": "/media/images/bg-circuit-640.jpg"
+          },
+          {
+            "width": 1280,
+            "src": "/media/images/bg-circuit-1280.jpg"
+          },
+          {
+            "width": 1920,
+            "src": "/media/images/bg-circuit-1920.jpg"
+          }
+        ]
+      }
+    },
+    "bg-globe": {
+      "slug": "bg-globe",
+      "kind": "illustrations",
+      "width": 2090,
+      "height": 1178,
+      "blurDataURL": "data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAADQAQCdASoQAAkAA4BaJbACdAEO+ncBwAD+9o5S1Eg9Xf3g9sYOXtEfY+2VZWmb5B6YAA==",
+      "variants": {
+        "avif": [
+          {
+            "width": 640,
+            "src": "/media/images/bg-globe-640.avif"
+          },
+          {
+            "width": 1280,
+            "src": "/media/images/bg-globe-1280.avif"
+          },
+          {
+            "width": 1920,
+            "src": "/media/images/bg-globe-1920.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 640,
+            "src": "/media/images/bg-globe-640.webp"
+          },
+          {
+            "width": 1280,
+            "src": "/media/images/bg-globe-1280.webp"
+          },
+          {
+            "width": 1920,
+            "src": "/media/images/bg-globe-1920.webp"
+          }
+        ],
+        "jpg": [
+          {
+            "width": 640,
+            "src": "/media/images/bg-globe-640.jpg"
+          },
+          {
+            "width": 1280,
+            "src": "/media/images/bg-globe-1280.jpg"
+          },
+          {
+            "width": 1920,
+            "src": "/media/images/bg-globe-1920.jpg"
+          }
+        ]
+      }
+    },
+    "bg-hexes": {
+      "slug": "bg-hexes",
+      "kind": "illustrations",
+      "width": 2090,
+      "height": 1178,
+      "blurDataURL": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAADwAQCdASoQAAkAA4BaJbACdADdjRoJjAAA/vXShQyY80wJ6qIGXg5SeXr86lWo3hINUD8YED3mBfkilUYkwV10NNShtiHbkZaQAA==",
+      "variants": {
+        "avif": [
+          {
+            "width": 640,
+            "src": "/media/images/bg-hexes-640.avif"
+          },
+          {
+            "width": 1280,
+            "src": "/media/images/bg-hexes-1280.avif"
+          },
+          {
+            "width": 1920,
+            "src": "/media/images/bg-hexes-1920.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 640,
+            "src": "/media/images/bg-hexes-640.webp"
+          },
+          {
+            "width": 1280,
+            "src": "/media/images/bg-hexes-1280.webp"
+          },
+          {
+            "width": 1920,
+            "src": "/media/images/bg-hexes-1920.webp"
+          }
+        ],
+        "jpg": [
+          {
+            "width": 640,
+            "src": "/media/images/bg-hexes-640.jpg"
+          },
+          {
+            "width": 1280,
+            "src": "/media/images/bg-hexes-1280.jpg"
+          },
+          {
+            "width": 1920,
+            "src": "/media/images/bg-hexes-1920.jpg"
+          }
+        ]
+      }
+    },
+    "bg-orbits": {
+      "slug": "bg-orbits",
+      "kind": "illustrations",
+      "width": 2090,
+      "height": 1178,
+      "blurDataURL": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAADwAQCdASoQAAkAA4BaJbACdAEPAk2+YQAA/vaSEE04Tdy5BWrW5x5rjz3s9ODm0zfVfWgA",
+      "variants": {
+        "avif": [
+          {
+            "width": 640,
+            "src": "/media/images/bg-orbits-640.avif"
+          },
+          {
+            "width": 1280,
+            "src": "/media/images/bg-orbits-1280.avif"
+          },
+          {
+            "width": 1920,
+            "src": "/media/images/bg-orbits-1920.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 640,
+            "src": "/media/images/bg-orbits-640.webp"
+          },
+          {
+            "width": 1280,
+            "src": "/media/images/bg-orbits-1280.webp"
+          },
+          {
+            "width": 1920,
+            "src": "/media/images/bg-orbits-1920.webp"
+          }
+        ],
+        "jpg": [
+          {
+            "width": 640,
+            "src": "/media/images/bg-orbits-640.jpg"
+          },
+          {
+            "width": 1280,
+            "src": "/media/images/bg-orbits-1280.jpg"
+          },
+          {
+            "width": 1920,
+            "src": "/media/images/bg-orbits-1920.jpg"
+          }
+        ]
+      }
+    },
+    "bg-rows": {
+      "slug": "bg-rows",
+      "kind": "illustrations",
+      "width": 2090,
+      "height": 1178,
+      "blurDataURL": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAADQAQCdASoQAAkAA4BaJbACdADHpXR8wAD+9tewvDlE0uFpXJJBZt3zXHcMlofWmb3lAAAA",
+      "variants": {
+        "avif": [
+          {
+            "width": 640,
+            "src": "/media/images/bg-rows-640.avif"
+          },
+          {
+            "width": 1280,
+            "src": "/media/images/bg-rows-1280.avif"
+          },
+          {
+            "width": 1920,
+            "src": "/media/images/bg-rows-1920.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 640,
+            "src": "/media/images/bg-rows-640.webp"
+          },
+          {
+            "width": 1280,
+            "src": "/media/images/bg-rows-1280.webp"
+          },
+          {
+            "width": 1920,
+            "src": "/media/images/bg-rows-1920.webp"
+          }
+        ],
+        "jpg": [
+          {
+            "width": 640,
+            "src": "/media/images/bg-rows-640.jpg"
+          },
+          {
+            "width": 1280,
+            "src": "/media/images/bg-rows-1280.jpg"
+          },
+          {
+            "width": 1920,
+            "src": "/media/images/bg-rows-1920.jpg"
+          }
+        ]
+      }
+    },
+    "bg-seal": {
+      "slug": "bg-seal",
+      "kind": "illustrations",
+      "width": 2090,
+      "height": 1178,
+      "blurDataURL": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAADQAQCdASoQAAkAA4BaJbACdAEPAKVtAAD+93yaKFZ2c3jtljGuXdn5XeMLDhJ+BTWZgAAA",
+      "variants": {
+        "avif": [
+          {
+            "width": 640,
+            "src": "/media/images/bg-seal-640.avif"
+          },
+          {
+            "width": 1280,
+            "src": "/media/images/bg-seal-1280.avif"
+          },
+          {
+            "width": 1920,
+            "src": "/media/images/bg-seal-1920.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 640,
+            "src": "/media/images/bg-seal-640.webp"
+          },
+          {
+            "width": 1280,
+            "src": "/media/images/bg-seal-1280.webp"
+          },
+          {
+            "width": 1920,
+            "src": "/media/images/bg-seal-1920.webp"
+          }
+        ],
+        "jpg": [
+          {
+            "width": 640,
+            "src": "/media/images/bg-seal-640.jpg"
+          },
+          {
+            "width": 1280,
+            "src": "/media/images/bg-seal-1280.jpg"
+          },
+          {
+            "width": 1920,
+            "src": "/media/images/bg-seal-1920.jpg"
+          }
+        ]
+      }
+    },
+    "bg-solar": {
+      "slug": "bg-solar",
+      "kind": "illustrations",
+      "width": 2090,
+      "height": 1178,
+      "blurDataURL": "data:image/webp;base64,UklGRkgAAABXRUJQVlA4IDwAAAAQAgCdASoQAAkAA4BaJbACdLoAAks7OXAAAP73gm6mcyWpHi1h6fdux6G5xVawO/qTwyYKxSj2+zvgAAA=",
+      "variants": {
+        "avif": [
+          {
+            "width": 640,
+            "src": "/media/images/bg-solar-640.avif"
+          },
+          {
+            "width": 1280,
+            "src": "/media/images/bg-solar-1280.avif"
+          },
+          {
+            "width": 1920,
+            "src": "/media/images/bg-solar-1920.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 640,
+            "src": "/media/images/bg-solar-640.webp"
+          },
+          {
+            "width": 1280,
+            "src": "/media/images/bg-solar-1280.webp"
+          },
+          {
+            "width": 1920,
+            "src": "/media/images/bg-solar-1920.webp"
+          }
+        ],
+        "jpg": [
+          {
+            "width": 640,
+            "src": "/media/images/bg-solar-640.jpg"
+          },
+          {
+            "width": 1280,
+            "src": "/media/images/bg-solar-1280.jpg"
+          },
+          {
+            "width": 1920,
+            "src": "/media/images/bg-solar-1920.jpg"
+          }
+        ]
+      }
+    },
+    "bg-strata": {
+      "slug": "bg-strata",
+      "kind": "illustrations",
+      "width": 2090,
+      "height": 1178,
+      "blurDataURL": "data:image/webp;base64,UklGRjQAAABXRUJQVlA4ICgAAABwAQCdASoQAAkAA4BaJaACdAFAAAD+8rjQkkOmS5HYQ7fgOCYm9VAA",
+      "variants": {
+        "avif": [
+          {
+            "width": 640,
+            "src": "/media/images/bg-strata-640.avif"
+          },
+          {
+            "width": 1280,
+            "src": "/media/images/bg-strata-1280.avif"
+          },
+          {
+            "width": 1920,
+            "src": "/media/images/bg-strata-1920.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 640,
+            "src": "/media/images/bg-strata-640.webp"
+          },
+          {
+            "width": 1280,
+            "src": "/media/images/bg-strata-1280.webp"
+          },
+          {
+            "width": 1920,
+            "src": "/media/images/bg-strata-1920.webp"
+          }
+        ],
+        "jpg": [
+          {
+            "width": 640,
+            "src": "/media/images/bg-strata-640.jpg"
+          },
+          {
+            "width": 1280,
+            "src": "/media/images/bg-strata-1280.jpg"
+          },
+          {
+            "width": 1920,
+            "src": "/media/images/bg-strata-1920.jpg"
+          }
+        ]
+      }
+    },
     "boardroom-meeting": {
       "slug": "boardroom-meeting",
       "kind": "illustrations",
@@ -1592,6 +2102,57 @@
           {
             "width": 973,
             "src": "/media/images/digital-assets1-973.jpg"
+          }
+        ]
+      }
+    },
+    "greengrid-hero": {
+      "slug": "greengrid-hero",
+      "kind": "illustrations",
+      "width": 1919,
+      "height": 1081,
+      "blurDataURL": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAAAQAgCdASoQAAkAA4BaJbACdAEeke3a3c0AAP6J30Ti8nJ1/h2f8flaSW5Ny54CETj4LS6WcqBUbqWPdUCgb2TRYfCe13DH/lTtFLBXBEt60lQoAAA=",
+      "variants": {
+        "avif": [
+          {
+            "width": 640,
+            "src": "/media/images/greengrid-hero-640.avif"
+          },
+          {
+            "width": 1280,
+            "src": "/media/images/greengrid-hero-1280.avif"
+          },
+          {
+            "width": 1919,
+            "src": "/media/images/greengrid-hero-1919.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 640,
+            "src": "/media/images/greengrid-hero-640.webp"
+          },
+          {
+            "width": 1280,
+            "src": "/media/images/greengrid-hero-1280.webp"
+          },
+          {
+            "width": 1919,
+            "src": "/media/images/greengrid-hero-1919.webp"
+          }
+        ],
+        "jpg": [
+          {
+            "width": 640,
+            "src": "/media/images/greengrid-hero-640.jpg"
+          },
+          {
+            "width": 1280,
+            "src": "/media/images/greengrid-hero-1280.jpg"
+          },
+          {
+            "width": 1919,
+            "src": "/media/images/greengrid-hero-1919.jpg"
           }
         ]
       }
@@ -2028,26 +2589,77 @@
     "bankole-otegbeye": {
       "slug": "bankole-otegbeye",
       "kind": "portraits",
-      "width": 480,
-      "height": 480,
-      "blurDataURL": "data:image/webp;base64,UklGRnwAAABXRUJQVlA4IHAAAABwAgCdASoQABAAA4BaJYgCdAYvDy/6DYSBNQAAAP6foF9WLf3HpNr029x6BTh4LKa+JlFBIu0MgXfQ4Z2aPqwqJmXrOieTcByA/xyeJR3T8V/DsJF4Pan4GFWKUUxtLwV1OdmUWdqA9uL1gwxMAAAA",
+      "width": 800,
+      "height": 800,
+      "blurDataURL": "data:image/webp;base64,UklGRnQAAABXRUJQVlA4IGgAAAAQAgCdASoQABAAA4BaJbACdAEQz/dnG1OAAP678J578pwtUuT+J9pndWTXsN6KHQFRnNdX7IeEByf7mTG7IwxJtZgNmyQCi/vEazrtsWc399WNf5Pnp16t2qe+1v1g7ZEOokFWREAAAA==",
       "variants": {
         "avif": [
           {
-            "width": 480,
-            "src": "/media/images/bankole-otegbeye-480.avif"
+            "width": 640,
+            "src": "/media/images/bankole-otegbeye-640.avif"
+          },
+          {
+            "width": 800,
+            "src": "/media/images/bankole-otegbeye-800.avif"
           }
         ],
         "webp": [
           {
-            "width": 480,
-            "src": "/media/images/bankole-otegbeye-480.webp"
+            "width": 640,
+            "src": "/media/images/bankole-otegbeye-640.webp"
+          },
+          {
+            "width": 800,
+            "src": "/media/images/bankole-otegbeye-800.webp"
           }
         ],
         "jpg": [
           {
-            "width": 480,
-            "src": "/media/images/bankole-otegbeye-480.jpg"
+            "width": 640,
+            "src": "/media/images/bankole-otegbeye-640.jpg"
+          },
+          {
+            "width": 800,
+            "src": "/media/images/bankole-otegbeye-800.jpg"
+          }
+        ]
+      }
+    },
+    "bello-solomon": {
+      "slug": "bello-solomon",
+      "kind": "portraits",
+      "width": 960,
+      "height": 960,
+      "blurDataURL": "data:image/webp;base64,UklGRpgAAABXRUJQVlA4IIwAAAAwAgCdASoQABAAA4BaJbACdAdwLe5fbcfC8AD9bp3VGunTJBkyIu3Af+zj3XrFOSa9f4W2gbC+/65j03es2JBq3xqhauF+3qeT75Bf6qeFOqb1WQCo3dQiENPji46+TWbNBdkcgUm+x/rffKXV88h0GWuAAjFUq3isOiO/474MzZ1fQnn+13Qy8AAAAA==",
+      "variants": {
+        "avif": [
+          {
+            "width": 640,
+            "src": "/media/images/bello-solomon-640.avif"
+          },
+          {
+            "width": 960,
+            "src": "/media/images/bello-solomon-960.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 640,
+            "src": "/media/images/bello-solomon-640.webp"
+          },
+          {
+            "width": 960,
+            "src": "/media/images/bello-solomon-960.webp"
+          }
+        ],
+        "jpg": [
+          {
+            "width": 640,
+            "src": "/media/images/bello-solomon-640.jpg"
+          },
+          {
+            "width": 960,
+            "src": "/media/images/bello-solomon-960.jpg"
           }
         ]
       }
@@ -2055,26 +2667,131 @@
     "emmanuel-dangana": {
       "slug": "emmanuel-dangana",
       "kind": "portraits",
-      "width": 480,
-      "height": 480,
-      "blurDataURL": "data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAAAwAgCdASoQABAAA4BaJZwAD5PxcAU49eMBAAD+9Qd3D55MaAvUPr3zThOmbLuTcXMPDTl5XcN0ce2Jl5fIJPsHe3UFskAgGwZ9STcBsMSE5DOF90rzlS3Adgj7XK+QGYw+5eAA",
+      "width": 730,
+      "height": 730,
+      "blurDataURL": "data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAAAwAgCdASoQABAAA4BaJYgCdAEWlO/Grq+cAAD+7mMrtX6FRRzfyBerJOBpZZvmQRZ0SdcevYHzGK6y8EYTmM4FjDSq7m482Hv6QRMvcGuZ2ynOj8ljoz74iusO1n8M7KUkoxWgAAA=",
       "variants": {
         "avif": [
           {
-            "width": 480,
-            "src": "/media/images/emmanuel-dangana-480.avif"
+            "width": 640,
+            "src": "/media/images/emmanuel-dangana-640.avif"
+          },
+          {
+            "width": 730,
+            "src": "/media/images/emmanuel-dangana-730.avif"
           }
         ],
         "webp": [
           {
-            "width": 480,
-            "src": "/media/images/emmanuel-dangana-480.webp"
+            "width": 640,
+            "src": "/media/images/emmanuel-dangana-640.webp"
+          },
+          {
+            "width": 730,
+            "src": "/media/images/emmanuel-dangana-730.webp"
           }
         ],
         "jpg": [
           {
-            "width": 480,
-            "src": "/media/images/emmanuel-dangana-480.jpg"
+            "width": 640,
+            "src": "/media/images/emmanuel-dangana-640.jpg"
+          },
+          {
+            "width": 730,
+            "src": "/media/images/emmanuel-dangana-730.jpg"
+          }
+        ]
+      }
+    },
+    "faraa-nana-gaji": {
+      "slug": "faraa-nana-gaji",
+      "kind": "portraits",
+      "width": 700,
+      "height": 700,
+      "blurDataURL": "data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAABQAgCdASoQABAAA4BaJbACdAYu5qbnr4U9XgAA/vHfSmJ7cjstsujY84NaE3RU8OAEpaVl7KLXCSheGHWb1+cEp5wxCJw21B1DNvAPqQ7/YASa8hpDvApYCHjjAuywicO0c9F6QVVc2YjAAAA=",
+      "variants": {
+        "avif": [
+          {
+            "width": 640,
+            "src": "/media/images/faraa-nana-gaji-640.avif"
+          },
+          {
+            "width": 700,
+            "src": "/media/images/faraa-nana-gaji-700.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 640,
+            "src": "/media/images/faraa-nana-gaji-640.webp"
+          },
+          {
+            "width": 700,
+            "src": "/media/images/faraa-nana-gaji-700.webp"
+          }
+        ],
+        "jpg": [
+          {
+            "width": 640,
+            "src": "/media/images/faraa-nana-gaji-640.jpg"
+          },
+          {
+            "width": 700,
+            "src": "/media/images/faraa-nana-gaji-700.jpg"
+          }
+        ]
+      }
+    },
+    "fisayo-ajayi": {
+      "slug": "fisayo-ajayi",
+      "kind": "portraits",
+      "width": 600,
+      "height": 600,
+      "blurDataURL": "data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAABwAgCdASoQABAAA4BaJbACdLoAEJYRQbF1/r3QAP6NL0LMJio6GxDNs0zftPU6LVPFM9KkPHc/FBOtCcxr+mkAh7zgzwqtYg92kmayolPjwGK1pq4+P/jI+5vySNZ8yPXwT1R9Q4rg6YAA",
+      "variants": {
+        "avif": [
+          {
+            "width": 600,
+            "src": "/media/images/fisayo-ajayi-600.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 600,
+            "src": "/media/images/fisayo-ajayi-600.webp"
+          }
+        ],
+        "jpg": [
+          {
+            "width": 600,
+            "src": "/media/images/fisayo-ajayi-600.jpg"
+          }
+        ]
+      }
+    },
+    "michael-mathew": {
+      "slug": "michael-mathew",
+      "kind": "portraits",
+      "width": 420,
+      "height": 420,
+      "blurDataURL": "data:image/webp;base64,UklGRoQAAABXRUJQVlA4IHgAAABQAgCdASoQABAAA4BaJQBdgMXh1Orh3rFJ1VQA/PSMd6+1ojGC3XvJ5p8BMHl11UFH2+7Cwy7+96uLHUG+z2+ph22uYf3AsbDtip176CMNMFfQTZn7K5+Kh9IGp8G2wHCib42wgK8213iQq12bTEewO7p+gN1AAAA=",
+      "variants": {
+        "avif": [
+          {
+            "width": 420,
+            "src": "/media/images/michael-mathew-420.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 420,
+            "src": "/media/images/michael-mathew-420.webp"
+          }
+        ],
+        "jpg": [
+          {
+            "width": 420,
+            "src": "/media/images/michael-mathew-420.jpg"
           }
         ]
       }
@@ -2106,56 +2823,107 @@
         ]
       }
     },
-    "tobi-oyedeji": {
-      "slug": "tobi-oyedeji",
+    "shalom-adamu": {
+      "slug": "shalom-adamu",
       "kind": "portraits",
-      "width": 480,
-      "height": 480,
-      "blurDataURL": "data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAABQAgCdASoQABAAA4BaJYgCdAEXeZJCmu/kkgAA/u/Myk9YdghgRADzPGAOaugH1v7KF2NWnuafT6E9Ynqg2f7CbcOLWqDHm/4hZbiuyWAcZt23WuZs5hak2wvcE+YA3kN/YXfAmeeh/QAA",
+      "width": 340,
+      "height": 340,
+      "blurDataURL": "data:image/webp;base64,UklGRnQAAABXRUJQVlA4IGgAAABwAgCdASoQABAAA4BaJYwC7AYv/wepY0ruCjmgAP7WrFJeTVAubFN38APt6V2ZX+olM7Y6uHJ181rz5maJ0D6N0Fj5q1Xa5LD8foivPcAhJxeQsK0m8TaFrH6PTU9pXjK9z4lGjjwAAA==",
       "variants": {
         "avif": [
           {
-            "width": 480,
-            "src": "/media/images/tobi-oyedeji-480.avif"
+            "width": 340,
+            "src": "/media/images/shalom-adamu-340.avif"
           }
         ],
         "webp": [
           {
-            "width": 480,
-            "src": "/media/images/tobi-oyedeji-480.webp"
+            "width": 340,
+            "src": "/media/images/shalom-adamu-340.webp"
           }
         ],
         "jpg": [
           {
-            "width": 480,
-            "src": "/media/images/tobi-oyedeji-480.jpg"
+            "width": 340,
+            "src": "/media/images/shalom-adamu-340.jpg"
           }
         ]
       }
     },
-    "tola-otegbeye": {
-      "slug": "tola-otegbeye",
+    "simon-peter-doka": {
+      "slug": "simon-peter-doka",
       "kind": "portraits",
-      "width": 480,
-      "height": 480,
-      "blurDataURL": "data:image/webp;base64,UklGRoAAAABXRUJQVlA4IHQAAACQAgCdASoQABAAA4BaJQBOj+AVIHulTwftTXeuAAD9vLnb3lTEDxi6BpfUUfiSm6bxhZZy6Cx+DCSL/30UGoCwaUxrW8uO772W7VMXPcdCR/jQWukbOLld2mfHscLM+4PHsiGJyra5pWlylmcndHQ+YnZ4AA==",
+      "width": 758,
+      "height": 758,
+      "blurDataURL": "data:image/webp;base64,UklGRoAAAABXRUJQVlA4IHQAAAAwAgCdASoQABAAA4BaJQBOgMYJwE4LENApMAD+84WZczP80x4dYqparnqcxtxzvb53Sj3s+5GqmcwS+eGmLfR9Owh2VPkJWLi5oRU392Ak/fjwm9E4kk7lJPLe7SQoIEAGEecNBA4D0BKwajscXeZpGAAAAA==",
       "variants": {
         "avif": [
           {
-            "width": 480,
-            "src": "/media/images/tola-otegbeye-480.avif"
+            "width": 640,
+            "src": "/media/images/simon-peter-doka-640.avif"
+          },
+          {
+            "width": 758,
+            "src": "/media/images/simon-peter-doka-758.avif"
           }
         ],
         "webp": [
           {
-            "width": 480,
-            "src": "/media/images/tola-otegbeye-480.webp"
+            "width": 640,
+            "src": "/media/images/simon-peter-doka-640.webp"
+          },
+          {
+            "width": 758,
+            "src": "/media/images/simon-peter-doka-758.webp"
           }
         ],
         "jpg": [
           {
-            "width": 480,
-            "src": "/media/images/tola-otegbeye-480.jpg"
+            "width": 640,
+            "src": "/media/images/simon-peter-doka-640.jpg"
+          },
+          {
+            "width": 758,
+            "src": "/media/images/simon-peter-doka-758.jpg"
+          }
+        ]
+      }
+    },
+    "thompson-ojuwoni": {
+      "slug": "thompson-ojuwoni",
+      "kind": "portraits",
+      "width": 800,
+      "height": 800,
+      "blurDataURL": "data:image/webp;base64,UklGRnwAAABXRUJQVlA4IHAAAABQAgCdASoQABAAA4BaJbACdAD8GeKfvl+2EIAA/IL/4AvhamUjSXyODs808Yx6/OWwjfmXoHS4NCaGKPtON+TTLQ0tGi+QRHe14sDnvg2xS7R/bRIX13j9Tcqm1giotcsjB2PEMhqtk/1ii4JZNAAA",
+      "variants": {
+        "avif": [
+          {
+            "width": 640,
+            "src": "/media/images/thompson-ojuwoni-640.avif"
+          },
+          {
+            "width": 800,
+            "src": "/media/images/thompson-ojuwoni-800.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 640,
+            "src": "/media/images/thompson-ojuwoni-640.webp"
+          },
+          {
+            "width": 800,
+            "src": "/media/images/thompson-ojuwoni-800.webp"
+          }
+        ],
+        "jpg": [
+          {
+            "width": 640,
+            "src": "/media/images/thompson-ojuwoni-640.jpg"
+          },
+          {
+            "width": 800,
+            "src": "/media/images/thompson-ojuwoni-800.jpg"
           }
         ]
       }
@@ -2183,6 +2951,33 @@
           {
             "width": 480,
             "src": "/media/images/tunde-oyinlola-480.jpg"
+          }
+        ]
+      }
+    },
+    "victory-augustine": {
+      "slug": "victory-augustine",
+      "kind": "portraits",
+      "width": 560,
+      "height": 560,
+      "blurDataURL": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAADwAQCdASoQABAAA4BaJQBdgBQoTUL/nAAA/unaCXojguvCAssd/tKQDXf/8pIGMFD7WBpe5QfEwcgtUkk38l9CwDmEZUtTz/MPyfIiXC7qL+7sdkmY6ZWsgnhBEhBpYPgAAA==",
+      "variants": {
+        "avif": [
+          {
+            "width": 560,
+            "src": "/media/images/victory-augustine-560.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 560,
+            "src": "/media/images/victory-augustine-560.webp"
+          }
+        ],
+        "jpg": [
+          {
+            "width": 560,
+            "src": "/media/images/victory-augustine-560.jpg"
           }
         ]
       }

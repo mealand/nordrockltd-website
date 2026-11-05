@@ -4,10 +4,13 @@
 // confidential) and the public ATiMS repository README and architecture notes.
 // No dashes in copy: the client reads them as AI-generated.
 import type { HeroMedia } from "@/components/sections/PageHero";
+import type { ImageSlug } from "@/lib/media";
 
 export type ProductPage = {
   slug: string;
   hero: { title: string; intro: string; media: HeroMedia };
+  /** The photo on this platform's card on the Products page. */
+  card: { image: ImageSlug; alt: string };
   problem: { title: string; body: string };
   /** For products in development: how it will work, shown beside the problem. */
   howItWorks?: string;
@@ -29,6 +32,7 @@ const interest = { label: "Register interest", href: "/contact/?enquiry=interest
 export const productPages: ProductPage[] = [
   {
     slug: "tracechain",
+    card: { image: "bagged-ore-field", alt: "Bagged ore lined up and tagged beside a sluice at a mine site" },
     hero: {
       title: "Mine-to-market traceability, verified on blockchain.",
       intro:
@@ -91,6 +95,7 @@ export const productPages: ProductPage[] = [
   },
   {
     slug: "atims",
+    card: { image: "agriculture3", alt: "A phone recording a harvest while farmers work a field" },
     hero: {
       title: "Traceability and compliance for farm produce.",
       intro:
@@ -158,6 +163,7 @@ export const productPages: ProductPage[] = [
   },
   {
     slug: "geoai",
+    card: { image: "site-briefing", alt: "A team studying a map at an exploration site with a drill rig behind" },
     hero: {
       title: "Know where to look before you dig.",
       intro:
@@ -198,6 +204,7 @@ export const productPages: ProductPage[] = [
   },
   {
     slug: "smarttrade",
+    card: { image: "digital-assets", alt: "Trading dashboards with charts on a glass screen" },
     hero: {
       title: "Every trade recorded. Every partner scored.",
       intro:
@@ -234,6 +241,7 @@ export const productPages: ProductPage[] = [
   },
   {
     slug: "crowdmine",
+    card: { image: "stakeholder-meeting", alt: "Partners and community leaders meeting around a map" },
     hero: {
       title: "Participation in verified mining projects.",
       intro:
@@ -272,11 +280,12 @@ export const productPages: ProductPage[] = [
   },
   {
     slug: "greengrid",
+    card: { image: "renewable-energy", alt: "Aerial view of solar panels among green trees" },
     hero: {
       title: "Clean power for mining, measured kilowatt by kilowatt.",
       intro:
         "GreenGrid pairs solar and hybrid systems with metering that records output on TraceChain.",
-      media: { image: "renewable-energy1", label: "Solar panels and wind turbines at sunset" },
+      media: { image: "greengrid-hero", label: "Solar panels and wind turbines at sunset" },
     },
     problem: {
       title: "Mining runs on diesel where the grid fails, and the energy footprint is hard to prove.",

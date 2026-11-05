@@ -18,7 +18,7 @@ export default function Page() {
         eyebrow="Platforms"
         title="The systems behind our four industries."
         intro="Remote sites and small producers need tools that work without signal, identify every person in the chain and produce records a buyer can check. We built our own, starting with what our mining business needed."
-        media={{ image: "tech-hub", label: "A digital operations hub overlooking a mine site" }}
+        media={{ image: "digital-assets1", label: "A hand holding a glowing stack of digital ledger blocks" }}
       />
       <PlatformGroups />
       <LiveProducts />

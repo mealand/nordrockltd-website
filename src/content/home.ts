@@ -12,7 +12,7 @@ export const intro = {
 
 export const stats: { value: number; suffix?: string; label: string }[] = [
   { value: 10, suffix: "+", label: "Minerals supplied to global markets" },
-  { value: 61, label: "Mineral titles across Kaduna State through our KMDC partnership" },
+  { value: 100, suffix: "%", label: "Compliance with OECD Standards on Responsible Sourcing" },
   { value: 10, suffix: " ktpa", label: "Planned capacity of our concentration hub" },
   { value: 10000, suffix: "+", label: "Artisanal miners targeted for onboarding" },
 ];

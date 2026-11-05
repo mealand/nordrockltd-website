@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { getProductPage, platformGroups } from "@/content/products";
-import { products } from "@/content/site";
+import { products, type Product } from "@/content/site";
+import { Picture } from "@/components/media/Picture";
 import { Reveal, RevealGroup } from "@/components/motion/Reveal";
 import { SplitReveal } from "@/components/motion/SplitReveal";
 import { Container } from "@/components/ui/Container";
@@ -8,10 +9,69 @@ import { Eyebrow } from "@/components/ui/Heading";
 import { Section } from "@/components/ui/Section";
 import { cn } from "@/lib/utils";
 
-const bySlug = (slug: string) => products.find((p) => p.href === `/products/${slug}/`)!;
+const slugOf = (p: Product) => p.href.split("/").filter(Boolean).at(-1)!;
+const industryOf = (slug: string) => platformGroups.find((g) => g.products.includes(slug))?.industry;
 
-/** Unified system view: every platform grouped by the industry it serves, with its status. */
+/** One platform as a photo card with its status, industry and purpose. */
+function PlatformCard({ product, large }: { product: Product; large?: boolean }) {
+  const slug = slugOf(product);
+  const page = getProductPage(slug)!;
+  const live = product.status === "live";
+  return (
+    <Link
+      href={product.href}
+      className={cn(
+        "group relative flex flex-col justify-end overflow-hidden rounded-3xl bg-ink p-6 text-white transition-[translate,box-shadow] duration-500 ease-out-expo hover:-translate-y-2 hover:shadow-2xl hover:shadow-navy/30 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-azure sm:p-8",
+        large ? "aspect-[4/5] sm:aspect-[16/11]" : "aspect-[4/5] sm:aspect-[4/3] xl:aspect-[3/4]",
+      )}
+    >
+      <Picture
+        slug={page.card.image}
+        alt={page.card.alt}
+        fill
+        sizes={large ? "(min-width: 1024px) 45vw, 100vw" : "(min-width: 1280px) 25vw, (min-width: 640px) 50vw, 100vw"}
+        imgClassName="transition-transform duration-[1.2s] ease-out-expo group-hover:scale-105"
+      />
+      <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/55 to-ink/5" />
+      <div className="relative">
+        <p className="flex flex-wrap items-center gap-2 text-[0.7rem] font-semibold">
+          <span
+            className={cn(
+              "inline-flex items-center gap-1.5 rounded-full px-2.5 py-1 ring-1 backdrop-blur-sm",
+              live
+                ? "bg-emerald-400/15 text-emerald-300 ring-emerald-300/30"
+                : "bg-white/15 text-white ring-white/20",
+            )}
+          >
+            {live && <span className="size-1.5 rounded-full bg-emerald-300" />}
+            {live ? "Live" : "In development"}
+          </span>
+          <span className="text-white/80">{industryOf(slug)}</span>
+        </p>
+        <h3
+          className={cn(
+            "font-display mt-4 font-semibold tracking-tight",
+            large ? "text-3xl sm:text-5xl" : "text-2xl sm:text-3xl",
+          )}
+        >
+          {product.label}
+        </h3>
+        <p className="mt-2 max-w-lg text-sm leading-relaxed text-white/85">{product.description}</p>
+        <span className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-sky-300 transition-colors group-hover:text-white">
+          Explore
+          <span aria-hidden className="transition-transform duration-300 group-hover:translate-x-1">
+            →
+          </span>
+        </span>
+      </div>
+    </Link>
+  );
+}
+
+/** Every platform as a photo card: the live two first, then the tools in development. */
 export function PlatformGroups() {
+  const live = products.filter((p) => p.status === "live");
+  const pipeline = products.filter((p) => p.status !== "live");
   return (
     <Section>
       <Container>
@@ -35,66 +95,44 @@ export function PlatformGroups() {
           </Reveal>
         </div>
 
-        <RevealGroup className="mt-14 grid gap-5 md:grid-cols-2 xl:grid-cols-4" stagger={0.1}>
-          {platformGroups.map((g) => (
-            <div
-              key={g.industry}
-              className="flex h-full flex-col rounded-3xl bg-stone-50 p-6 ring-1 ring-navy/5"
-            >
-              <Link
-                href={g.href}
-                className="font-display text-xs font-semibold tracking-[0.22em] text-azure-700 uppercase hover:underline"
-              >
-                {g.industry}
-              </Link>
-              {g.products.length === 0 ? (
-                <p className="mt-6 rounded-2xl border border-dashed border-navy/15 p-5 text-sm text-stone-500">
-                  Coming soon
-                </p>
-              ) : (
-                <ul className="mt-5 space-y-3">
-                  {g.products.map((slug) => {
-                    const p = bySlug(slug);
-                    const live = p.status === "live";
-                    return (
-                      <li key={slug}>
-                        <Link
-                          href={p.href}
-                          className="group block rounded-2xl bg-white p-5 ring-1 ring-navy/5 transition-all duration-500 hover:-translate-y-1 hover:shadow-xl hover:shadow-navy/10 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-azure"
-                        >
-                          <span className="flex items-center justify-between gap-3">
-                            <span className="font-display text-lg font-semibold tracking-tight">
-                              {p.label}
-                            </span>
-                            <span
-                              className={cn(
-                                "inline-flex shrink-0 items-center gap-1.5 rounded-full px-2.5 py-0.5 text-[0.7rem] font-semibold",
-                                live
-                                  ? "bg-emerald-50 text-emerald-800"
-                                  : "bg-stone-200/70 text-stone-500",
-                              )}
-                            >
-                              {live && (
-                                <span className="relative flex size-1.5">
-                                  <span className="absolute inset-0 animate-ping rounded-full bg-emerald-500 motion-reduce:hidden" />
-                                  <span className="relative size-1.5 rounded-full bg-emerald-500" />
-                                </span>
-                              )}
-                              {live ? "Live" : "In development"}
-                            </span>
-                          </span>
-                          <span className="mt-2 block text-sm leading-relaxed text-stone-500">
-                            {getProductPage(slug)?.role}
-                          </span>
-                        </Link>
-                      </li>
-                    );
-                  })}
-                </ul>
-              )}
-            </div>
+        <RevealGroup className="mt-14 grid gap-5 lg:grid-cols-2" stagger={0.1}>
+          {live.map((p) => (
+            <PlatformCard key={p.href} product={p} large />
           ))}
         </RevealGroup>
+
+        <Reveal className="mt-16">
+          <p className="text-xs font-semibold tracking-[0.22em] text-azure-700 uppercase">
+            In development
+          </p>
+        </Reveal>
+        <RevealGroup className="mt-6 grid gap-5 sm:grid-cols-2 xl:grid-cols-4" stagger={0.08}>
+          {pipeline.map((p) => (
+            <PlatformCard key={p.href} product={p} />
+          ))}
+        </RevealGroup>
+
+        <Reveal className="mt-5">
+          <Link
+            href="/industries/real-estate-and-housing/"
+            className="group relative flex min-h-48 flex-col justify-end overflow-hidden rounded-3xl bg-ink p-6 text-white focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-azure sm:p-8"
+          >
+            <Picture
+              slug="real-estate"
+              alt="Aerial view of a planned housing estate"
+              fill
+              sizes="100vw"
+              imgClassName="transition-transform duration-[1.2s] ease-out-expo group-hover:scale-105"
+            />
+            <div className="absolute inset-0 bg-gradient-to-r from-ink via-ink/70 to-ink/10" />
+            <div className="relative">
+              <p className="text-[0.7rem] font-semibold text-white/80">Coming soon</p>
+              <h3 className="font-display mt-2 text-2xl font-semibold tracking-tight sm:text-3xl">
+                Real Estate and Housing
+              </h3>
+            </div>
+          </Link>
+        </Reveal>
       </Container>
     </Section>
   );

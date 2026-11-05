@@ -1,4 +1,5 @@
 import { ecosystem } from "@/content/industries";
+import { ParallaxBackdrop } from "@/components/media/ParallaxBackdrop";
 import { Reveal, RevealGroup } from "@/components/motion/Reveal";
 import { SplitReveal } from "@/components/motion/SplitReveal";
 import { Container } from "@/components/ui/Container";
@@ -9,10 +10,7 @@ import { Section } from "@/components/ui/Section";
 export function Ecosystem() {
   return (
     <Section tone="navy" className="overflow-clip">
-      <div
-        aria-hidden
-        className="pointer-events-none absolute -right-40 -bottom-40 size-[36rem] rounded-full bg-azure/20 blur-3xl"
-      />
+      <ParallaxBackdrop slug="bg-orbits" />
       <Container className="relative grid gap-12 lg:grid-cols-[minmax(0,5fr)_minmax(0,7fr)] lg:gap-20">
         <div>
           <Reveal y={16}>

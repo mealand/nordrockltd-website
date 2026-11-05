@@ -69,44 +69,83 @@ export type Leader = {
 
 export const leadership: Leader[] = [
   {
-    name: "Tola Otegbeye",
-    role: "Chief Executive Officer",
-    photo: "tola-otegbeye",
-    bio: "More than 10 years of experience in metals and mining. MEng Oil and Gas; MSc Sustainable Metallurgy.",
-    linkedin: "https://www.linkedin.com/in/omotola-otegbeye-9a505015a/",
+    name: "Bankole Otegbeye",
+    role: "Chief Legal Officer",
+    photo: "bankole-otegbeye",
+    bio: "More than 9 years in corporate and financial law; qualified in Nigeria, England and Wales.",
+    linkedin: "https://www.linkedin.com/in/dbankoleotegbeye/",
   },
   {
     name: "Emmanuel Dangana",
     role: "Chief Technology Officer",
     photo: "emmanuel-dangana",
-    bio: "10 years plus experience in information and communications technologies, including artificial intelligence, blockchain and cybersecurity, and over 6 years in the defence and intelligence sector.",
+    bio: "10 years plus experience in Emerging Technologies and over 6 years of experience in the Defense & Intelligence sector.",
     linkedin: "https://www.linkedin.com/in/emmanuel-dangana",
-  },
-  {
-    name: "Tobi Oyedeji",
-    role: "Chief Financial Officer",
-    photo: "tobi-oyedeji",
-    bio: "More than 9 years in finance and capital markets.",
-  },
-  {
-    name: "Bankole Otegbeye",
-    role: "Legal",
-    photo: "bankole-otegbeye",
-    bio: "More than 9 years in corporate and financial law; qualified in Nigeria, England and Wales.",
-    linkedin: "https://www.linkedin.com/in/dbankoleotegbeye/",
   },
   {
     name: "Opemiotan Omolara",
     role: "Banking and Operations",
     photo: "opemiotan-omolara",
     bio: "More than 15 years in banking and financial services.",
+    linkedin: "https://www.linkedin.com/in/opemiotan-o-a3144a99/",
   },
   {
     name: "Tunde Oyinlola",
     role: "Geospatial and Mining Operations",
     photo: "tunde-oyinlola",
-    bio: "More than 8 years of experience; BSc Geology.",
+    bio: "More than 8 years; BSc Geology.",
     linkedin: "https://www.linkedin.com/in/tundeoyinlola/",
+  },
+];
+
+export const team: { name: string; role: string; photo: ImageSlug; linkedin: string }[] = [
+  {
+    name: "Victory Augustine",
+    role: "Marketing and Communication Manager",
+    photo: "victory-augustine",
+    linkedin: "https://www.linkedin.com/in/victory-augustine-78594218a/",
+  },
+  {
+    name: "Fisayou Ajayi",
+    role: "Business Development Manager",
+    photo: "fisayo-ajayi",
+    linkedin: "https://www.linkedin.com/in/fisayoomoyenia/",
+  },
+  {
+    name: "Fara'a Nana Gaji",
+    role: "Community Engagement Coordinator",
+    photo: "faraa-nana-gaji",
+    linkedin: "https://www.linkedin.com/in/fara%E2%80%99a-nana-gaji-94b1b08a/",
+  },
+  {
+    name: "Bello Solomon",
+    role: "Mining Operations Coordinator",
+    photo: "bello-solomon",
+    linkedin: "https://www.linkedin.com/in/bello-solomon-55263b1b4/",
+  },
+  {
+    name: "Shalom Adamu",
+    role: "Logistics Coordinator",
+    photo: "shalom-adamu",
+    linkedin: "https://www.linkedin.com/in/shalom-adamu-59060610b/",
+  },
+  {
+    name: "Simon Peter Doka",
+    role: "Marketing Coordinator",
+    photo: "simon-peter-doka",
+    linkedin: "https://www.linkedin.com/in/simon-doka-59661b1a2/",
+  },
+  {
+    name: "Thompson Ojuwoni",
+    role: "Cyber Security Expert",
+    photo: "thompson-ojuwoni",
+    linkedin: "https://www.linkedin.com/in/thompson-ojuwoni-410859162/",
+  },
+  {
+    name: "Michael Mathew",
+    role: "UI/UX Development Lead",
+    photo: "michael-mathew",
+    linkedin: "https://www.linkedin.com/in/michael-martin-mathew/",
   },
 ];
 
@@ -142,16 +181,16 @@ export const focusAreas: {
     title: "Artisan engagement",
     text: "We work directly with miners and host communities: formalising operations, improving livelihoods, and building in traceability, safety and fair market access.",
     media: {
-      image: "community-engagement",
-      alt: "Artisanal miners and community members sorting ore at a table under a tree",
+      image: "artisan-briefing-2",
+      alt: "NordRock briefing a large group of artisanal miners on site",
     },
   },
   {
     title: "Strategic partnerships",
     text: "We partner with government mineral agencies, local private institutions, and Western, Asian and European organisations for investment, expertise transfer and investor confidence.",
     media: {
-      image: "partnership-handshake-blue",
-      alt: "Two partners in hard hats shaking hands above an open pit mine",
+      image: "field-team-meeting",
+      alt: "NordRock team meeting outdoors at a site",
     },
   },
 ];

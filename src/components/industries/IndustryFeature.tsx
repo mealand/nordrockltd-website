@@ -1,18 +1,18 @@
 import type { IndustryFeature as Feature } from "@/content/industries";
+import { ParallaxBackdrop } from "@/components/media/ParallaxBackdrop";
 import { Reveal, RevealGroup } from "@/components/motion/Reveal";
 import { SplitReveal } from "@/components/motion/SplitReveal";
 import { Container } from "@/components/ui/Container";
 import { Eyebrow } from "@/components/ui/Heading";
 import { Section } from "@/components/ui/Section";
 
+const backdrops = { minerals: "bg-strata", stack: "bg-rows", pathways: "bg-solar" } as const;
+
 /** The one section that differs per industry: minerals, technology stack or energy pathways. */
 export function IndustryFeature({ feature }: { feature: Feature }) {
   return (
     <Section tone="navy" className="overflow-clip">
-      <div
-        aria-hidden
-        className="pointer-events-none absolute -top-40 -right-40 size-[40rem] rounded-full bg-azure/20 blur-3xl"
-      />
+      <ParallaxBackdrop slug={backdrops[feature.type]} />
       <Container className="relative">
         {feature.type === "minerals" && <Minerals feature={feature} />}
         {feature.type === "stack" && <Stack feature={feature} />}

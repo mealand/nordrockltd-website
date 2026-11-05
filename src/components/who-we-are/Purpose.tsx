@@ -1,4 +1,5 @@
 import { mission, principles, values, vision } from "@/content/who-we-are";
+import { ParallaxBackdrop } from "@/components/media/ParallaxBackdrop";
 import { Reveal, RevealGroup } from "@/components/motion/Reveal";
 import { SplitReveal } from "@/components/motion/SplitReveal";
 import { Container } from "@/components/ui/Container";
@@ -9,10 +10,7 @@ import { Section } from "@/components/ui/Section";
 export function Purpose() {
   return (
     <Section tone="navy" className="overflow-clip">
-      <div
-        aria-hidden
-        className="pointer-events-none absolute -top-40 left-1/3 size-[40rem] rounded-full bg-royal/20 blur-3xl"
-      />
+      <ParallaxBackdrop slug="bg-arcs" />
       <Container className="relative">
         <Reveal y={16}>
           <Eyebrow>Vision, mission and values</Eyebrow>
