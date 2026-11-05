@@ -17,10 +17,13 @@ export function ProductsTeaser() {
 
   return (
     <Section tone="ink" className="overflow-clip">
-      {/* Faint ledger grid as a nod to the blockchain products. */}
+      {/* Ledger chain artwork behind the whole section, with a scrim for legibility. */}
+      <Parallax strength={24}>
+        <Picture slug="platforms-network" alt="" fill sizes="100vw" />
+      </Parallax>
       <div
         aria-hidden
-        className="pointer-events-none absolute inset-0 [mask-image:radial-gradient(ellipse_at_top,black,transparent_70%)] opacity-[0.07] [background-image:linear-gradient(white_1px,transparent_1px),linear-gradient(90deg,white_1px,transparent_1px)] [background-size:56px_56px]"
+        className="pointer-events-none absolute inset-0 bg-gradient-to-b from-ink/70 via-ink/35 to-ink/80"
       />
       <Container className="relative">
         <Reveal y={16}>
@@ -38,18 +41,7 @@ export function ProductsTeaser() {
           </p>
         </Reveal>
 
-        <Reveal className="relative mt-12 aspect-[16/10] overflow-hidden rounded-3xl ring-1 ring-white/10 sm:aspect-[21/9]">
-          <Parallax strength={26}>
-            <Picture
-              slug="platforms-network"
-              alt="A chain of ledger blocks linking points across a contour map"
-              fill
-              sizes="(min-width: 1280px) 1200px, 100vw"
-            />
-          </Parallax>
-        </Reveal>
-
-        <RevealGroup className="mt-6 grid gap-6 lg:grid-cols-2" stagger={0.15}>
+        <RevealGroup className="mt-14 grid gap-6 lg:grid-cols-2" stagger={0.15}>
           {live.map((p) => {
             const d = productDetails[p.href];
             return (
@@ -101,7 +93,7 @@ export function ProductsTeaser() {
         <RevealGroup
           as="ul"
           className="mt-6 grid gap-px overflow-hidden rounded-3xl bg-white/10 sm:grid-cols-2 lg:grid-cols-4"
-          itemClassName="bg-ink"
+          itemClassName="bg-ink/75"
           stagger={0.08}
         >
           {pipeline.map((p) => (
