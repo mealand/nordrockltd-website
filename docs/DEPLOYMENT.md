@@ -1,4 +1,8 @@
-# Deploying to newsite.nordrockltd.com
+# Deploying to nordrockltd.com
+
+The site moved from the review subdomain, newsite.nordrockltd.com, to the main domain in November
+2026. The setup steps below describe the original subdomain; the process is the same for the main
+domain's document root. A first upload to an empty folder takes about 11 minutes.
 
 The site deploys automatically from GitHub. Every push to `main` runs
 [`.github/workflows/deploy.yml`](../.github/workflows/deploy.yml), which type-checks, lints and
@@ -47,7 +51,7 @@ Optional **variables** (same page, **Variables** tab) — only if the defaults d
 | ---------------------------- | ------- | -------------------------------------------------------------------------------------------------------------- |
 | `FTP_SERVER_DIR`             | `./`    | If the FTP account's home is not the subdomain root, e.g. `newsite.nordrockltd.com/` (keep the trailing slash) |
 | `FTP_PROTOCOL`               | `ftps`  | `ftp` only if the host has no FTPS; `ftps-legacy` for implicit FTPS on port 990                                |
-| `NEXT_PUBLIC_ALLOW_INDEXING` | unset   | Set to `true` only for the main-domain launch                                                                  |
+| `NEXT_PUBLIC_ALLOW_INDEXING` | `true`  | Set to `false` to keep a deployed build out of search results                                                  |
 
 ### 5. Run the first deploy
 
@@ -71,9 +75,9 @@ time), and limits each IP to 5 messages an hour. Addresses and limits are consta
 
 ## Search engines
 
-The review site is kept out of search results three ways: a `noindex` meta tag on every page, a
-`robots.txt` that disallows everything, and an `X-Robots-Tag` header sent only for the `newsite.`
-host (see `public/.htaccess`).
+The deploy workflow builds with `NEXT_PUBLIC_ALLOW_INDEXING=true`, so the main domain is open to
+search engines and `robots.txt` points them at the sitemap. Any `newsite.` host still gets an
+`X-Robots-Tag: noindex` header (see `public/.htaccess`).
 
 ## Troubleshooting
 
@@ -89,9 +93,6 @@ host (see `public/.htaccess`).
   host allows `.htaccess` overrides (some LiteSpeed setups ignore `<If>` blocks; the site still
   works, only cache/robots headers are affected).
 
-## Moving to nordrockltd.com later
+## Old WordPress addresses
 
-1. Back up the current WordPress site (cPanel **Backup** or the host's tool).
-2. Point the FTP account (or `FTP_SERVER_DIR`) at the main domain's document root.
-3. Set `NEXT_PUBLIC_ALLOW_INDEXING=true` and re-run the workflow.
-4. Add redirects for any old WordPress URLs worth keeping to `public/.htaccess`.
+To keep an old WordPress URL working, add a redirect for it to `public/.htaccess`.

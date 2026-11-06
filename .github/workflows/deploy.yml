@@ -1,19 +1,19 @@
 # Builds the static export and deploys it to cPanel over FTPS.
 #
 # Every push and pull request is type-checked, linted and built. Pushes to `main`
-# (and manual runs) then upload `out/` to the review site, newsite.nordrockltd.com.
+# (and manual runs) then upload `out/` to the live site, nordrockltd.com.
 # Uploads are incremental: the action keeps a state file on the server and only
 # sends files that changed.
 #
 # Repository secrets (Settings → Secrets and variables → Actions → Secrets):
 #   FTP_SERVER     e.g. ftp.nordrockltd.com
-#   FTP_USERNAME   the cPanel FTP account created for the subdomain
+#   FTP_USERNAME   the cPanel FTP account for the site's document root
 #   FTP_PASSWORD
 # Optional repository variables (same page → Variables):
 #   FTP_SERVER_DIR             default "./" — the FTP account's home should BE the
-#                              subdomain's document root; otherwise set e.g. "newsite.nordrockltd.com/"
+#                              site's document root; otherwise set the folder, with a trailing slash
 #   FTP_PROTOCOL               default "ftps"; use "ftp" only if the host has no TLS
-#   NEXT_PUBLIC_ALLOW_INDEXING set to "true" only when deploying to the main domain
+#   NEXT_PUBLIC_ALLOW_INDEXING default "true"; set to "false" to keep a build out of search results
 #
 # See docs/DEPLOYMENT.md for the cPanel side.
 
@@ -63,9 +63,9 @@ jobs:
       - name: Build static export
         run: npm run build
         env:
-          NEXT_PUBLIC_ALLOW_INDEXING: ${{ vars.NEXT_PUBLIC_ALLOW_INDEXING }}
+          NEXT_PUBLIC_ALLOW_INDEXING: ${{ vars.NEXT_PUBLIC_ALLOW_INDEXING || 'true' }}
 
-      - name: Deploy to newsite.nordrockltd.com
+      - name: Deploy to nordrockltd.com
         if: env.IS_DEPLOY == 'true' && env.HAS_FTP_SECRETS == 'true'
         uses: SamKirkland/FTP-Deploy-Action@110f9186c050f71550953127052e77650219c287 # v4.4.0
         with:

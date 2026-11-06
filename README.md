@@ -1,7 +1,7 @@
 # NordRock Limited — Corporate Website
 
 Next.js (App Router, TypeScript, Tailwind CSS v4) built as a **static export** for cPanel hosting.
-Review URL: `https://newsite.nordrockltd.com` · Plan: [docs/DEVELOPMENT_PLAN.md](docs/DEVELOPMENT_PLAN.md)
+Live URL: `https://nordrockltd.com` · Plan: [docs/DEVELOPMENT_PLAN.md](docs/DEVELOPMENT_PLAN.md)
 
 ## Commands
 
@@ -36,10 +36,11 @@ ffmpeg/ffprobe come from the `ffmpeg-static` / `ffprobe-static` packages, so no 
 
 ## Deployment
 
-Pushes to `main` build and deploy automatically to `https://newsite.nordrockltd.com` via GitHub
+Pushes to `main` build and deploy automatically to `https://nordrockltd.com` via GitHub
 Actions over FTPS. One-time cPanel and GitHub secrets setup: [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md).
 
 ## Indexing
 
-The review build is `noindex` (meta tag, `robots.txt`, and an `X-Robots-Tag` header on the `newsite.`
-host). Set `NEXT_PUBLIC_ALLOW_INDEXING=true` at build time once the site moves to `nordrockltd.com`.
+The deploy workflow builds with `NEXT_PUBLIC_ALLOW_INDEXING=true`, so `nordrockltd.com` is open to
+search engines. Any other build is `noindex` (meta tag and `robots.txt`), and the `newsite.` host also
+gets an `X-Robots-Tag` header. Set the repository variable to `false` to block a deployed build.

@@ -11,8 +11,7 @@ import "./globals.css";
 const mulish = Mulish({ variable: "--font-mulish", subsets: ["latin"] });
 const roboto = Roboto({ variable: "--font-roboto", subsets: ["latin"], weight: ["300", "400", "500", "700"] });
 
-// Keep the review deployment (newsite.nordrockltd.com) out of search results.
-// Flip NEXT_PUBLIC_ALLOW_INDEXING=true when the site moves to the main domain.
+// Only the live build (NEXT_PUBLIC_ALLOW_INDEXING=true) may appear in search results.
 const allowIndexing = process.env.NEXT_PUBLIC_ALLOW_INDEXING === "true";
 
 export const metadata: Metadata = {

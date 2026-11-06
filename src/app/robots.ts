@@ -1,8 +1,8 @@
 import type { MetadataRoute } from "next";
 import { company } from "@/content/site";
 
-// Blocks all crawlers on the review build; opens up (and points at the sitemap)
-// once NEXT_PUBLIC_ALLOW_INDEXING=true is set for the main domain build.
+// Open to crawlers (and points at the sitemap) on the live build, which sets
+// NEXT_PUBLIC_ALLOW_INDEXING=true; every other build blocks them.
 export const dynamic = "force-static";
 
 export default function robots(): MetadataRoute.Robots {
