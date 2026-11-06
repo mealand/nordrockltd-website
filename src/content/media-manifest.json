@@ -3128,13 +3128,6 @@
       "png": "/media/logos/partner-apri.png",
       "webp": "/media/logos/partner-apri.webp"
     },
-    "partner-bio": {
-      "slug": "partner-bio",
-      "width": 777,
-      "height": 240,
-      "png": "/media/logos/partner-bio.png",
-      "webp": "/media/logos/partner-bio.webp"
-    },
     "partner-ckaa": {
       "slug": "partner-ckaa",
       "width": 547,
@@ -3142,12 +3135,12 @@
       "png": "/media/logos/partner-ckaa.png",
       "webp": "/media/logos/partner-ckaa.webp"
     },
-    "partner-jetro": {
-      "slug": "partner-jetro",
-      "width": 193,
-      "height": 66,
-      "png": "/media/logos/partner-jetro.png",
-      "webp": "/media/logos/partner-jetro.webp"
+    "partner-jk-jewelleries": {
+      "slug": "partner-jk-jewelleries",
+      "width": 172,
+      "height": 172,
+      "png": "/media/logos/partner-jk-jewelleries.png",
+      "webp": "/media/logos/partner-jk-jewelleries.webp"
     },
     "partner-kaduna-state": {
       "slug": "partner-kaduna-state",
@@ -3170,6 +3163,13 @@
       "png": "/media/logos/partner-mining-cadastre.png",
       "webp": "/media/logos/partner-mining-cadastre.webp"
     },
+    "partner-miresso": {
+      "slug": "partner-miresso",
+      "width": 851,
+      "height": 200,
+      "png": "/media/logos/partner-miresso.png",
+      "webp": "/media/logos/partner-miresso.webp"
+    },
     "partner-ogun-state": {
       "slug": "partner-ogun-state",
       "width": 89,
@@ -3190,6 +3190,13 @@
       "height": 106,
       "png": "/media/logos/partner-ulba.png",
       "webp": "/media/logos/partner-ulba.webp"
+    },
+    "partner-veridicor": {
+      "slug": "partner-veridicor",
+      "width": 1192,
+      "height": 160,
+      "png": "/media/logos/partner-veridicor.png",
+      "webp": "/media/logos/partner-veridicor.webp"
     },
     "who-we-are-badge": {
       "slug": "who-we-are-badge",

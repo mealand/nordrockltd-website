@@ -103,7 +103,7 @@ export const hub = {
 };
 
 // Organisations shown on the live site's partner strip, plus offtake partners. Logos come
-// from each organisation's own website; the SPREZZ Integrated logo was supplied by NordRock.
+// from each organisation's own website; SPREZZ Integrated and JK Jewelleries came from NordRock.
 export const partners: { name: string; logo: LogoSlug }[] = [
   { name: "Kaduna State Government", logo: "partner-kaduna-state" },
   { name: "Kaduna Mining Development Company", logo: "partner-kmdc" },
@@ -112,8 +112,9 @@ export const partners: { name: string; logo: LogoSlug }[] = [
   { name: "Ulba Metallurgical Plant", logo: "partner-ulba" },
   { name: "CKAA Synergy Limited", logo: "partner-ckaa" },
   { name: "SPREZZ Integrated", logo: "partner-sprezz" },
-  { name: "JETRO", logo: "partner-jetro" },
-  { name: "BIO", logo: "partner-bio" },
+  { name: "JK Jewelleries", logo: "partner-jk-jewelleries" },
+  { name: "Veridicor", logo: "partner-veridicor" },
+  { name: "MiRESSO", logo: "partner-miresso" },
   { name: "Austrian Development Agency", logo: "partner-ada" },
   { name: "Africa Policy Research Institute", logo: "partner-apri" },
 ];
