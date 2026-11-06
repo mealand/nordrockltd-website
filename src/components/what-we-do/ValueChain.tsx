@@ -1,4 +1,5 @@
 import { valueChain } from "@/content/what-we-do";
+import { MediaOverlay } from "@/components/media/MediaOverlay";
 import { Picture } from "@/components/media/Picture";
 import { PinnedScroll } from "@/components/motion/PinnedScroll";
 import { Reveal } from "@/components/motion/Reveal";
@@ -38,10 +39,10 @@ export function ValueChain() {
           >
             <div className="relative aspect-[4/3] lg:absolute lg:inset-0 lg:aspect-auto">
               <Picture slug={step.image} alt="" fill sizes="(min-width: 1024px) 28vw, 80vw" />
-              <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/30 to-transparent" />
+              <MediaOverlay />
             </div>
             <div className="relative p-6 lg:absolute lg:inset-x-0 lg:bottom-0 lg:p-8">
-              <p className="font-display text-sm font-semibold text-royal-300">
+              <p className="font-display text-sm font-semibold text-white">
                 {String(i + 1).padStart(2, "0")} / {String(valueChain.length).padStart(2, "0")}
               </p>
               <h3 className="font-display mt-2 text-2xl font-semibold">{step.title}</h3>

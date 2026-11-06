@@ -1,4 +1,5 @@
 import type { Industry } from "@/content/industries";
+import { MediaOverlay } from "@/components/media/MediaOverlay";
 import { Picture } from "@/components/media/Picture";
 import { Reveal, RevealGroup } from "@/components/motion/Reveal";
 import { SplitReveal } from "@/components/motion/SplitReveal";
@@ -52,9 +53,9 @@ export function IndustryAreas({ industry }: { industry: Industry }) {
                     sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw"
                     imgClassName="transition-transform duration-[1.2s] ease-out-expo group-hover:scale-105"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-ink/80 via-transparent to-transparent" />
+                  <MediaOverlay variant="foot" />
                   <h3 className="font-display absolute inset-x-0 bottom-0 p-6 text-2xl font-semibold text-white">
-                    <span className="block text-sm text-royal-300">0{i + 1}</span>
+                    <span className="block text-sm text-white">0{i + 1}</span>
                     {a.title}
                   </h3>
                 </div>

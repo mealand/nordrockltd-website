@@ -1,6 +1,7 @@
 import { getImage, getVideo, type ImageSlug, type VideoSlug } from "@/lib/media";
 import { cn } from "@/lib/utils";
 import { HeroCarousel, type HeroSlide } from "@/components/media/HeroCarousel";
+import { MediaOverlay } from "@/components/media/MediaOverlay";
 import { Picture } from "@/components/media/Picture";
 import { VideoLoop } from "@/components/media/VideoLoop";
 import { Parallax } from "@/components/motion/Parallax";
@@ -69,7 +70,7 @@ export function PageHero({
   return (
     <section
       className={cn(
-        "relative isolate flex items-end overflow-hidden bg-ink text-white [--accent:var(--color-sky-300)]",
+        "relative isolate flex items-end overflow-hidden bg-ink text-white [--accent:white]",
         size === "home" ? "min-h-[100svh]" : "min-h-[70svh] lg:min-h-[78svh]",
       )}
     >
@@ -86,15 +87,17 @@ export function PageHero({
         </Parallax>
       )}
       {/* Legibility scrims. */}
-      <div
-        aria-hidden
-        className={cn(
-          "absolute inset-0 -z-10",
-          framed
-            ? "lg:bg-gradient-to-r lg:from-ink lg:via-ink/85 lg:to-ink/50"
-            : "bg-gradient-to-t from-ink via-ink/55 to-ink/30",
-        )}
-      />
+      {framed ? (
+        <div
+          aria-hidden
+          className="absolute inset-0 -z-10 lg:bg-gradient-to-r lg:from-ink lg:via-ink/85 lg:to-ink/50"
+        />
+      ) : (
+        <>
+          <MediaOverlay className="-z-10" />
+          <MediaOverlay variant="side" className="-z-10 hidden lg:block" />
+        </>
+      )}
       <div
         aria-hidden
         className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_15%_100%,rgba(30,111,224,0.32),transparent_55%)]"
@@ -127,7 +130,7 @@ export function PageHero({
           />
           {intro && (
             <Reveal delay={0.5} y={20}>
-              <p className="mt-6 max-w-2xl text-base leading-relaxed text-white/80 sm:text-lg">
+              <p className="mt-6 max-w-2xl text-base leading-relaxed text-white/90 sm:text-lg">
                 {intro}
               </p>
             </Reveal>
@@ -149,10 +152,7 @@ export function PageHero({
             )}
           >
             <Parallax strength={10}>{mediaEl}</Parallax>
-            <div
-              aria-hidden
-              className="absolute inset-0 bg-gradient-to-t from-ink via-ink/70 to-ink/35 lg:hidden"
-            />
+            <MediaOverlay className="lg:hidden" />
           </div>
         )}
       </Container>

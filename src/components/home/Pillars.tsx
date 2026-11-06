@@ -61,7 +61,7 @@ export function Pillars() {
                       </Slideshow>
                     </Parallax>
                     <div className="absolute inset-0 bg-gradient-to-t from-navy via-navy/10 to-transparent" />
-                    <span className="font-display absolute top-5 left-6 text-sm font-semibold text-royal-300">
+                    <span className="font-display absolute top-5 left-6 rounded-full bg-ink/80 px-3 py-1 text-sm font-semibold text-white">
                       0{i + 1}
                     </span>
                   </div>

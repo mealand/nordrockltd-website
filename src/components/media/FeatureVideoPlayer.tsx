@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import type { PosterSet } from "@/lib/media";
+import { MediaOverlay } from "@/components/media/MediaOverlay";
 import { cn } from "@/lib/utils";
 
 type Props = {
@@ -45,7 +46,7 @@ export function FeatureVideoPlayer({ src, poster, title, duration, className }: 
               className="absolute inset-0 h-full w-full object-cover transition-transform duration-[1.2s] ease-out-expo group-hover:scale-105"
             />
           </picture>
-          <span className="absolute inset-0 bg-gradient-to-t from-ink/90 via-ink/20 to-ink/10" />
+          <MediaOverlay variant="foot" />
           <span className="absolute inset-0 grid place-items-center">
             <span className="relative grid size-20 place-items-center rounded-full bg-royal text-white shadow-xl transition-transform duration-500 group-hover:scale-110">
               <span

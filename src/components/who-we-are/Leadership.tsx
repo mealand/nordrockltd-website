@@ -50,7 +50,7 @@ export function Leadership() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-ink/90 via-navy/20 to-navy/10 mix-blend-multiply" />
                 <div className="absolute inset-x-0 bottom-0 translate-y-full p-6 text-sm leading-relaxed text-white transition-transform duration-500 ease-out-expo group-hover:translate-y-0 group-focus-within:translate-y-0">
-                  <p className="rounded-2xl bg-ink/80 p-4 backdrop-blur-md">{l.bio}</p>
+                  <p className="rounded-2xl bg-ink/90 p-4 backdrop-blur-md">{l.bio}</p>
                 </div>
               </div>
               <div className="mt-5 flex items-start justify-between gap-4">

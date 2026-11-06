@@ -2,6 +2,7 @@ import Link from "next/link";
 import { model } from "@/content/what-we-do";
 import { industries } from "@/content/site";
 import { statusLabels } from "@/content/industries";
+import { MediaOverlay } from "@/components/media/MediaOverlay";
 import { Picture } from "@/components/media/Picture";
 import { Reveal, RevealGroup } from "@/components/motion/Reveal";
 import { SplitReveal } from "@/components/motion/SplitReveal";
@@ -45,8 +46,8 @@ export function OurModel() {
                 className="-z-10"
                 imgClassName="transition-transform duration-[1.4s] ease-out-expo group-hover:scale-110"
               />
-              <div className="absolute inset-0 -z-10 bg-gradient-to-t from-ink via-ink/60 to-ink/10" />
-              <span className="font-display text-sm font-semibold text-royal-300">0{i + 1}</span>
+              <MediaOverlay className="-z-10" />
+              <span className="font-display text-sm font-semibold text-white">0{i + 1}</span>
               <h3 className="font-display mt-2 text-3xl font-semibold tracking-tight">{p.title}</h3>
               <p className="mt-3 max-w-md leading-relaxed text-white/85 transition-[opacity,translate] duration-500 lg:translate-y-4 lg:opacity-0 lg:group-hover:translate-y-0 lg:group-hover:opacity-100 lg:group-focus-visible:translate-y-0 lg:group-focus-visible:opacity-100">
                 {p.text}

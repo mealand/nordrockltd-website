@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { industryPages, statusLabels } from "@/content/industries";
+import { MediaOverlay } from "@/components/media/MediaOverlay";
 import { Picture } from "@/components/media/Picture";
 import { Reveal, RevealGroup } from "@/components/motion/Reveal";
 import { Slideshow } from "@/components/motion/Slideshow";
@@ -54,7 +55,7 @@ export function IndustriesTeaser() {
                     />
                   ))}
                 </Slideshow>
-                <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/45 to-ink/5" />
+                <MediaOverlay />
                 <div className="relative">
                   <span className="inline-block rounded-full bg-white/15 px-3 py-1 text-[0.7rem] font-semibold tracking-wide ring-1 ring-white/20 backdrop-blur-sm">
                     {statusLabels[ind.status]}

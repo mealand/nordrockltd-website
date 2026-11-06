@@ -4,8 +4,8 @@ import { cn } from "@/lib/utils";
 import { Picture } from "./Picture";
 
 const scrims = {
-  navy: "from-navy/75 via-navy/45 to-navy/85",
-  ink: "from-ink/70 via-ink/35 to-ink/80",
+  navy: "from-navy/85 via-navy/65 to-navy/90",
+  ink: "from-ink/80 via-ink/60 to-ink/85",
 };
 
 /** Artwork behind a whole dark section, moving on scroll. Put a `relative` container after it. */

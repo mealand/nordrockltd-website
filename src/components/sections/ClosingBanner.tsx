@@ -1,5 +1,6 @@
 import type { HeroMedia } from "@/components/sections/PageHero";
 import { HeroMediaFill } from "@/components/media/HeroMediaFill";
+import { MediaOverlay } from "@/components/media/MediaOverlay";
 import { Magnetic } from "@/components/motion/Magnetic";
 import { Parallax } from "@/components/motion/Parallax";
 import { Reveal } from "@/components/motion/Reveal";
@@ -18,10 +19,7 @@ export function ClosingBanner({ title, button, href, media }: Closing) {
           <HeroMediaFill media={media} sizes="100vw" />
         </Parallax>
       )}
-      <div
-        aria-hidden
-        className="absolute inset-0 -z-10 bg-gradient-to-r from-ink via-ink/85 to-ink/40"
-      />
+      <MediaOverlay variant="left" className="-z-10" />
       <div
         aria-hidden
         className="absolute -bottom-40 -left-20 -z-10 size-[34rem] rounded-full bg-royal/30 blur-3xl"

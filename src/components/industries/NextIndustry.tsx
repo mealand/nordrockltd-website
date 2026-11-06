@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { Industry } from "@/content/industries";
 import { HeroMediaFill } from "@/components/media/HeroMediaFill";
+import { MediaOverlay } from "@/components/media/MediaOverlay";
 import { Container } from "@/components/ui/Container";
 
 /** Full-width link to the next industry, closing each detail page. */
@@ -13,10 +14,7 @@ export function NextIndustry({ industry }: { industry: Industry }) {
       <div className="absolute inset-0 -z-10 opacity-40 transition-all duration-[1.2s] ease-out-expo group-hover:scale-105 group-hover:opacity-60">
         <HeroMediaFill media={industry.overview.media} sizes="100vw" />
       </div>
-      <div
-        aria-hidden
-        className="absolute inset-0 -z-10 bg-gradient-to-r from-ink via-ink/80 to-ink/40"
-      />
+      <MediaOverlay variant="left" className="-z-10" />
       <Container className="flex flex-col gap-6 py-20 sm:flex-row sm:items-end sm:justify-between sm:py-28">
         <div>
           <p className="text-xs font-semibold tracking-[0.22em] text-sky-300 uppercase">

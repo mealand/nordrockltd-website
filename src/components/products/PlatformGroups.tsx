@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { getProductPage, platformGroups } from "@/content/products";
 import { products, type Product } from "@/content/site";
+import { MediaOverlay } from "@/components/media/MediaOverlay";
 import { Picture } from "@/components/media/Picture";
 import { Reveal, RevealGroup } from "@/components/motion/Reveal";
 import { SplitReveal } from "@/components/motion/SplitReveal";
@@ -32,7 +33,7 @@ function PlatformCard({ product, large }: { product: Product; large?: boolean })
         sizes={large ? "(min-width: 1024px) 45vw, 100vw" : "(min-width: 1280px) 25vw, (min-width: 640px) 50vw, 100vw"}
         imgClassName="transition-transform duration-[1.2s] ease-out-expo group-hover:scale-105"
       />
-      <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/55 to-ink/5" />
+      <MediaOverlay />
       <div className="relative">
         <p className="flex flex-wrap items-center gap-2 text-[0.7rem] font-semibold">
           <span
@@ -124,7 +125,7 @@ export function PlatformGroups() {
               sizes="100vw"
               imgClassName="transition-transform duration-[1.2s] ease-out-expo group-hover:scale-105"
             />
-            <div className="absolute inset-0 bg-gradient-to-r from-ink via-ink/70 to-ink/10" />
+            <MediaOverlay variant="left" />
             <div className="relative">
               <p className="text-[0.7rem] font-semibold text-white/80">Coming soon</p>
               <h3 className="font-display mt-2 text-2xl font-semibold tracking-tight sm:text-3xl">
