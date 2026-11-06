@@ -36,13 +36,18 @@ export const partnerGroups = [
   },
   {
     title: "Offtake & industry",
-    partners: ["Ulba Metallurgical Plant"],
+    partners: [
+      "Ulba Metallurgical Plant",
+      "MiRESSO",
+      "JK Jewelleries",
+      "CKAA Synergy Limited",
+      "SPREZZ Integrated",
+    ],
   },
   {
     title: "International development",
     partners: [
-      "JETRO",
-      "BIO, the Belgian Investment Company for Developing Countries",
+      "Veridicor",
       "Austrian Development Agency",
       "Africa Policy Research Institute",
     ],
