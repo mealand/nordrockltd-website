@@ -2106,6 +2106,57 @@
         ]
       }
     },
+    "esg-compliance": {
+      "slug": "esg-compliance",
+      "kind": "illustrations",
+      "width": 2675,
+      "height": 1459,
+      "blurDataURL": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAADQAQCdASoQAAkAA4BaJQBYdiLJsoaoAAD+eT6w+aZOz83TqZ5bpk3rjqL+wcx2j5hv44wb/FJ4JzEAS9wU8I3D2OsAAA==",
+      "variants": {
+        "avif": [
+          {
+            "width": 640,
+            "src": "/media/images/esg-compliance-640.avif"
+          },
+          {
+            "width": 1280,
+            "src": "/media/images/esg-compliance-1280.avif"
+          },
+          {
+            "width": 1920,
+            "src": "/media/images/esg-compliance-1920.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 640,
+            "src": "/media/images/esg-compliance-640.webp"
+          },
+          {
+            "width": 1280,
+            "src": "/media/images/esg-compliance-1280.webp"
+          },
+          {
+            "width": 1920,
+            "src": "/media/images/esg-compliance-1920.webp"
+          }
+        ],
+        "jpg": [
+          {
+            "width": 640,
+            "src": "/media/images/esg-compliance-640.jpg"
+          },
+          {
+            "width": 1280,
+            "src": "/media/images/esg-compliance-1280.jpg"
+          },
+          {
+            "width": 1920,
+            "src": "/media/images/esg-compliance-1920.jpg"
+          }
+        ]
+      }
+    },
     "greengrid-hero": {
       "slug": "greengrid-hero",
       "kind": "illustrations",
@@ -2582,6 +2633,57 @@
           {
             "width": 973,
             "src": "/media/images/tech-hub-973.jpg"
+          }
+        ]
+      }
+    },
+    "tech-implementation": {
+      "slug": "tech-implementation",
+      "kind": "illustrations",
+      "width": 2675,
+      "height": 1459,
+      "blurDataURL": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAADQAQCdASoQAAkAA4BaJYgCdAEUk7nVMAD+1z+NRMld+AzgIV1lDmeZuLwJEAYp92DZkGr39zRb2E8E0Fem1LHUv1v4qatDc0YigAAA",
+      "variants": {
+        "avif": [
+          {
+            "width": 640,
+            "src": "/media/images/tech-implementation-640.avif"
+          },
+          {
+            "width": 1280,
+            "src": "/media/images/tech-implementation-1280.avif"
+          },
+          {
+            "width": 1920,
+            "src": "/media/images/tech-implementation-1920.avif"
+          }
+        ],
+        "webp": [
+          {
+            "width": 640,
+            "src": "/media/images/tech-implementation-640.webp"
+          },
+          {
+            "width": 1280,
+            "src": "/media/images/tech-implementation-1280.webp"
+          },
+          {
+            "width": 1920,
+            "src": "/media/images/tech-implementation-1920.webp"
+          }
+        ],
+        "jpg": [
+          {
+            "width": 640,
+            "src": "/media/images/tech-implementation-640.jpg"
+          },
+          {
+            "width": 1280,
+            "src": "/media/images/tech-implementation-1280.jpg"
+          },
+          {
+            "width": 1920,
+            "src": "/media/images/tech-implementation-1920.jpg"
           }
         ]
       }
